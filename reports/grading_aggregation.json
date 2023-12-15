@@ -1,0 +1,1157 @@
+[
+  {
+    "$addFields": {
+      "no_newline_diag": {
+        "$replaceAll": {
+          "input": "$diagnosis[0]",
+          "find": "",
+          "replacement": ""
+        }
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "pre_chief_complaint": {
+        "$filter": {
+          "input": {
+            "$slice": [
+              "$conv_hist.chief_complaint_agent",
+              1,
+              {
+                "$size": "$conv_hist.chief_complaint_agent"
+              }
+            ]
+          },
+          "cond": {
+            "$and": [
+              {
+                "$ne": [
+                  "$$conv.role",
+                  "system"
+                ]
+              },
+              {
+                "$ne": [
+                  "$$conv.role",
+                  "function"
+                ]
+              }
+            ]
+          },
+          "as": "conv"
+        }
+      },
+      "followups": {
+        "$filter": {
+          "input": "$conv_hist.followup_agent",
+          "cond": {
+            "$and": [
+              {
+                "$ne": [
+                  "$$follow.content",
+                  ""
+                ]
+              },
+              {
+                "$ne": [
+                  "$$follow.role",
+                  "function"
+                ]
+              }
+            ]
+          },
+          "as": "follow"
+        }
+      },
+      "treatment": {
+        "$filter": {
+          "input": "$conv_hist.treatment_agent",
+          "cond": {
+            "$and": [
+              {
+                "$eq": [
+                  "$$treat.role",
+                  "assistant"
+                ]
+              }
+            ]
+          },
+          "as": "treat"
+        }
+      },
+      "diagnosis": {
+        "$filter": {
+          "input": "$conv_hist.diagnosis_agent",
+          "cond": {
+            "$and": [
+              {
+                "$eq": [
+                  "$$diag.role",
+                  "assistant"
+                ]
+              }
+            ]
+          },
+          "as": "diag"
+        }
+      }
+    }
+  },
+  {
+    "$match": {
+      "chief_complaint.complaint": {
+        "$nin": [
+          null,
+          ""
+        ]
+      },
+      "current_agent_index": {
+        "$gte": 4,
+        "$lte": 5
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_0": {
+        "$reduce": {
+          "input": {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$pre_chief_complaint.content"
+                  },
+                  "then": "$pre_chief_complaint.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$pre_chief_complaint.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$pre_chief_complaint.content"
+              ]
+            }
+          },
+          "initialValue": "",
+          "in": {
+            "$concat": [
+              "$$value",
+              {
+                "$cond": {
+                  "if": {
+                    "$eq": [
+                      "$$value",
+                      ""
+                    ]
+                  },
+                  "then": "",
+                  "else": "##"
+                }
+              },
+              "$$this"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_1": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          1
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_2": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          2
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_3": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          3
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_4": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          4
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_5": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          5
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_6": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          6
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_7": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          7
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_8": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          8
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_9": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          9
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_10": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          10
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_11": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          11
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_12": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          12
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_13": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          13
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_14": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          14
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_15": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          15
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_16": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          16
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_17": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          17
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_18": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          18
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_19": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          19
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_20": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$followups.content"
+                  },
+                  "then": "$followups.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$followups.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$followups.content"
+              ]
+            }
+          },
+          20
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_21": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$diagnosis.content"
+                  },
+                  "then": "$diagnosis.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$diagnosis.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$diagnosis.content"
+              ]
+            }
+          },
+          0
+        ]
+      }
+    }
+  },
+  {
+    "$addFields": {
+      "__alias_22": {
+        "$arrayElemAt": [
+          {
+            "$switch": {
+              "branches": [
+                {
+                  "case": {
+                    "$isArray": "$treatment.content"
+                  },
+                  "then": "$treatment.content"
+                },
+                {
+                  "case": {
+                    "$in": [
+                      {
+                        "$type": "$treatment.content"
+                      },
+                      [
+                        "null",
+                        "missing",
+                        "object"
+                      ]
+                    ]
+                  },
+                  "then": []
+                }
+              ],
+              "default": [
+                "$treatment.content"
+              ]
+            }
+          },
+          0
+        ]
+      }
+    }
+  },
+  {
+    "$group": {
+      "_id": {
+        "__alias_23": "$_id",
+        "__alias_24": "$created",
+        "__alias_0": "$__alias_0",
+        "__alias_25": "$chief_complaint.complaint",
+        "__alias_1": "$__alias_1",
+        "__alias_2": "$__alias_2",
+        "__alias_3": "$__alias_3",
+        "__alias_4": "$__alias_4",
+        "__alias_5": "$__alias_5",
+        "__alias_6": "$__alias_6",
+        "__alias_7": "$__alias_7",
+        "__alias_8": "$__alias_8",
+        "__alias_9": "$__alias_9",
+        "__alias_10": "$__alias_10",
+        "__alias_11": "$__alias_11",
+        "__alias_12": "$__alias_12",
+        "__alias_13": "$__alias_13",
+        "__alias_14": "$__alias_14",
+        "__alias_15": "$__alias_15",
+        "__alias_16": "$__alias_16",
+        "__alias_17": "$__alias_17",
+        "__alias_18": "$__alias_18",
+        "__alias_19": "$__alias_19",
+        "__alias_20": "$__alias_20",
+        "__alias_21": "$__alias_21",
+        "__alias_22": "$__alias_22"
+      }
+    }
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "__alias_23": "$_id.__alias_23",
+      "__alias_24": "$_id.__alias_24",
+      "__alias_0": "$_id.__alias_0",
+      "__alias_25": "$_id.__alias_25",
+      "__alias_1": "$_id.__alias_1",
+      "__alias_2": "$_id.__alias_2",
+      "__alias_3": "$_id.__alias_3",
+      "__alias_4": "$_id.__alias_4",
+      "__alias_5": "$_id.__alias_5",
+      "__alias_6": "$_id.__alias_6",
+      "__alias_7": "$_id.__alias_7",
+      "__alias_8": "$_id.__alias_8",
+      "__alias_9": "$_id.__alias_9",
+      "__alias_10": "$_id.__alias_10",
+      "__alias_11": "$_id.__alias_11",
+      "__alias_12": "$_id.__alias_12",
+      "__alias_13": "$_id.__alias_13",
+      "__alias_14": "$_id.__alias_14",
+      "__alias_15": "$_id.__alias_15",
+      "__alias_16": "$_id.__alias_16",
+      "__alias_17": "$_id.__alias_17",
+      "__alias_18": "$_id.__alias_18",
+      "__alias_19": "$_id.__alias_19",
+      "__alias_20": "$_id.__alias_20",
+      "__alias_21": "$_id.__alias_21",
+      "__alias_22": "$_id.__alias_22"
+    }
+  },
+  {
+    "$project": {
+      "group": "$__alias_23",
+      "created": "$__alias_24",
+      "pre_chief_complaint": "$__alias_0",
+      "chief_complaint": "$__alias_25",
+      "Q1": "$__alias_1",
+      "A1": "$__alias_2",
+      "Q2": "$__alias_3",
+      "A2": "$__alias_4",
+      "Q3": "$__alias_5",
+      "A3": "$__alias_6",
+      "Q4": "$__alias_7",
+      "A4": "$__alias_8",
+      "Q5": "$__alias_9",
+      "A5": "$__alias_10",
+      "Q6": "$__alias_11",
+      "A6": "$__alias_12",
+      "Q7": "$__alias_13",
+      "A7": "$__alias_14",
+      "Q8": "$__alias_15",
+      "A8": "$__alias_16",
+      "Q9": "$__alias_17",
+      "A9": "$__alias_18",
+      "Q10": "$__alias_19",
+      "A10": "$__alias_20",
+      "diagnosis": "$__alias_21",
+      "treatment": "$__alias_22",
+      "_id": 0
+    }
+  },
+  {
+    "$sort": {
+      "group": 1,
+      "group_series_0": 1,
+      "group_series_1": 1,
+      "group_series_10": 1,
+      "group_series_11": 1,
+      "group_series_12": 1,
+      "group_series_13": 1,
+      "group_series_14": 1,
+      "group_series_15": 1,
+      "group_series_16": 1,
+      "group_series_17": 1,
+      "group_series_18": 1,
+      "group_series_19": 1,
+      "group_series_2": 1,
+      "group_series_20": 1,
+      "group_series_21": 1,
+      "group_series_22": 1,
+      "group_series_23": 1,
+      "group_series_24": 1,
+      "group_series_3": 1,
+      "group_series_4": 1,
+      "group_series_5": 1,
+      "group_series_6": 1,
+      "group_series_7": 1,
+      "group_series_8": 1,
+      "group_series_9": 1
+    }
+  },
+  {
+    "$limit": 50000
+  }
+]

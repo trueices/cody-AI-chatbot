@@ -1,0 +1,210 @@
+{
+  "_id": {
+    "oid": "653112d4a602a5e42652392f"
+  },
+  "username": "mgvg2skD9ecihUlx8CHA4SorKdHv9xcZ7YqLbsUjf1TRZkCiPS",
+  "agent_names": [
+    "chief_complaint_agent",
+    "name_enquiry_agent",
+    "followup_agent",
+    "magic_minute_agent",
+    "diagnosis_agent",
+    "treatment_agent",
+    "human_doctor_agent",
+    "feedback_agent",
+    "end_agent"
+  ],
+  "chief_complaint": "faint line on pregnancy test",
+  "completion_tokens": 751,
+  "conv_hist": {
+    "chief_complaint_agent": [
+      {
+        "role": "assistant",
+        "content": "Hello, I'm Cody, your AI Doctor, here to help you get better. I've been trained by licensed doctors.\n\nPlease tell me one specific health problem you'd like help with today. 😄\n\nYou can say something like “sinus pressure” or “I have a sore throat.”"
+      },
+      {
+        "role": "user",
+        "content": "Faint line on pregnancy test "
+      },
+      {
+        "role": "assistant",
+        "content": "So you want to focus on the faint line on your pregnancy test today, is that correct?"
+      },
+      {
+        "role": "user",
+        "content": "yes "
+      },
+      {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "capture_chief_complaint_tool",
+          "arguments": "{\n  \"chief_complaint\": \"faint line on pregnancy test\"\n}"
+        }
+      },
+      {
+        "role": "function",
+        "content": "Chief complaint captured",
+        "name": "capture_chief_complaint_tool"
+      }
+    ],
+    "name_enquiry_agent": [
+      {
+        "role": "system",
+        "content": "\nYou are continuing a conversation with a patient. \nIn this stage, you are trying to capture the name of the patient.\nYour task is to ask the name of the patient.\nAs soon as you get a name, call the capture_name_tool to capture the name. \nIf the user does not provide a name, inform the user that you need a name to continue.\nDo not entertain any other questions, except for the name.\nIf the user responds with anything other than a name, inform the user that you need a name to continue.\nIf the user says that they dont want to share their name, inform the user that they can use a made up name.\nAs soon as you get a name, call the capture_name_tool to capture the name. \n"
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for confirming! Before I ask you a few questions, what should I call you?"
+      },
+      {
+        "role": "user",
+        "content": "Ellie is fine "
+      },
+      {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "capture_name_tool",
+          "arguments": "{\n  \"name\": \"Ellie\"\n}"
+        }
+      },
+      {
+        "role": "function",
+        "content": "Name captured",
+        "name": "capture_name_tool"
+      },
+      {
+        "role": "assistant",
+        "content": "Good to meet you, Ellie! My goal is to provide you with an accurate diagnosis and plan. Let's talk about your faint line on the pregnancy test.\n\n"
+      }
+    ],
+    "followup_agent": [
+      {
+        "role": "assistant",
+        "content": "Have you experienced any other symptoms of pregnancy, such as missed periods or morning sickness?"
+      },
+      {
+        "role": "user",
+        "content": "yes I am 3 weeks late and have been feeling sick but not actually been sick "
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been taking any medications or supplements that could potentially affect the results of the pregnancy test?\nBy the way Ellie, I didn’t mention this earlier, but our conversation is always private and confidential."
+      },
+      {
+        "role": "user",
+        "content": "No I had taken a pregnancy test at the doctors a week ago who told me to take a test today and it came up with faint positive "
+      },
+      {
+        "role": "assistant",
+        "content": "Hmm.. I see. It's good that you followed up with a pregnancy test. Have you had any recent changes in your lifestyle or stress levels that could potentially affect your menstrual cycle?"
+      },
+      {
+        "role": "user",
+        "content": "No I suffer with anxiety and depression but it's not been affecting me recently "
+      },
+      {
+        "role": "assistant",
+        "content": "Have you had any recent changes in your sexual activity or contraceptive use that could potentially affect the results of the pregnancy test?"
+      },
+      {
+        "role": "user",
+        "content": "No"
+      },
+      {
+        "role": "assistant",
+        "content": "Have you had any previous pregnancies or miscarriages?"
+      },
+      {
+        "role": "user",
+        "content": "never I am 18 years old and this would be my first "
+      },
+      {
+        "role": "assistant",
+        "content": "Hmm.. I see. Along with the faint positive pregnancy test, have you noticed any abdominal pain or cramping?"
+      },
+      {
+        "role": "user",
+        "content": "yes I have had a lot of cramping for the past 3 weeks "
+      },
+      {
+        "role": "assistant",
+        "content": "Hmm.. I see. In addition to the cramping, have you noticed any vaginal bleeding or spotting?"
+      },
+      {
+        "role": "user",
+        "content": "No but did get some brown discharge for a couple of days and I have been preducing a lot more white discharge then usual "
+      },
+      {
+        "role": "assistant",
+        "content": "Have you had any recent changes in your weight or appetite that could potentially affect your menstrual cycle and the results of the pregnancy test?"
+      },
+      {
+        "role": "user",
+        "content": "I have lost abit of weight and have been eating abit more but not lost any unusual or unhealthy weight "
+      },
+      {
+        "role": "assistant",
+        "content": "Hmm.. I see. Have you had any recent exposure to any potential toxins or chemicals that could potentially affect the results of the pregnancy test?"
+      },
+      {
+        "role": "user",
+        "content": "Not that I can think of "
+      },
+      {
+        "role": "assistant",
+        "content": "Any changes in your urine output or frequency, or any discomfort during urination?"
+      },
+      {
+        "role": "user",
+        "content": "I've been urintating a lot more then usual "
+      }
+    ],
+    "magic_minute_agent": [
+      {
+        "role": "assistant",
+        "content": "Ellie, here's what I've understood so far:\n- You have come to me regarding your faint line on pregnancy test.\n- You are 3 weeks late for your period.\n- You have been feeling sick but not actually vomiting.\n- You have been experiencing cramping for the past 3 weeks.\n- You had some brown discharge for a couple of days.\n- You have been producing more white discharge than usual.\n- You have been urinating more frequently than usual.\n- You have lost some weight and have been eating slightly more.\n- You have not had any previous pregnancies or miscarriages.\n- You have not had any recent changes in your sexual activity or contraceptive use.\n- You have not had any recent exposure to toxins or chemicals.\n\n\n\n"
+      }
+    ],
+    "diagnosis_agent": [
+      {
+        "role": "assistant",
+        "content": "Based on what you've told me, I've prepared your Top 3 Diagnosis List.\n\n1. Pregnancy (80% probability): The faint line on the pregnancy test, along with the missed period, increased urination, and changes in appetite and weight, suggest the possibility of pregnancy.\n\n2. Urinary Tract Infection (UTI) (60% probability): The increased frequency of urination and the presence of white discharge could be indicative of a UTI.\n\n3. Hormonal Imbalance (40% probability): The delayed period, cramping, and changes in appetite and weight could be caused by a hormonal imbalance.\n\nPlease consult with a healthcare professional for a proper diagnosis and further guidance.\n\nI have prepared personalized treatment plans for you. If you would like to see a treatment plan, tell me the diagnosis or its number."
+      }
+    ],
+    "treatment_agent": [],
+    "human_doctor_agent": [],
+    "feedback_agent": [],
+    "end_agent": []
+  },
+  "created": "2023-10-19T11:28:20.603956",
+  "current_agent_index": 4,
+  "current_agent_name": "diagnosis_agent",
+  "deployed": "2023-10-18T19:36:07.741679",
+  "diagnosis_list": [
+    "PREGNANCY",
+    "URINARY TRACT INFECTION (UTI)",
+    "HORMONAL IMBALANCE"
+  ],
+  "engagement_minutes": 9.94297375,
+  "followup_summary": null,
+  "hist_for_que_gen": "\nQuestion: Have you experienced any other symptoms of pregnancy, such as missed periods or morning sickness?\nAnswer: yes I am 3 weeks late and have been feeling sick but not actually been sick \nQuestion: Have you been taking any medications or supplements that could potentially affect the results of the pregnancy test?\nAnswer: No I had taken a pregnancy test at the doctors a week ago who told me to take a test today and it came up with faint positive \nQuestion: Have you had any recent changes in your lifestyle or stress levels that could potentially affect your menstrual cycle?\nAnswer: No I suffer with anxiety and depression but it's not been affecting me recently \nQuestion: Have you had any recent changes in your sexual activity or contraceptive use that could potentially affect the results of the pregnancy test?\nAnswer: No\nQuestion: Have you had any previous pregnancies or miscarriages?\nAnswer: never I am 18 years old and this would be my first \nQuestion: Have you experienced any abdominal pain or cramping along with the faint positive pregnancy test?\nAnswer: yes I have had a lot of cramping for the past 3 weeks \nQuestion: Have you had any vaginal bleeding or spotting along with the faint positive pregnancy test and cramping?\nAnswer: No but did get some brown discharge for a couple of days and I have been preducing a lot more white discharge then usual \nQuestion: Have you had any recent changes in your weight or appetite that could potentially affect your menstrual cycle and the results of the pregnancy test?\nAnswer: I have lost abit of weight and have been eating abit more but not lost any unusual or unhealthy weight \nQuestion: Have you had any recent exposure to any potential toxins or chemicals that could potentially affect the results of the pregnancy test?\nAnswer: Not that I can think of \nQuestion: Have you had any recent changes in your urine output or frequency, as well as any burning or discomfort during urination?\nAnswer: I've been urintating a lot more then usual ",
+  "last_human_input": "I've been urintating a lot more then usual ",
+  "last_updated": "2023-10-19T11:38:17.182381",
+  "max_token_count": 877,
+  "mode": null,
+  "patient_name": "Ellie",
+  "prompt_tokens": 6115,
+  "successful_requests": 16,
+  "total_cost": 0.0106745,
+  "version": "0.1.1-alpha",
+  "dx_group_list": [
+    "UTIs",
+    "EndocrinologyOther"
+  ],
+  "dx_specialist_list": [
+    "infectious_disease_specialist",
+    "endocrinologist"
+  ]
+}

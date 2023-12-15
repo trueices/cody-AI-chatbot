@@ -1,0 +1,184 @@
+{
+  "status": "success",
+  "eventType": "fullauto",
+  "sessionId": "a516bca8-7a27-4f97-b725-558eb6c32bc2",
+  "attemptId": "49bbbbbc-7640-4163-9882-6ff936c0fa20",
+  "vendorData": "YDQI58M2JK2RCLU2H8N21W8L1F6EDJIZB8J1OHFOTY6E60VSWS",
+  "version": "1.0.0",
+  "acceptanceTime": "2024-04-05T05:58:59.042749Z",
+  "time": "2024-04-05T06:00:03.207Z",
+  "data": {
+    "verification": {
+      "decisionScore": 0.99,
+      "decision": "approved",
+      "person": {
+        "firstName": {
+          "confidenceCategory": "high",
+          "value": "PANKAJ",
+          "sources": [
+            "VIZ"
+          ]
+        },
+        "lastName": {
+          "confidenceCategory": "high",
+          "value": "AGRAWAL",
+          "sources": [
+            "VIZ"
+          ]
+        },
+        "dateOfBirth": {
+          "confidenceCategory": "high",
+          "sources": [
+            "VIZ"
+          ]
+        },
+        "idNumber": {
+          "confidenceCategory": "high",
+          "sources": [
+            "VIZ"
+          ]
+        }
+      },
+      "document": {
+        "number": {
+          "confidenceCategory": "high",
+          "sources": [
+            "VIZ"
+          ]
+        },
+        "type": {
+          "value": "drivers_license"
+        },
+        "country": {
+          "value": "NO"
+        },
+        "validUntil": {
+          "confidenceCategory": "high",
+          "value": "2037-01-09",
+          "sources": [
+            "VIZ"
+          ]
+        },
+        "validFrom": {
+          "confidenceCategory": "high",
+          "value": "2022-01-10",
+          "sources": [
+            "VIZ"
+          ]
+        }
+      },
+      "insights": [
+        {
+          "label": "allowedIpLocation",
+          "result": "yes",
+          "category": "fraud"
+        },
+        {
+          "label": "documentAccepted",
+          "result": "yes",
+          "category": "document"
+        },
+        {
+          "label": "documentBackFullyVisible",
+          "result": "yes",
+          "category": "document"
+        },
+        {
+          "label": "documentBackImageAvailable",
+          "result": "yes",
+          "category": "document"
+        },
+        {
+          "label": "documentFrontFullyVisible",
+          "result": "yes",
+          "category": "document"
+        },
+        {
+          "label": "documentFrontImageAvailable",
+          "result": "yes",
+          "category": "document"
+        },
+        {
+          "label": "documentImageQualitySufficient",
+          "result": "yes",
+          "category": "document"
+        },
+        {
+          "label": "documentNotExpired",
+          "result": "yes",
+          "category": "document"
+        },
+        {
+          "label": "documentRecognised",
+          "result": "yes",
+          "category": "document"
+        },
+        {
+          "label": "expectedTrafficBehaviour",
+          "result": "yes",
+          "category": "fraud"
+        },
+        {
+          "label": "faceImageAvailable",
+          "result": "yes",
+          "category": "biometric"
+        },
+        {
+          "label": "faceImageQualitySufficient",
+          "result": "yes",
+          "category": "biometric"
+        },
+        {
+          "label": "faceLiveness",
+          "result": "yes",
+          "category": "biometric"
+        },
+        {
+          "label": "faceNotInBlocklist",
+          "result": "yes",
+          "category": "biometric"
+        },
+        {
+          "label": "faceSimilarToPortrait",
+          "result": "yes",
+          "category": "biometric"
+        },
+        {
+          "label": "lowFraudRateForDocument",
+          "result": "yes",
+          "category": "document"
+        },
+        {
+          "label": "newDocument",
+          "result": "yes",
+          "category": "velocity"
+        },
+        {
+          "label": "newUser",
+          "result": "yes",
+          "category": "velocity"
+        },
+        {
+          "label": "noDeviceRisk",
+          "result": "yes",
+          "category": "fraud"
+        },
+        {
+          "label": "physicalDocumentPresent",
+          "result": "yes",
+          "category": "document"
+        },
+        {
+          "label": "validDocumentAppearance",
+          "result": "yes",
+          "category": "document"
+        },
+        {
+          "label": "validDocumentData",
+          "result": "yes",
+          "category": "document"
+        }
+      ]
+    }
+  }
+}

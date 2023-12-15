@@ -1,0 +1,121 @@
+{
+  "id": "evt_3Ozj01Bl169sjuIE3Y5LMts3",
+  "object": "event",
+  "api_version": "2022-11-15",
+  "created": 1711732433,
+  "data": {
+    "object": {
+      "id": "ch_3Ozj01Bl169sjuIE31ti1UW2",
+      "object": "charge",
+      "amount": 3900,
+      "amount_captured": 0,
+      "amount_refunded": 0,
+      "application": null,
+      "application_fee": null,
+      "application_fee_amount": null,
+      "balance_transaction": null,
+      "billing_details": {
+        "address": {
+          "city": null,
+          "country": "NO",
+          "line1": null,
+          "line2": null,
+          "postal_code": null,
+          "state": null
+        },
+        "email": "pnkaj.agrwal@gmail.com",
+        "name": "pankaj",
+        "phone": null
+      },
+      "calculated_statement_descriptor": "CODY.MD",
+      "captured": false,
+      "created": 1711732434,
+      "currency": "usd",
+      "customer": null,
+      "description": null,
+      "destination": null,
+      "dispute": null,
+      "disputed": false,
+      "failure_balance_transaction": null,
+      "failure_code": null,
+      "failure_message": null,
+      "fraud_details": {
+      },
+      "invoice": null,
+      "livemode": false,
+      "metadata": {
+        "convo_id": "FXLJmBn5kT1DNxs3BVH1svcMKBjtgwi5gyb0ANFO35dF0WBrbi",
+        "offer_id": "MN3PUJ0E0PJCPLCWYQHOK9BX2V0VCNXT3XFH0A4PARTM7H1ZXH"
+      },
+      "on_behalf_of": null,
+      "order": null,
+      "outcome": {
+        "network_status": "approved_by_network",
+        "reason": null,
+        "risk_level": "normal",
+        "risk_score": 27,
+        "seller_message": "Payment complete.",
+        "type": "authorized"
+      },
+      "paid": true,
+      "payment_intent": "pi_3Ozj01Bl169sjuIE3wFvruKL",
+      "payment_method": "pm_1Ozj01Bl169sjuIE5GZAgoXo",
+      "payment_method_details": {
+        "card": {
+          "amount_authorized": 3900,
+          "brand": "visa",
+          "capture_before": 1712337234,
+          "checks": {
+            "address_line1_check": null,
+            "address_postal_code_check": null,
+            "cvc_check": "pass"
+          },
+          "country": "US",
+          "exp_month": 4,
+          "exp_year": 2025,
+          "extended_authorization": {
+            "status": "disabled"
+          },
+          "fingerprint": "qWTcR0R4dnN8V3rk",
+          "funding": "credit",
+          "incremental_authorization": {
+            "status": "unavailable"
+          },
+          "installments": null,
+          "last4": "4242",
+          "mandate": null,
+          "multicapture": {
+            "status": "unavailable"
+          },
+          "network": "visa",
+          "network_token": {
+            "used": false
+          },
+          "overcapture": {
+            "maximum_amount_capturable": 3900,
+            "status": "unavailable"
+          },
+          "three_d_secure": null,
+          "wallet": null
+        },
+        "type": "card"
+      },
+      "radar_options": {
+      },
+      "receipt_email": null,
+      "receipt_number": null,
+      "receipt_url": "https://pay.stripe.com/receipts/payment/CAcaFwoVYWNjdF8xTlpZOHJCbDE2OXNqdUlFKNLtm7AGMgaIsBa24M86LBZvnrqmG3CQ7VCCuj4PSe0pYdF6aPD47nISmC1OkZji8epU7vLhLQLwqjs8",
+      "refunded": false,
+      "review": null,
+      "shipping": null,
+      "source": null,
+      "source_transfer": null,
+      "statement_descriptor": null,
+      "statement_descriptor_suffix": null,
+      "status": "succeeded",
+      "transfer_data": null,
+      "transfer_group": null
+    }
+  },
+  "type": "charge.succeeded"
+}

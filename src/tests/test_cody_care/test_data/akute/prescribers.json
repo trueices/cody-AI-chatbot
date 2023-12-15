@@ -1,0 +1,73 @@
+[
+  {
+    "id": "634c7e2b2ceaa80009a25652",
+    "first_name": "David",
+    "last_name": "Sanders",
+    "email": "dave@wonderfulmedicalgroup.com",
+    "dob": "1980-01-01",
+    "npi": "1548673023",
+    "dea": "",
+    "bio": "bio",
+    "licenses": [
+      {
+        "number": "23452345",
+        "state": "California",
+        "expirationDate": "2026-01-01"
+      }
+    ],
+    "roles": [
+      "Practitioner",
+      "Prescriber",
+      "Owner",
+      "Admin",
+      "Developer"
+    ]
+  },
+  {
+    "id": "634c83742688fa3e21c7c9d4",
+    "first_name": "Albert",
+    "last_name": "DiPiero",
+    "email": "albert@wonderfulmedicalgroup.com",
+    "dob": "1980-01-01",
+    "npi": "1366457855",
+    "dea": "",
+    "licenses": [
+      {
+        "number": "456456",
+        "state": "Arizona",
+        "expirationDate": "2026-01-01"
+      }
+    ],
+    "bio": "bio",
+    "roles": [
+      "Practitioner",
+      "Prescriber",
+      "Owner",
+      "Admin",
+      "Developer"
+    ]
+  },
+  {
+    "id": "65f11c16987a7e46ccffa00f",
+    "first_name": "Pankaj",
+    "last_name": "Agrawal",
+    "email": "pankaj.agrawal.home@gmail.com",
+    "dob": "1980-01-01",
+    "npi": "6141935646",
+    "dea": "",
+    "licenses": [
+      {
+        "number": "4512312",
+        "state": "Oregon",
+        "expirationDate": "2024-01-01"
+      }
+    ],
+    "roles": [
+      "Practitioner",
+      "Prescriber",
+      "Owner",
+      "Admin",
+      "Developer"
+    ]
+  }
+]

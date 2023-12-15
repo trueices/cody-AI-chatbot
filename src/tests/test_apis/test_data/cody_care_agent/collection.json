@@ -1,0 +1,207 @@
+{
+  "username": "FXLJmBn5kT1DNxs3BVH1svcMKBjtgwi5gyb0ANFO35dF0WBrbi",
+  "address": null,
+  "agent_names": [
+    "navigation_agent",
+    "chief_complaint_agent",
+    "router_agent",
+    "name_enquiry_agent",
+    "followup_agent",
+    "magic_minute_agent",
+    "diagnosis_agent",
+    "concierge_agent",
+    "treatment_agent",
+    "find_care_agent",
+    "feedback_agent",
+    "end_agent",
+    "ad_demo_agent",
+    "followup_care_agent",
+    "dx_conversation_agent",
+    "tx_conversation_agent",
+    "question_agent",
+    "existing_diagnosis_agent",
+    "cody_care_agent"
+  ],
+  "analytics_state": null,
+  "care_feedback_rating": null,
+  "character_src": "router",
+  "chief_complaint": "fever",
+  "completion_tokens": 471,
+  "concierge_option": "detailed",
+  "confidence_score": 0,
+  "conv_hist": {
+    "navigation_agent": [
+      {
+        "role": "assistant",
+        "content": "Hello A!\n\n\nI'm Cody, your AI Doctor, I've been trained by licensed doctors.\n\nWhat health issue do you want to work on today?😄\n\n\nWe can work on a pressing problem. Just tell me what’s wrong. You can say  “sinus pressure” or “I have a sore throat”.\n\nWe can work on an existing condition. You can say, “I have diabetes” or “I have endometriosis”.\n\nOr, you can just ask me a question, like “what’s cholesterol?”"
+      },
+      {
+        "role": "user",
+        "content": "Fever"
+      },
+      {
+        "role": "assistant",
+        "content": "So you want to focus on the fever today, is that correct?"
+      },
+      {
+        "role": "user",
+        "content": "yes"
+      },
+      {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "capture_intent_tool",
+          "arguments": "{\"intent\":\"symptom_or_suspected_condition\"}"
+        }
+      }
+    ],
+    "chief_complaint_agent": [],
+    "router_agent": [
+      {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "categorize_chief_complaint",
+          "arguments": "{\"specialist\":\"InfectiousDiseaseSpecialist\"}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "categorize_chief_complaint",
+          "arguments": "{\"sub_speciality\":\"InfectiousDiseasesOther\",\"is_disease_name\":false}"
+        }
+      }
+    ],
+    "name_enquiry_agent": [
+      {
+        "role": "assistant",
+        "content": "A, my goal is to provide you with an accurate assessment and plan. Lets talk about your concerns regarding fever."
+      }
+    ],
+    "followup_agent": [
+      {
+        "role": "assistant",
+        "content": "Please describe your concerns regarding fever. What symptoms are you experiencing with your fever?"
+      },
+      {
+        "role": "user",
+        "content": "diagnosis"
+      }
+    ],
+    "magic_minute_agent": [
+      {
+        "role": "assistant",
+        "content": "A, here's what I've understood so far:\n<h1>Summary of our conversation</h1>\n<ul>\n<li>You have reached out to me regarding your fever.</li>\n<li>You mentioned experiencing symptoms along with the fever.</li>\n</ul>\n\n\n"
+      }
+    ],
+    "diagnosis_agent": [
+      {
+        "role": "assistant",
+        "content": "Based on what you've told me, I've prepared your Top 3 Condition List.\n<h1>Your Top 3 Condition List</h1>\n<b>1. Influenza (50% probability)</b> Viral infection causing fever, body aches, and respiratory symptoms.\n<b>2. Urinary Tract Infection (30% probability)</b> Bacterial infection leading to fever, frequent urination, and discomfort.\n<b>3. Pneumonia (20% probability)</b> Infection in the lungs causing fever, cough, and difficulty breathing."
+      }
+    ],
+    "concierge_agent": [
+      {
+        "role": "assistant",
+        "content": "\n\n\nWhat should we do next?\n\n1. Let’s discuss your Top 3 Condition List\n2. Let’s take a look at Treatments.\n3. Start a new conversation."
+      },
+      {
+        "role": "user",
+        "content": "connect to doc"
+      }
+    ],
+    "treatment_agent": [],
+    "find_care_agent": [],
+    "feedback_agent": [],
+    "end_agent": [],
+    "ad_demo_agent": [],
+    "followup_care_agent": [],
+    "dx_conversation_agent": [],
+    "tx_conversation_agent": [],
+    "question_agent": [],
+    "existing_diagnosis_agent": [],
+    "cody_care_agent": [
+      {
+        "role": "assistant",
+        "content": "\nThe Doctor Service is $39 and does not include the cost of tests or medications. The Doctor Service is paid with a credit card. You may pay for medications and tests with your insurance or a credit card.\n    \nYour Doctor will provide you with a 🩺Certified Plan that will address:\n    \n    - Diagnosis\n    - Tests\n    - Prescription Medications\n    - Non Prescription Medications\n    - Referrals\n    - Self Care\n    \nWould you like to proceed?\n    \n    1. Let’s proceed.\n    2. No thanks. What else can I do now?\n    "
+      },
+      {
+        "role": "assistant",
+        "content": "\nPerfect, moving along, now it’s payment time.\n\nWe will stop here. This is under development. Please proceed with the next steps.\n"
+      }
+    ]
+  },
+  "conv_train_msgs": [],
+  "created": "2024-03-28T12:58:57.485854",
+  "current_agent_index": 18,
+  "current_agent_name": "cody_care_agent",
+  "debug_messages_list": [
+    "-------",
+    "System prompt: \nYou are Cody, a specialist doctor in InfectiousDiseaseSpecialist.\nYou are treating a patient who have expressed concerns regarding the topic: fever\n\nHere is a suggested LIST OF FIELDS you can ask about:\n['details of {chief complaint}', 'when started {chief complaint}', 'previous medical diagnoses']\n\nEach field has some attributes associated with it. These attributes contain information about how to generate a question from the corresponding field.\nThe attributes are:\n{'details of {chief complaint}': {'FIELD DATA ATTRIBUTES': 'To complete this Field, describe the Chief Complaint in detail. \\n\\n', 'EXAMPLES OF QUESTIONS': 'Please describe your {}. \\nWhat do you mean by {}\\nDescribe all you are experiencing with your { }', 'FIELD DATA ATTRIBUTE EXAMPLES': 'I am told I have worsening kidney function due to diabetes. \\nI have itchy skin and decreased urine '}, 'when started {chief complaint}': {'FIELD DATA ATTRIBUTES': 'To complete this Field, determine for how long your patient has experienced their Chief Complaint. \\n\\nDenote the duration in: hours, days, weeks, months, years', 'EXAMPLES OF QUESTIONS': 'When did you first start experiencing {}?\\nWhen did this current episode of {} start?', 'FIELD DATA ATTRIBUTE EXAMPLES': '2 years ago\\n2 weeks ago'}, 'previous medical diagnoses': {'FIELD DATA ATTRIBUTES': 'To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.', 'EXAMPLES OF QUESTIONS': 'Have you been diagnosied by a health professional with any medical conditions?', 'FIELD DATA ATTRIBUTE EXAMPLES': 'Yes, I was diagnosed with Covid 19 twice since 2020.'}}\n\nUse this LIST OF FIELDS to select the next field to ask, based on the conversation history.\nSelect only one field from the list. Maintain the sequence of the fields.\nYour output should be a JSON with the following keys:\n\nthought: A few words, describing your thought process.\nfields_answered: list of strings (the fields that are already answered by the patient/user. Can be empty. Should be among ['details of {chief complaint}', 'when started {chief complaint}', 'previous medical diagnoses'])\nnext_field: string (the field selected to create the next question. Should be one among ['details of {chief complaint}', 'when started {chief complaint}', 'previous medical diagnoses'])\nquestion: string (The next question to ask regarding the next_field)\n\nNote:\n1. If the user responds to a field saying that they dont know, you should consider the field filled/answered.\n2. But if the user responds by asking a question or by responding in a way that doesnt make sense, you should consider the field not filled/answered.\n3. Your volcabulary of fields should only be among the list ['details of {chief complaint}', 'when started {chief complaint}', 'previous medical diagnoses'].\n4. DO not hallucinate or make up any information.\n5. If a field in ['details of {chief complaint}', 'when started {chief complaint}', 'previous medical diagnoses'] is filled, you should include it in the list of fields_answered. The next_field should be a field that you have not asked yet.\n6. The priority of fields is based on the sequence of the list of fields. The first field in the list has the highest priority.\n\nExample 1:\nCHIEF COMPLAINT: concerned about Tremor\nLIST OF FIELDS: ['Diagnosed with Neurologic Condition' , 'Headache', 'Balance changes', 'Intensity']\nCONVERSATION HISTORY:\nai: What is you age?\nuser: 60\nai: Have you been diagnosed with any neurologic condition?\nuser: No\nai: Ok.. Have you had headaches associated with your tremors?\nuser: Yes, sometimes\nOUTPUT:\n{\n\"thought\": \"Among the LIST OF FIELDS, the fields \"Diagnosed with Neurologic Condition\" and \"Headache\" have been asked and answered. So, both are marked as filled.\",\n\"fields_answered\": [\"Diagnosed with Neurologic Condition\", \"Headache\"],\n\"next_field\": \"Balance changes\",\n\"question\": \"Have you had any changes in the way you balance yourself?\",\n}\n\nExample 2:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['Sex' , 'Year of birth', 'dermatological conditions']\nCONVERSATION HISTORY:\nOUTPUT:\n{\n\"thought\": \"There's no conversation history, so no fields are answered. The first field \"Sex\" has the highest priority since it comes first in the list. Hence it is used as the next_field to ask.\",\n\"fields_answered\": [],\n\"next_field\": \"Sex\",\n\"question\": \"What is your sex?\",\n}\n\nExample 3:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: yes\nOUTPUT:\n{\n\"thought\": \"This response does not provide the year of birth. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n\nExample 4:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['whiteheads', 'blackheads']\nCONVERSATION HISTORY:\nai: Do you have any whiteheads?\nuser: what is whitehead?\nOUTPUT:\n{\n\"thought\": \"Human has enquired about whiteheads. But I still dont know if the user has whiteheads or not. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"whiteheads\",\n\"question\": \"Do you have any whiteheads?\",\n}\n\nExample 5:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: male\nOUTPUT:\n{\n\"thought\": \"Human's last response to the question about year of birth doesnt make sense. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n",
+    "--------",
+    "Additional Prompt: \nCHIEF COMPLAINT: concerned about the topic fever\nLIST OF FIELDS: ['details of {chief complaint}', 'when started {chief complaint}', 'previous medical diagnoses']\nCONVERSATION HISTORY:\n",
+    "-------",
+    "-------",
+    "Thought: There's no conversation history, so no fields are answered. The first field 'details of {chief complaint}' has the highest priority since it comes first in the list. Hence it is used as the next_field to ask.",
+    "Fields answered: []",
+    "Next Field: details of {chief complaint}",
+    "Question: Please describe your concerns regarding fever. What symptoms are you experiencing with your fever?",
+    "Total score: 0",
+    "--------"
+  ],
+  "deployed": "2024-03-28T12:58:27.005539",
+  "diagnosis_list": [
+    "INFLUENZA",
+    "URINARY TRACT INFECTION",
+    "PNEUMONIA"
+  ],
+  "dx_group_list": [
+    "Pneumonia",
+    "Influenza",
+    "UTIs"
+  ],
+  "dx_specialist_list": [
+    "pulmonologist",
+    "infectious_disease_specialist"
+  ],
+  "dxg_version": "unified",
+  "engagement_minutes": 0.7161804833333334,
+  "error_types": [],
+  "errors": [],
+  "errors_care": [],
+  "existing_dx": "",
+  "existing_dx_tx": "",
+  "feedback_rating": null,
+  "followup_summary": null,
+  "hist_for_que_gen": "",
+  "ip_address": "",
+  "last_human_input": "lets proceed",
+  "last_updated": "2024-03-28T12:59:40.456683",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      10.1842944,
+      59.7393408
+    ]
+  },
+  "max_token_count": 1477,
+  "next_agent_name": null,
+  "patient_name": "A",
+  "priority_field_relevance": {},
+  "priority_field_src": "specialist",
+  "priority_fields_asked": [],
+  "prompt_tokens": 4148,
+  "question_agent_feedback": null,
+  "specialist": "infectious_disease_specialist",
+  "subSpecialty": "general",
+  "successful_requests": 10,
+  "thought_process": "There's no conversation history, so no fields are answered. The first field 'details of {chief complaint}' has the highest priority since it comes first in the list. Hence it is used as the next_field to ask.",
+  "timeouts": 0,
+  "total_cost": 0.007164000000000001,
+  "treatment_plans": {},
+  "treatment_plans_seen": [],
+  "version": "0.15.0-alpha"
+}

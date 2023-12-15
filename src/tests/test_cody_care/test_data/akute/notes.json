@@ -1,0 +1,78 @@
+[
+    {
+        "id": "52ce8436-c92b-4c8d-89cb-2fe65946d1fe",
+        "type": "Progress Note",
+        "patient_id": "506cb000-c12d-4058-8110-b999b1dd95fa",
+        "external_patient_id": null,
+        "service_date": "2024-04-12T05:05:34Z",
+        "last_updated": "2024-04-12T05:06:00Z",
+        "status": "final",
+        "signed": {
+            "user_id": "66137dee95a00800086ae315",
+            "user_name": "Nishant Kumar",
+            "timestamp": "2024-04-12T05:06:00Z"
+        },
+        "authors": [
+            {
+                "user_id": "66137dee95a00800086ae315",
+                "user_name": "Nishant Kumar"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Subjective",
+                "text": "CC:\n\n\nHPI:\n\n\nPMH:\n\nAllergies: /allergies\n\n/medications\n\n/problem list\n\nPSH:\n\nFamily History:\n\nSocial:\n\nReview of Systems:\n\tConstitutional: Negative: fatigue, fever, chills, night sweats, weight loss, weight gain.\n\tHEENT: Negative: trauma, otorrhea, sinus congestion, rhinorrhea, cough, nasal congestion\n\tSkin: Negative: rashes, lesions, acne, pruritus, dryness\n\tHeme: Negative: easy bruising, easy bleeding\n\tCardiovascular: Negative: chest pain, palpitations, presyncope\n\tRespiratory: Negative: SOB, wheezing, dsypnea, TB exposure\n\tGI: Negative: nausea, vomiting, diarrhea, constipation, abdominal pain\n\tGU: Negative: dysuria, discharge, hematuria, incontinence, flank pain\n\tMSK: Negative: new weakness, arthralgia, myalgia\n\tNeuro: Negative: dizziness, headache, imbalance, vision changes, confusion\n\tPsychology: Negative: depression, anxiety, insomnia, stress, anger\n\tSocial: Negative: Change in home, relationships, employment, substance use, exercise\n\n"
+            },
+            {
+                "title": "Objective",
+                "text": "Vitals:\n/vital\n\n\n\n\n\nLabs:\n\n"
+            },
+            {
+                "title": "Assessment",
+                "text": "/dx"
+            },
+            {
+                "title": "Plan",
+                "text": "PLAN 1: Here is your Certified Plan from your visit with Cody:\n\n\nDiagnosis:  \n\n\nTests:\nI have recommend and ordered the following tests:\n\n\nPrescription Medications:\nI have sent the following prescription medications to your pharmacy:\n\n\n\nNon Prescription Medications:\nI recommend the following non-prescription medications\n\nReferrals:\nI recommend the following \n\nSelf Care:\nI recommend the following \n\n\nWatch for: \n"
+            }
+        ]
+    },
+    {
+        "id": "143b5cb2-d752-4500-8a6e-c50a4a8cd8a3",
+        "type": "Progress Note",
+        "patient_id": "506cb000-c12d-4058-8110-b999b1dd95fa",
+        "external_patient_id": null,
+        "service_date": "2024-05-12T05:16:10Z",
+        "last_updated": "2024-05-12T05:16:18Z",
+        "status": "final",
+        "signed": {
+            "user_id": "66137dee95a00800086ae315",
+            "user_name": "Nishant Kumar",
+            "timestamp": "2024-04-12T05:16:18Z"
+        },
+        "authors": [
+            {
+                "user_id": "66137dee95a00800086ae315",
+                "user_name": "Nishant Kumar"
+            }
+        ],
+        "sections": [
+            {
+                "title": "Subjective",
+                "text": "CC:\n\n\nHPI:\n\n\nPMH:\n\nAllergies: /allergies\n\n/medications\n\n/problem list\n\nPSH:\n\nFamily History:\n\nSocial:\n\nReview of Systems:\n\tConstitutional: Negative: fatigue, fever, chills, night sweats, weight loss, weight gain.\n\tHEENT: Negative: trauma, otorrhea, sinus congestion, rhinorrhea, cough, nasal congestion\n\tSkin: Negative: rashes, lesions, acne, pruritus, dryness\n\tHeme: Negative: easy bruising, easy bleeding\n\tCardiovascular: Negative: chest pain, palpitations, presyncope\n\tRespiratory: Negative: SOB, wheezing, dsypnea, TB exposure\n\tGI: Negative: nausea, vomiting, diarrhea, constipation, abdominal pain\n\tGU: Negative: dysuria, discharge, hematuria, incontinence, flank pain\n\tMSK: Negative: new weakness, arthralgia, myalgia\n\tNeuro: Negative: dizziness, headache, imbalance, vision changes, confusion\n\tPsychology: Negative: depression, anxiety, insomnia, stress, anger\n\tSocial: Negative: Change in home, relationships, employment, substance use, exercise\n\n"
+            },
+            {
+                "title": "Objective",
+                "text": "Vitals:\n/vital\n\n\n\n\n\nLabs:\n\n"
+            },
+            {
+                "title": "Assessment",
+                "text": "/dx"
+            },
+            {
+                "title": "Plan",
+                "text": "PLAN 2: Here is your Certified Plan from your visit with Cody:\n\n\nDiagnosis:  \n\n\nTests:\nI have recommend and ordered the following tests:\n\n\nPrescription Medications:\nI have sent the following prescription medications to your pharmacy:\n\n\n\nNon Prescription Medications:\nI recommend the following non-prescription medications\n\nReferrals:\nI recommend the following \n\nSelf Care:\nI recommend the following \n\n\nWatch for: \n"
+            }
+        ]
+    }
+]

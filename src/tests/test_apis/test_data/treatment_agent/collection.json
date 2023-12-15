@@ -1,0 +1,214 @@
+{
+  "_id": {
+    "oid": "653071b9a602a5e426d5385d"
+  },
+  "username": "ngAXz2uCWSE5h7gKFdjaFmJrqW6ykQsszhxZf0ke1Y99yra0jb",
+  "agent_names": [
+    "chief_complaint_agent",
+    "name_enquiry_agent",
+    "followup_agent",
+    "magic_minute_agent",
+    "diagnosis_agent",
+    "treatment_agent",
+    "human_doctor_agent",
+    "feedback_agent",
+    "end_agent"
+  ],
+  "chief_complaint": "baby constipation",
+  "completion_tokens": 1021,
+  "conv_hist": {
+    "chief_complaint_agent": [
+      {
+        "role": "assistant",
+        "content": "Hello, I'm Cody, your AI Doctor, here to help you get better. I've been trained by licensed doctors.\n\nPlease tell me one specific health problem you'd like help with today. 😄\n\nYou can say something like “sinus pressure” or “I have a sore throat.”"
+      },
+      {
+        "role": "user",
+        "content": "My baby can't poop"
+      },
+      {
+        "role": "assistant",
+        "content": "So you want to focus on your baby's inability to poop today, is that correct?"
+      },
+      {
+        "role": "user",
+        "content": "yes "
+      },
+      {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "capture_chief_complaint_tool",
+          "arguments": "{\n  \"chief_complaint\": \"baby constipation\"\n}"
+        }
+      },
+      {
+        "role": "function",
+        "content": "Chief complaint captured",
+        "name": "capture_chief_complaint_tool"
+      }
+    ],
+    "name_enquiry_agent": [
+      {
+        "role": "system",
+        "content": "\nYou are continuing a conversation with a patient. \nIn this stage, you are trying to capture the name of the patient.\nYour task is to ask the name of the patient.\nAs soon as you get a name, call the capture_name_tool to capture the name. \nIf the user does not provide a name, inform the user that you need a name to continue.\nDo not entertain any other questions, except for the name.\nIf the user responds with anything other than a name, inform the user that you need a name to continue.\nIf the user says that they dont want to share their name, inform the user that they can use a made up name.\nAs soon as you get a name, call the capture_name_tool to capture the name. \n"
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for confirming! Before I ask you a few questions, what should I call you?"
+      },
+      {
+        "role": "user",
+        "content": "jan"
+      },
+      {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "capture_name_tool",
+          "arguments": "{\n  \"name\": \"Jan\"\n}"
+        }
+      },
+      {
+        "role": "function",
+        "content": "Name captured",
+        "name": "capture_name_tool"
+      },
+      {
+        "role": "assistant",
+        "content": "Good to meet you, Jan! My goal is to provide you with an accurate diagnosis and plan. Let's talk about your baby's constipation.\n\n"
+      }
+    ],
+    "followup_agent": [
+      {
+        "role": "assistant",
+        "content": "Is the baby exclusively breastfed or formula-fed?"
+      },
+      {
+        "role": "user",
+        "content": "breastfed "
+      },
+      {
+        "role": "assistant",
+        "content": "Are the baby's bowel movements regular or have you noticed a decrease in frequency?\nBy the way Jan, I didn’t mention this earlier, but our conversation is always private and confidential."
+      },
+      {
+        "role": "user",
+        "content": "usually two a day but it's been two weeks and there has been non w"
+      },
+      {
+        "role": "assistant",
+        "content": "Hmm.. I see. Is the baby showing any signs of discomfort or pain during bowel movements?"
+      },
+      {
+        "role": "user",
+        "content": "yes she goes bright red and tries so hard but nothing. She's hasn't filled her diaper in days "
+      },
+      {
+        "role": "assistant",
+        "content": "Is the baby experiencing any discomfort or pain in the abdomen or any other areas?"
+      },
+      {
+        "role": "user",
+        "content": "yes her tummy is sore and bloated "
+      },
+      {
+        "role": "assistant",
+        "content": "Is the baby urinating less frequently than usual or showing signs of a dry mouth?"
+      },
+      {
+        "role": "user",
+        "content": "no"
+      },
+      {
+        "role": "assistant",
+        "content": "Hmm.. I see. Is the baby showing any signs of straining or discomfort during feeding?"
+      },
+      {
+        "role": "user",
+        "content": "no"
+      },
+      {
+        "role": "assistant",
+        "content": "Hmm.. I see. Is the baby currently taking any medications or supplements?"
+      },
+      {
+        "role": "user",
+        "content": "no"
+      },
+      {
+        "role": "assistant",
+        "content": "Is the baby showing any signs of hard, dry stools or straining during bowel movements?"
+      },
+      {
+        "role": "user",
+        "content": "yes"
+      },
+      {
+        "role": "assistant",
+        "content": "Is there any blood in the baby's stool?"
+      },
+      {
+        "role": "user",
+        "content": "nk"
+      },
+      {
+        "role": "assistant",
+        "content": "Is the baby showing any signs of decreased appetite or reduced weight gain?"
+      },
+      {
+        "role": "user",
+        "content": "no"
+      }
+    ],
+    "magic_minute_agent": [
+      {
+        "role": "assistant",
+        "content": "Jan, here's what I've understood so far:\n- You have come to me regarding your baby's constipation.\n- The baby is exclusively breastfed.\n- The baby's bowel movements have been irregular for the past two weeks.\n- The baby is experiencing discomfort and pain during bowel movements.\n- The baby's tummy is sore and bloated.\n- The baby has not had a bowel movement in days.\n- The baby is not urinating less frequently or showing signs of a dry mouth.\n- The baby is not showing signs of straining or discomfort during feeding.\n- The baby is not taking any medications or supplements.\n- The baby is showing signs of hard, dry stools and straining during bowel movements.\n- There is no blood in the baby's stool.\n- The baby is not showing signs of decreased appetite or reduced weight gain.\n\n"
+      }
+    ],
+    "diagnosis_agent": [
+      {
+        "role": "assistant",
+        "content": "Based on what you've told me, I've prepared your Top 3 Diagnosis List.\n\n1. Infant Constipation (70% probability): Difficulty passing stools, hard and dry stools, straining during bowel movements, and bloated tummy are common symptoms of infant constipation. It is often caused by a lack of fiber in the baby's diet or dehydration.\n\n2. Gastrointestinal Infection (20% probability): Gastrointestinal infections can cause irregular bowel movements, discomfort, and pain during bowel movements. However, other symptoms like diarrhea, vomiting, and fever are usually present as well.\n\n3. Milk Protein Allergy (10% probability): In some cases, babies can develop an allergy to proteins in breast milk, leading to digestive issues like constipation, bloating, and discomfort. Other symptoms like skin rashes or eczema may also be present.\n\nPlease consult a healthcare professional for a proper diagnosis and treatment plan.\n\nI have prepared personalized treatment plans for you. If you would like to see a treatment plan, tell me the diagnosis or its number."
+      }
+    ],
+    "treatment_agent": [
+      {
+        "role": "system",
+        "content": "\nYou are a doctor. Your name is Cody.\nIn the previous stage, you have been conversing with a patient, about their symptoms.\nYou have already provided a diagnosis with a list of 3 most likely diseases, along with their probabilities.\nThe user has selected one of the diagnosis, to see a Treatment Plan.\nNow, you need to provide a treatment plan for the patient, for the disease they have selected.\nRemember to keep your responses short and concise. Also, do not engage in any other topic than the health issue being discussed.\nIf the user tries to go off topic, remind them that you are a doctor and you can only help them with their health issues.\nWhen the user choses a disease, give them a Treatment Plan which includes test and treatment for that particular disease.\n\nTreatment Plan format:\n\"[Disease name]: [a short description of the disease]\n\nTests:\n[tests to be done]\n\nTreatments:\n[Medications to be given.]\n- [Medication 1]\n- [Medication 2]\nand so on..\n\nSelf care tips:\n[Self care tips to be followed by the patient]\n- [Tip 1]\n- [Tip 2]\nand so on..\n\n[Suggestions for lifestyle changes, if any]\"\n\nAfter showing a treatment plan, ask the user if they would like to see another treatment plan. If they want to, ask them to enter the name of the diagnosis or it's number.\nAfter showing 2 treatment plans, ask the user if they want to see the last treatment plan.\nOnce all treatment plans are shown, ask the user if they would like to talk to a licenced doctor. If they want to, call the human_doctor_tool to pass the conversation to a licenced doctor.\nIf the user doesnt want to talk to a doctor, end the conversation by calling the next_agent_tool.\n"
+      },
+      {
+        "role": "user",
+        "content": "1"
+      },
+      {
+        "role": "assistant",
+        "content": "Infant Constipation:\n\nInfant constipation is a common condition ized by difficulty passing stools, hard and dry stools, straining during bowel movements, and a bloated tummy. It is often caused by a lack of fiber in the baby's diet or dehydration.\n\nTreatment Plan for Infant Constipation:\n\nTests:\n- Physical examination\n- Evaluation of the baby's diet and feeding habits\n\nTreatments:\n- Increase the baby's fluid intake by offering more breast milk or formula.\n- Include high-fiber foods in the baby's diet, such as pureed fruits and vegetables.\n- Gently massage the baby's tummy in a clockwise direction to stimulate bowel movements.\n- If necessary, your doctor may recommend a stool softener or laxative for the baby.\n\nSelf-care tips:\n- Ensure the baby is well-hydrated by offering frequent feedings.\n- Encourage regular physical activity, such as tummy time, to promote bowel movements.\n- Avoid giving the baby foods that can contribute to constipation, such as rice cereal or bananas.\n\nIt's important to consult a healthcare professional for a proper diagnosis and personalized treatment plan.\n\nWould you like to see another treatment plan? If yes, please enter the name or number of the diagnosis. If not, let me know if you would like to talk to a licensed doctor."
+      }
+    ],
+    "human_doctor_agent": [],
+    "feedback_agent": [],
+    "end_agent": []
+  },
+  "created": "2023-10-19T00:00:57.767711",
+  "current_agent_index": 5,
+  "current_agent_name": "treatment_agent",
+  "deployed": "2023-10-18T19:33:09.849897",
+  "diagnosis_list": [
+    "INFANT CONSTIPATION",
+    "GASTROINTESTINAL INFECTION",
+    "MILK PROTEIN ALLERGY"
+  ],
+  "engagement_minutes": 2.7239291833333334,
+  "followup_summary": null,
+  "hist_for_que_gen": "\nQuestion: Is the baby exclusively breastfed or formula-fed?\nAnswer: breastfed \nQuestion: Is the baby having regular bowel movements or is there a significant decrease in frequency?\nAnswer: usually two a day but it's been two weeks and there has been non w\nQuestion: Is the baby showing any signs of discomfort or pain during bowel movements?\nAnswer: yes she goes bright red and tries so hard but nothing. She's hasn't filled her diaper in days \nQuestion: Is the baby showing any signs of discomfort or pain in the abdomen or any other areas?\nAnswer: yes her tummy is sore and bloated \nQuestion: Is the baby showing any signs of dehydration such as decreased urine output or dry mouth?\nAnswer: no\nQuestion: Is the baby showing any signs of straining or discomfort during feeding?\nAnswer: no\nQuestion: Is the baby currently taking any medications or supplements?\nAnswer: no\nQuestion: Is the baby showing any signs of hard, dry stools or straining during bowel movements?\nAnswer: yes\nQuestion: Is the baby showing any signs of blood in the stool?\nAnswer: nk\nQuestion: Is the baby showing any signs of decreased appetite or reduced weight gain?\nAnswer: no",
+  "last_human_input": "1",
+  "last_updated": "2023-10-19T00:03:41.203462",
+  "max_token_count": 888,
+  "patient_name": "Jan",
+  "prompt_tokens": 5814,
+  "successful_requests": 17,
+  "total_cost": 0.010763000000000002,
+  "version": "0.1.1-alpha"
+}

@@ -1,0 +1,50 @@
+
+
+
+<div class='tx-plan'>
+    Sure, thing. I have found three ADHD care options for you.
+
+    <b>Interactive/Sponsored</b>
+    <span>1. <a class="text-blue underline" href="https://cody.md" target="_blank">Green Oak Therapists</a></span>
+    <ul>
+        <li>
+        1700 NW Civic Dr UNIT 310, Gresham
+        </li>
+        <li>
+        +1 503-666-8832
+        </li>
+        <li>
+        4.8 ⭐, 141 reviews
+        </li>
+    </ul>
+    <span>2. <a class="text-blue underline" href="https://obits.goldsteinsfuneral.com/dr-leon-marshall" target="_blank">Dr. Leon Marshall</a></span>
+    <ul>
+        <li>
+        24800 SE Stark St, Gresham
+        </li>
+        <li>
+        +1 503-413-8407
+        </li>
+        <li>
+        No reviews
+        </li>
+    </ul>
+    <span>3. <a class="text-blue underline" href="https://www.psychologytoday.com/us/therapists/amy-detweiler-salazar-psyd-troutdale-or/370846" target="_blank">Amy L. Detweiler, PsyD</a></span>
+    <ul>
+        <li>
+        1217 NE Burnside Rd, Gresham
+        </li>
+        <li>
+        +1 503-666-8832
+        </li>
+        <li>
+        4.5 ⭐, 1 reviews
+        </li>
+    </ul>
+</div>
+
+How may I help you now?
+Enter the number of your option.
+
+1. Learn more about healthcare provider options
+2. Other Options

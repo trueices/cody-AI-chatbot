@@ -1,0 +1,1501 @@
+[
+  {
+    "id": 35419,
+    "name": "108 Certification testing",
+    "address_line_1": "TEST cert",
+    "address_line_2": null,
+    "address_city": "GREENVILLE",
+    "address_state": "SC",
+    "address_zipcode": "29611",
+    "primary_phone_number": "8474760011",
+    "primary_fax_number": "8442225555",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 32444,
+    "name": "16CFF",
+    "address_line_1": "1111, lane 0ne",
+    "address_line_2": null,
+    "address_city": "salt lake city",
+    "address_state": "UT",
+    "address_zipcode": "84119",
+    "primary_phone_number": "4343434343",
+    "primary_fax_number": "5423423434",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 32449,
+    "name": "16MAIL",
+    "address_line_1": "11 first lane",
+    "address_line_2": null,
+    "address_city": "salt lake city",
+    "address_state": "UT",
+    "address_zipcode": "84119",
+    "primary_phone_number": "4323434234",
+    "primary_fax_number": "2343323223",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 11440,
+    "name": "1829 Downey",
+    "address_line_1": "9521 Dalen Street, Room R",
+    "address_line_2": null,
+    "address_city": "Downey",
+    "address_state": "CA",
+    "address_zipcode": "90242",
+    "primary_phone_number": "4156089207",
+    "primary_fax_number": "4156089207",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 33171,
+    "name": "1960",
+    "address_line_1": "MCKESSON - MT",
+    "address_line_2": null,
+    "address_city": "MISSOULA",
+    "address_state": "MT",
+    "address_zipcode": "59812",
+    "primary_phone_number": "4063598695",
+    "primary_fax_number": "4068880011",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 33175,
+    "name": "36RK",
+    "address_line_1": "406 SMART DRIVe",
+    "address_line_2": null,
+    "address_city": "CAYTON",
+    "address_state": "AL",
+    "address_zipcode": "36016",
+    "primary_phone_number": "4123704500",
+    "primary_fax_number": "4129804567",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 11482,
+    "name": "A247PC00-Anesthesia 24/7, PC",
+    "address_line_1": "1200 Freas Avenue",
+    "address_line_2": null,
+    "address_city": "Berwick",
+    "address_state": "PA",
+    "address_zipcode": "18603",
+    "primary_phone_number": "5707525572",
+    "primary_fax_number": "5707526442",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 11251,
+    "name": "A247PC00-Anesthesia 24/7, PC",
+    "address_line_1": "1200 Freas Avenue",
+    "address_line_2": null,
+    "address_city": "Berwick",
+    "address_state": "PA",
+    "address_zipcode": "18063",
+    "primary_phone_number": "5707525572",
+    "primary_fax_number": "6153972423",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 11650,
+    "name": "A247PC00-Anesthesia 24/7, PC",
+    "address_line_1": "1200 Freas Avenue",
+    "address_line_2": null,
+    "address_city": "Berwick",
+    "address_state": "PA",
+    "address_zipcode": "18603",
+    "primary_phone_number": "5707525572",
+    "primary_fax_number": "5707526442",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 11656,
+    "name": "ABCMDI00-Antonio B. Cordero, MD, In",
+    "address_line_1": "1712 Liliha St.",
+    "address_line_2": "Suite 301",
+    "address_city": "Honolulu",
+    "address_state": "HI",
+    "address_zipcode": "96817",
+    "primary_phone_number": "8085361011",
+    "primary_fax_number": "8085453428",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 11484,
+    "name": "ABCMDI00-Antonio B. Cordero, MD, In",
+    "address_line_1": "1712 Liliha St.",
+    "address_line_2": "Suite 301",
+    "address_city": "Honolulu",
+    "address_state": "HI",
+    "address_zipcode": "96817",
+    "primary_phone_number": "8085361011",
+    "primary_fax_number": "8085453428",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 11666,
+    "name": "ABTQA",
+    "address_line_1": "151 Hillpointe Drive",
+    "address_line_2": null,
+    "address_city": "Canonsburg",
+    "address_state": "PA",
+    "address_zipcode": "15317",
+    "primary_phone_number": "7247490030",
+    "primary_fax_number": "7247490030",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 11657,
+    "name": "AC00-Algone Center",
+    "address_line_1": "3066 E. Meridian Park Loop",
+    "address_line_2": "# 1",
+    "address_city": "Wasilla",
+    "address_state": "AK",
+    "address_zipcode": "99654",
+    "primary_phone_number": "9073739460",
+    "primary_fax_number": "9073739461",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 15515,
+    "name": "Acaria STCQ2 PC15",
+    "address_line_1": "2924 Telestar CT",
+    "address_line_2": null,
+    "address_city": "Falls Church",
+    "address_state": "VA",
+    "address_zipcode": "22042",
+    "primary_phone_number": "7247490030",
+    "primary_fax_number": "7247490030",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 11508,
+    "name": "AcariaHealth Pharmacy #12, Inc.",
+    "address_line_1": "5 Skyline Drive, Suite 240",
+    "address_line_2": null,
+    "address_city": "Hawthorne",
+    "address_state": "NY",
+    "address_zipcode": "105322166",
+    "primary_phone_number": "8005115144",
+    "primary_fax_number": "7247439167",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 15093,
+    "name": "AcariaHealth Pharmacy #22",
+    "address_line_1": "500 Kirts Blvd, Suite 300",
+    "address_line_2": null,
+    "address_city": "Troy",
+    "address_state": "MI",
+    "address_zipcode": "48084",
+    "primary_phone_number": "7247490030",
+    "primary_fax_number": "7247490030",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 35397,
+    "name": "ACARIAHEALTH PHARMACY #26",
+    "address_line_1": "500 Kirts Blvd",
+    "address_line_2": "Suite 300",
+    "address_city": "Troy",
+    "address_state": "MI",
+    "address_zipcode": "48084",
+    "primary_phone_number": "7247490030",
+    "primary_fax_number": "7247490030",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 26061,
+    "name": "ACARIAHEALTH PHARMACY, INC. STCQ2",
+    "address_line_1": "10409 WEST 84TH TERRACE",
+    "address_line_2": null,
+    "address_city": "Lenexa",
+    "address_state": "KS",
+    "address_zipcode": "66214",
+    "primary_phone_number": "7247490030",
+    "primary_fax_number": "7247490030",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 34605,
+    "name": "ACS PHARMACY",
+    "address_line_1": "6251 CHANCELLOR DR STE 101",
+    "address_line_2": null,
+    "address_city": "ORLANDO",
+    "address_state": "FL",
+    "address_zipcode": "32809",
+    "primary_phone_number": "8779856337",
+    "primary_fax_number": "8666797131",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy"
+    ]
+  },
+  {
+    "id": 33170,
+    "name": "AG36",
+    "address_line_1": "123 LANE",
+    "address_line_2": null,
+    "address_city": "SALT LAKE CITY",
+    "address_state": "UT",
+    "address_zipcode": "84190",
+    "primary_phone_number": "4122223121",
+    "primary_fax_number": "2222223232",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 34393,
+    "name": "AHF Pharmacy Columbia",
+    "address_line_1": "3025 Farrow Rd.",
+    "address_line_2": null,
+    "address_city": "Columbia",
+    "address_state": "SC",
+    "address_zipcode": "292037001",
+    "primary_phone_number": "8035095676",
+    "primary_fax_number": "8088405678",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 32668,
+    "name": "AHF Pharmacy Downtown",
+    "address_line_1": "1400 S Grand Avenue",
+    "address_line_2": "Ste. 801",
+    "address_city": "Los Angeles",
+    "address_state": "CA",
+    "address_zipcode": "900153068",
+    "primary_phone_number": "2137415271",
+    "primary_fax_number": "8889725391",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 8296,
+    "name": "AIS test #0123",
+    "address_line_1": "2625 Butterfield Road",
+    "address_line_2": "109S",
+    "address_city": "Oak Brook",
+    "address_state": "IL",
+    "address_zipcode": "60523",
+    "primary_phone_number": "6305731052",
+    "primary_fax_number": "6305741055",
+    "pharmacy_specialties": [
+      "Long-Term Care Pharmacy",
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 34404,
+    "name": "AllCarePlus Pharmacy",
+    "address_line_1": "50 Bearfoot Road",
+    "address_line_2": null,
+    "address_city": "Northborough",
+    "address_state": "MA",
+    "address_zipcode": "01532",
+    "primary_phone_number": "8333833533",
+    "primary_fax_number": "8447401211",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 11340,
+    "name": "AllianceRx (Cystic Fibrosis Service",
+    "address_line_1": "101 Carnegie drive",
+    "address_line_2": null,
+    "address_city": "Pittsburgh",
+    "address_state": "PA",
+    "address_zipcode": "15317",
+    "primary_phone_number": "7247439154",
+    "primary_fax_number": "7247439154",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 9095,
+    "name": "AllianceRx (Specialty) Walgreens Ph",
+    "address_line_1": "2354 Commerce Park Drive Ste 100",
+    "address_line_2": null,
+    "address_city": "Orlando",
+    "address_state": "FL",
+    "address_zipcode": "32819",
+    "primary_phone_number": "7247439154",
+    "primary_fax_number": "7247439167",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 31328,
+    "name": "AllianceRx Walgreens Prime #16287",
+    "address_line_1": "130 Enterprise Drive",
+    "address_line_2": null,
+    "address_city": "Pittsburgh",
+    "address_state": "PA",
+    "address_zipcode": "15275",
+    "primary_phone_number": "4125555555",
+    "primary_fax_number": "4125555556",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 11598,
+    "name": "ALM MAIN",
+    "address_line_1": "2417 Central Avenue",
+    "address_line_2": null,
+    "address_city": "Alameda",
+    "address_state": "CA",
+    "address_zipcode": "94501",
+    "primary_phone_number": "5107529250",
+    "primary_fax_number": "5107529065",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 8534,
+    "name": "AlphaQ Erx Pharmacy",
+    "address_line_1": "123 NORTH MAIN ST.",
+    "address_line_2": null,
+    "address_city": "YOUNG AMERICA",
+    "address_state": "MN",
+    "address_zipcode": "55555",
+    "primary_phone_number": "4122912134",
+    "primary_fax_number": "4122912134",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 15330,
+    "name": "Americas Pharmacy Source",
+    "address_line_1": "430 WHITE POND DR, SUITE 200",
+    "address_line_2": null,
+    "address_city": "AKRON",
+    "address_state": "OH",
+    "address_zipcode": "44320",
+    "primary_phone_number": "8008765432",
+    "primary_fax_number": "8008765431",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 9066,
+    "name": "ANS Corp Pharmacy of Modern Med I",
+    "address_line_1": "650 Louise Drive",
+    "address_line_2": null,
+    "address_city": "Warminster",
+    "address_state": "PA",
+    "address_zipcode": "18974",
+    "primary_phone_number": "2152687394",
+    "primary_fax_number": "2155551313",
+    "pharmacy_specialties": [
+      "24 Hour Pharmacy",
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 32094,
+    "name": "ASPN Pharmacies",
+    "address_line_1": "200 Park Ave",
+    "address_line_2": "Ste 300",
+    "address_city": "Florham Park",
+    "address_state": "NJ",
+    "address_zipcode": "07932",
+    "primary_phone_number": "8442673251",
+    "primary_fax_number": "8663578434",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy"
+    ]
+  },
+  {
+    "id": 29311,
+    "name": "ASPN Pharmacies, LLC",
+    "address_line_1": "200 Park Ave",
+    "address_line_2": "Ste 300",
+    "address_city": "Florham Park",
+    "address_state": "NJ",
+    "address_zipcode": "079321026",
+    "primary_phone_number": "8442673251",
+    "primary_fax_number": "8663578434",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy"
+    ]
+  },
+  {
+    "id": 14033,
+    "name": "AURORA SPECIALTY PHARMACY #1119",
+    "address_line_1": "N93W14575 Whittaker Way",
+    "address_line_2": null,
+    "address_city": "Menomonee Falls",
+    "address_state": "WI",
+    "address_zipcode": "53051",
+    "primary_phone_number": "8774090148",
+    "primary_fax_number": "2622533001",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 33957,
+    "name": "Bay Area 4",
+    "address_line_1": "555 Lefferts Ave",
+    "address_line_2": null,
+    "address_city": "South Pasadena",
+    "address_state": "FL",
+    "address_zipcode": "11225",
+    "primary_phone_number": "2128033339",
+    "primary_fax_number": "2128033339",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 11768,
+    "name": "BENECARD CENTRAL FILL",
+    "address_line_1": "5040 RITTER RD",
+    "address_line_2": null,
+    "address_city": "MECHANICSBURG",
+    "address_state": "PA",
+    "address_zipcode": "17055",
+    "primary_phone_number": "7174589100",
+    "primary_fax_number": "7174589100",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 11751,
+    "name": "Better Living Now, Inc.",
+    "address_line_1": "185 Oser Ave.",
+    "address_line_2": null,
+    "address_city": "Hauppauge",
+    "address_state": "NY",
+    "address_zipcode": "11735",
+    "primary_phone_number": "8008545729",
+    "primary_fax_number": "8006547515",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 11298,
+    "name": "BIRDI",
+    "address_line_1": "1 main st",
+    "address_line_2": null,
+    "address_city": "Novi",
+    "address_state": "MI",
+    "address_zipcode": "48376",
+    "primary_phone_number": "2152687394",
+    "primary_fax_number": "2155551313",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 34120,
+    "name": "Birdi (Home Delivery) Michigan",
+    "address_line_1": "43159 West Nine Mile Rd",
+    "address_line_2": null,
+    "address_city": "Novi",
+    "address_state": "MI",
+    "address_zipcode": "48375",
+    "primary_phone_number": "8772691159",
+    "primary_fax_number": "8773954836",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 11567,
+    "name": "Birdi MedImpact Erx QA",
+    "address_line_1": "1 Main St",
+    "address_line_2": null,
+    "address_city": "San Diego",
+    "address_state": "CA",
+    "address_zipcode": "92131",
+    "primary_phone_number": "2152687394",
+    "primary_fax_number": "2155551313",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 11356,
+    "name": "BJSP00-Bone & Joint Specialists, P.",
+    "address_line_1": "9001 Broadway",
+    "address_line_2": null,
+    "address_city": "Merrillville",
+    "address_state": "IN",
+    "address_zipcode": "46410",
+    "primary_phone_number": "2197953360",
+    "primary_fax_number": "2197566500",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 15912,
+    "name": "BlackBox Pharmacy #2",
+    "address_line_1": "20 Test",
+    "address_line_2": "Address2",
+    "address_city": "Costa Mesa",
+    "address_state": "CA",
+    "address_zipcode": "92300",
+    "primary_phone_number": "9491231234",
+    "primary_fax_number": "7148329923",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 33393,
+    "name": "Blink Pharmacy U.S.",
+    "address_line_1": "14515 North Outer 40 Rd Ste 350",
+    "address_line_2": null,
+    "address_city": "Chesterfield",
+    "address_state": "MO",
+    "address_zipcode": "63017",
+    "primary_phone_number": "3143562943",
+    "primary_fax_number": "3145582641",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 29709,
+    "name": "Brandons Test",
+    "address_line_1": "1213 Main St",
+    "address_line_2": null,
+    "address_city": "Fort Worth",
+    "address_state": "TX",
+    "address_zipcode": "76256",
+    "primary_phone_number": "5202554900",
+    "primary_fax_number": "5202553226",
+    "pharmacy_specialties": [
+      "24 Hour Pharmacy",
+      "Mail Order",
+      "Specialty Pharmacy",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 12713,
+    "name": "Bravo D",
+    "address_line_1": "123 NORTH MAIN ST",
+    "address_line_2": null,
+    "address_city": "NEW YORK",
+    "address_state": "NY",
+    "address_zipcode": "15317",
+    "primary_phone_number": "4122912134",
+    "primary_fax_number": "4122912134",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 11087,
+    "name": "BravoQ 10.6 Erx Pharmacy",
+    "address_line_1": "123 NORTH MAIN ST",
+    "address_line_2": null,
+    "address_city": "YOUNG AMERICA",
+    "address_state": "MN",
+    "address_zipcode": "55555",
+    "primary_phone_number": "4122912134",
+    "primary_fax_number": "4122912134",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 8550,
+    "name": "BriovaRx DEV (10.6 Old)",
+    "address_line_1": "6860 W. 115th st",
+    "address_line_2": "Suite 150",
+    "address_city": "Overland Park",
+    "address_state": "KS",
+    "address_zipcode": "66211",
+    "primary_phone_number": "7609360680",
+    "primary_fax_number": "8004917997",
+    "pharmacy_specialties": [
+      "24 Hour Pharmacy",
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 15880,
+    "name": "BriovaRx QA (10.6 Old)",
+    "address_line_1": "6860 W. 115th st",
+    "address_line_2": null,
+    "address_city": "Overland Park",
+    "address_state": "KS",
+    "address_zipcode": "66211",
+    "primary_phone_number": "7609360680",
+    "primary_fax_number": "8004917997",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 15881,
+    "name": "BriovaRx Stage/PFT (10.6 OLD)",
+    "address_line_1": "6860 W. 115th st",
+    "address_line_2": null,
+    "address_city": "Overland Park",
+    "address_state": "KS",
+    "address_zipcode": "66211",
+    "primary_phone_number": "7609360680",
+    "primary_fax_number": "7609380680",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 15882,
+    "name": "BriovaRx UAT (10.6 Old)",
+    "address_line_1": "3115 Melrose Drive",
+    "address_line_2": null,
+    "address_city": "Carlsbad",
+    "address_state": "CA",
+    "address_zipcode": "92010",
+    "primary_phone_number": "7609360680",
+    "primary_fax_number": "7609360680",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 35176,
+    "name": "Cabot Pharmacy",
+    "address_line_1": "3100 Diablo Ave",
+    "address_line_2": null,
+    "address_city": "Hayward",
+    "address_state": "CA",
+    "address_zipcode": "94545",
+    "primary_phone_number": "8559108606",
+    "primary_fax_number": "6504340601",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 34547,
+    "name": "CarelonRxJIT",
+    "address_line_1": "123 TEST RD",
+    "address_line_2": null,
+    "address_city": "Tuscon",
+    "address_state": "AZ",
+    "address_zipcode": "85641",
+    "primary_phone_number": "8333960309",
+    "primary_fax_number": "7325447258",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 34646,
+    "name": "CarelonRxSydney",
+    "address_line_1": "123 HIGH WAY",
+    "address_line_2": null,
+    "address_city": "Virginia Beach",
+    "address_state": "VA",
+    "address_zipcode": "23453",
+    "primary_phone_number": "8606667777",
+    "primary_fax_number": "3334445555",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 32569,
+    "name": "Careplus CVS/Pharmacy",
+    "address_line_1": "2700 Northeast Expressway NE",
+    "address_line_2": "Suite B-800",
+    "address_city": "ATLANTA",
+    "address_state": "GA",
+    "address_zipcode": "30345",
+    "primary_phone_number": "4043679111",
+    "primary_fax_number": "4043679199",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 32577,
+    "name": "Careplus CVS/Pharmacy",
+    "address_line_1": "60 Market Center Drive",
+    "address_line_2": "Suite 103",
+    "address_city": "Collierville",
+    "address_state": "TN",
+    "address_zipcode": "38017",
+    "primary_phone_number": "9013165752",
+    "primary_fax_number": "9013165760",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 8958,
+    "name": "Careplus CVS/Pharmacy",
+    "address_line_1": "3250 Harden Street Extension",
+    "address_line_2": "Suite 300",
+    "address_city": "Columbia",
+    "address_state": "SC",
+    "address_zipcode": "29203",
+    "primary_phone_number": "8006192531",
+    "primary_fax_number": "8006192531",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 8457,
+    "name": "Careplus CVS/Pharmacy",
+    "address_line_1": "1521 4th Avenue South",
+    "address_line_2": null,
+    "address_city": "Birmingham",
+    "address_state": "AL",
+    "address_zipcode": "35233",
+    "primary_phone_number": "8005988053",
+    "primary_fax_number": "8005988053",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 8511,
+    "name": "Careplus CVS/Pharmacy",
+    "address_line_1": "500 Ala Moana Blvd",
+    "address_line_2": "Suite 1-A, One Waterfront Plaza",
+    "address_city": "Honolulu",
+    "address_state": "HI",
+    "address_zipcode": "96813",
+    "primary_phone_number": "8008961464",
+    "primary_fax_number": "8008961464",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 8629,
+    "name": "CarePlus CVS/Pharmacy",
+    "address_line_1": "32 North Euclid Avenue",
+    "address_line_2": null,
+    "address_city": "St. Louis",
+    "address_state": "MO",
+    "address_zipcode": "63108",
+    "primary_phone_number": "8663978315",
+    "primary_fax_number": "8663978315",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 9224,
+    "name": "CAREPLUS SPECIALTY PROGRAM",
+    "address_line_1": "105 Mall Boulevard",
+    "address_line_2": null,
+    "address_city": "Monroeville",
+    "address_state": "PA",
+    "address_zipcode": "15146",
+    "primary_phone_number": "8008495128",
+    "primary_fax_number": "8003301386",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 32317,
+    "name": "Carepoint - Jared",
+    "address_line_1": "997 Morrison Dr",
+    "address_line_2": null,
+    "address_city": "Charleston",
+    "address_state": "SC",
+    "address_zipcode": "29406",
+    "primary_phone_number": "8439744220",
+    "primary_fax_number": "8439999999",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 30873,
+    "name": "Carepoint Express",
+    "address_line_1": "33 E Irving Rd",
+    "address_line_2": null,
+    "address_city": "Roselle",
+    "address_state": "IL",
+    "address_zipcode": "60172",
+    "primary_phone_number": "8552379112",
+    "primary_fax_number": "8552379113",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 8365,
+    "name": "Carepoint6.1",
+    "address_line_1": "215 E Bay St",
+    "address_line_2": null,
+    "address_city": "Charleston",
+    "address_state": "SC",
+    "address_zipcode": "294012633",
+    "primary_phone_number": "8438536999",
+    "primary_fax_number": "8438539980",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 29772,
+    "name": "CAREZONE PHARMACY LLC",
+    "address_line_1": "800 Airpark Center Dr, Suite 809",
+    "address_line_2": null,
+    "address_city": "Nashville",
+    "address_state": "TN",
+    "address_zipcode": "37217",
+    "primary_phone_number": "8885215845",
+    "primary_fax_number": "8447080120",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 29651,
+    "name": "Carlsbad Lincare",
+    "address_line_1": "2335 Camino Vida Roble",
+    "address_line_2": "Suite B",
+    "address_city": "Carlsbad",
+    "address_state": "CA",
+    "address_zipcode": "92011",
+    "primary_phone_number": "8007585433",
+    "primary_fax_number": "7609299199",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy"
+    ]
+  },
+  {
+    "id": 34915,
+    "name": "CCF COMPLIANCE PKG-INTERNAL USE",
+    "address_line_1": "3125 Science Park Dr",
+    "address_line_2": "AC4B-100",
+    "address_city": "Beachwood",
+    "address_state": "OH",
+    "address_zipcode": "44122",
+    "primary_phone_number": "8333271462",
+    "primary_fax_number": "2164485619",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 31169,
+    "name": "CCF HOME DELIVERY",
+    "address_line_1": "3125 Science Park Dr.",
+    "address_line_2": "AC4b-100",
+    "address_city": "Beachwood",
+    "address_state": "OH",
+    "address_zipcode": "44122",
+    "primary_phone_number": "8552760885",
+    "primary_fax_number": "2164485603",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 29797,
+    "name": "CCF SPECIALTY",
+    "address_line_1": "3125 Science Park Dr",
+    "address_line_2": "AC4B-100",
+    "address_city": "Beachwood",
+    "address_state": "OH",
+    "address_zipcode": "44122",
+    "primary_phone_number": "8442167732",
+    "primary_fax_number": "2164485603",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 33572,
+    "name": "CenterWell Pharmacy - Miramar, FL M",
+    "address_line_1": "10749 Marks Way",
+    "address_line_2": null,
+    "address_city": "Miramar",
+    "address_state": "FL",
+    "address_zipcode": "33025",
+    "primary_phone_number": "8009679830",
+    "primary_fax_number": "8009679830",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 33574,
+    "name": "CenterWell Pharmacy Mail Delivery",
+    "address_line_1": "9843 Windisch Rd",
+    "address_line_2": null,
+    "address_city": "West Chester",
+    "address_state": "OH",
+    "address_zipcode": "45069",
+    "primary_phone_number": "8009679830",
+    "primary_fax_number": "8772105324",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 33573,
+    "name": "CenterWell Pharmacy Miramar - FL ON",
+    "address_line_1": "10749 Marks Way",
+    "address_line_2": null,
+    "address_city": "Miramar",
+    "address_state": "FL",
+    "address_zipcode": "33025",
+    "primary_phone_number": "8009679830",
+    "primary_fax_number": "8009679830",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 33575,
+    "name": "CenterWell Pharmacy Miramar, FL MAI",
+    "address_line_1": "10749 Marks Way",
+    "address_line_2": null,
+    "address_city": "Miramar",
+    "address_state": "FL",
+    "address_zipcode": "33025",
+    "primary_phone_number": "8009679830",
+    "primary_fax_number": "8009679830",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 8096,
+    "name": "CenterWell Specialty Pharmacy",
+    "address_line_1": "9843 WINDISCH ROAD",
+    "address_line_2": "Update Pharmacy",
+    "address_city": "WESTCHESTER",
+    "address_state": "OH",
+    "address_zipcode": "45069",
+    "primary_phone_number": "8004862668",
+    "primary_fax_number": "8774057940",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 8514,
+    "name": "CharlieQ Erx Pharmacy - !\"#$%'()*+,",
+    "address_line_1": "123 TEST123 TEST MAXX TESTT",
+    "address_line_2": "123 TEST MAXX TESTT",
+    "address_city": "YOUNG AMERICA",
+    "address_state": "MN",
+    "address_zipcode": "55555",
+    "primary_phone_number": "4122912134",
+    "primary_fax_number": "4122912134",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 26109,
+    "name": "CHILDREN'S HOSPITAL HOME CARE - SPE",
+    "address_line_1": "3000 Horizon Drive",
+    "address_line_2": null,
+    "address_city": "King of Prussia",
+    "address_state": "PA",
+    "address_zipcode": "19406",
+    "primary_phone_number": "2674258888",
+    "primary_fax_number": "2674259143",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 34206,
+    "name": "Chuck's Pharmacy OM",
+    "address_line_1": "997 Morrison Dr",
+    "address_line_2": "Suite 302",
+    "address_city": "Charleston",
+    "address_state": "SC",
+    "address_zipcode": "29403",
+    "primary_phone_number": "8007741361",
+    "primary_fax_number": "8438539980",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 8946,
+    "name": "CIGNA",
+    "address_line_1": "206 WELSH RD",
+    "address_line_2": "PO Box 1019",
+    "address_city": "HORSHAM",
+    "address_state": "PA",
+    "address_zipcode": "19044",
+    "primary_phone_number": "8002854812",
+    "primary_fax_number": "8009737150",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 26199,
+    "name": "Colorado MOPC",
+    "address_line_1": "9521 Dalen Street",
+    "address_line_2": null,
+    "address_city": "Downey",
+    "address_state": "CA",
+    "address_zipcode": "90242",
+    "primary_phone_number": "8665236059",
+    "primary_fax_number": "8776267035",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 11085,
+    "name": "Commcare Pharmacy",
+    "address_line_1": "Test Test Test",
+    "address_line_2": null,
+    "address_city": "Fort Lauderdale",
+    "address_state": "FL",
+    "address_zipcode": "33306",
+    "primary_phone_number": "9543326170",
+    "primary_fax_number": "9543326188",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 11075,
+    "name": "Commcare Pharmacy - Delete",
+    "address_line_1": "1801 Coral Way #115",
+    "address_line_2": null,
+    "address_city": "Miami",
+    "address_state": "FL",
+    "address_zipcode": "33145",
+    "primary_phone_number": "3058545535",
+    "primary_fax_number": "3058545929",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  },
+  {
+    "id": 8041,
+    "name": "Craig's Pharmacy",
+    "address_line_1": "11120 W Van Buren",
+    "address_line_2": null,
+    "address_city": "Avondale",
+    "address_state": "AZ",
+    "address_zipcode": "85323",
+    "primary_phone_number": "2088637517",
+    "primary_fax_number": "6054445000",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy"
+    ]
+  },
+  {
+    "id": 11671,
+    "name": "creehanExternal",
+    "address_line_1": "123 North Main Street",
+    "address_line_2": null,
+    "address_city": "Young America",
+    "address_state": "MN",
+    "address_zipcode": "55555",
+    "primary_phone_number": "4122912134",
+    "primary_fax_number": "4122912134",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 29037,
+    "name": "CRP Retail Pharmacy 6.1 #3 Overland",
+    "address_line_1": "4030 Annas Retreat",
+    "address_line_2": null,
+    "address_city": "St. Thomas",
+    "address_state": "VI",
+    "address_zipcode": "00802",
+    "primary_phone_number": "7141112222",
+    "primary_fax_number": "7141113333",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 12230,
+    "name": "Curant Health Georgia, LLC",
+    "address_line_1": "200 Technology Ct SE, Suite B",
+    "address_line_2": null,
+    "address_city": "Smyrna",
+    "address_state": "GA",
+    "address_zipcode": "30082",
+    "primary_phone_number": "8664378040",
+    "primary_fax_number": "8664378411",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 8025,
+    "name": "CVS Caremark Inc (Mail Order)",
+    "address_line_1": "9501 E Shea Blvd",
+    "address_line_2": null,
+    "address_city": "Scottsdale",
+    "address_state": "AZ",
+    "address_zipcode": "85260",
+    "primary_phone_number": "8778647744",
+    "primary_fax_number": "8003780323",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 8537,
+    "name": "CVS Caremark Specialty Pharmacy",
+    "address_line_1": "800 Biermann Court",
+    "address_line_2": "St B",
+    "address_city": "Mount Prospect",
+    "address_state": "IL",
+    "address_zipcode": "60056",
+    "primary_phone_number": "8774089742",
+    "primary_fax_number": "8774089742",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 8941,
+    "name": "CVS SPECIALTY Monroeville",
+    "address_line_1": "105 Mall Boulevard",
+    "address_line_2": null,
+    "address_city": "Monroeville",
+    "address_state": "PA",
+    "address_zipcode": "15146",
+    "primary_phone_number": "8002387828",
+    "primary_fax_number": "8772877226",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 8954,
+    "name": "CVS SPECIALTY PuertoRico",
+    "address_line_1": "280 Ave. Jesus T Pinero",
+    "address_line_2": "Suite B",
+    "address_city": "RIO PIEDRAS",
+    "address_state": "PR",
+    "address_zipcode": "01927",
+    "primary_phone_number": "8882801190",
+    "primary_fax_number": "8882801191",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 31669,
+    "name": "DeliverCareRxCA",
+    "address_line_1": "3095 INDEPENDENCE DRIVE STE A",
+    "address_line_2": null,
+    "address_city": "LIVERMORE",
+    "address_state": "CA",
+    "address_zipcode": "94551",
+    "primary_phone_number": "8442980673",
+    "primary_fax_number": "8558574771",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 11086,
+    "name": "DeltaQ 10.6 Erx Pharmacy",
+    "address_line_1": "123 NORTH MAIN ST",
+    "address_line_2": null,
+    "address_city": "YOUNG AMERICA",
+    "address_state": "MN",
+    "address_zipcode": "55555",
+    "primary_phone_number": "4122912134",
+    "primary_fax_number": "4122912134",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 15842,
+    "name": "DeltaQ PC 50",
+    "address_line_1": "8 GRANDVIEW CIRCLE, SUITE 210",
+    "address_line_2": null,
+    "address_city": "CANONSBURG",
+    "address_state": "PA",
+    "address_zipcode": "15317",
+    "primary_phone_number": "4122912134",
+    "primary_fax_number": "4122912134",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 31170,
+    "name": "DeltaQ PC70",
+    "address_line_1": "123 Canonsburg Drive",
+    "address_line_2": null,
+    "address_city": "Canonsburg",
+    "address_state": "PA",
+    "address_zipcode": "15317",
+    "primary_phone_number": "4125551212",
+    "primary_fax_number": "4125551212",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 29424,
+    "name": "DeltaQ Pharmacy 50",
+    "address_line_1": "8 GRANDVIEW CIR",
+    "address_line_2": null,
+    "address_city": "CANONSBURG",
+    "address_state": "PA",
+    "address_zipcode": "15317",
+    "primary_phone_number": "4122912134",
+    "primary_fax_number": "4122912134",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 29549,
+    "name": "Depot Drug Phcy Mail Order 1",
+    "address_line_1": "1040 North 2200 West",
+    "address_line_2": null,
+    "address_city": "Salt Lake City",
+    "address_state": "UT",
+    "address_zipcode": "84116",
+    "primary_phone_number": "4024965366",
+    "primary_fax_number": "8015954440",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 33512,
+    "name": "DH PHARMACY BY MAIL - CLOSED NETWOR",
+    "address_line_1": "500 Quivas Street, Suite A",
+    "address_line_2": "NOT A PICKUP LOCATION",
+    "address_city": "Denver",
+    "address_state": "CO",
+    "address_zipcode": "80204",
+    "primary_phone_number": "3034364488",
+    "primary_fax_number": "3036022335",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 35431,
+    "name": "DirectRx Pharmacy",
+    "address_line_1": "830 Kirts Blvd. STE 300",
+    "address_line_2": null,
+    "address_city": "Troy",
+    "address_state": "MI",
+    "address_zipcode": "48084",
+    "primary_phone_number": "8553623397",
+    "primary_fax_number": "8778924007",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "Specialty Pharmacy",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 34056,
+    "name": "DISPENSE PRO MO DEMO",
+    "address_line_1": "124 SIMPLE RD",
+    "address_line_2": null,
+    "address_city": "BOULDER",
+    "address_state": "CO",
+    "address_zipcode": "80303",
+    "primary_phone_number": "3034941221",
+    "primary_fax_number": "3034941222",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 14540,
+    "name": "dod demo store",
+    "address_line_1": "1232 Bristol",
+    "address_line_2": null,
+    "address_city": "Costa Mesa",
+    "address_state": "ca",
+    "address_zipcode": "92705",
+    "primary_phone_number": "9492323457",
+    "primary_fax_number": "9493332222",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 9266,
+    "name": "Dr Chrono Pharmacy",
+    "address_line_1": "12345 MAIN ST.",
+    "address_line_2": null,
+    "address_city": "DEFAULT CITY",
+    "address_state": "NY",
+    "address_zipcode": "00001",
+    "primary_phone_number": "4125551234",
+    "primary_fax_number": "4125551235",
+    "pharmacy_specialties": [
+      "Mail Order",
+      "EPCS"
+    ]
+  },
+  {
+    "id": 7924,
+    "name": "Drug Mart Xerox",
+    "address_line_1": "255 Leopold St",
+    "address_line_2": null,
+    "address_city": "Fort Myers",
+    "address_state": "HI",
+    "address_zipcode": "967201234",
+    "primary_phone_number": "2393829384",
+    "primary_fax_number": "7035556678",
+    "pharmacy_specialties": [
+      "Mail Order"
+    ]
+  }
+]

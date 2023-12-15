@@ -1,0 +1,12 @@
+{
+  "convo_id": "NHdfId8aDTWJcTVcDqzCqY9bJTUeK5PToNwRfCS0pRduIt2yw3",
+  "chief_complaint": "Flatulence",
+  "email_address": "test@test.com",
+  "is_locked": false,
+  "last_followup_outcome": "all_better",
+  "name": "suhail",
+  "next_followup_date": null,
+  "state": "follow_up_done",
+  "state_initiated": false,
+  "user_id": "439492fc-dbd2-4531-95f6-be6f0a07eccf"
+}

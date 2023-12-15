@@ -1,0 +1,42 @@
+
+
+<h2>Diagnosis References Selected For You:</h2>
+
+<ul>
+    <li>
+        <b>Sponsored</b>
+        <br>
+        <a class="text-blue underline" href="https://www.moretoadhd.com/" target="_blank">More To ADHD</a>
+        <br>
+        www.moretoadhd.com
+        <p>
+        Your ADHD treatment plan should be tailored to meet your needs and goals
+        </p>
+    </li>
+    <li>
+        <a class="text-blue underline" href="https://www.apa.org" target="_blank">An ADHD diagnosis in adulthood comes with challenges and benefits</a>
+        <br>
+        March 1, 2023
+        <br>
+        www.apa.org
+        <p>
+        The process of diagnosing adults. For symptoms to be considered ADHD, they must have started before the age of 12. This makes diagnosing adults ..
+        </p>
+    </li>
+    <li>
+        <a class="text-blue underline" href="https://chadd.org" target="_blank">Diagnosis of ADHD in Adults - CHADD</a>
+        <br>
+        Chadd.org
+        <p>
+        Although there is no single medical, physical, or genetic test for ADHD, a diagnostic evaluation can be provided by a qualified mental health care professional ...
+        </p>
+    </li>
+    <li>
+        <a class="text-blue underline" href="https://www.aafp.org" target="_blank">Adult ADHD: Assessment and Diagnosis - AAFP</a>
+        <br>
+        www.aafp.org
+        <p>
+        Evaluation of adults presenting with ADHD symptoms typically requires at least two visits. As well as allowing for a thorough evaluation, two visits allows the…
+        </p>
+    </li>
+</ul>

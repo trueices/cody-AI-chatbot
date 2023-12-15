@@ -1,0 +1,93 @@
+SPECIALITY/DXGROUP,GREETING,OPTIONS,URLs
+ParkinsonsDisease,"Hello!
+
+
+I'm Cody, your AI Doctor, specializing in Neurology. I've been trained by licensed doctors.
+
+What health issue do you want to work on today?😄","We can work on diagnosing a pressing problem. Just tell me what’s wrong. You can say “I am concerned about Parkinson's Disease”, or “I am experiencing  a tremor”.
+
+We can work on an existing condition. You can say, “I have Parkinsons”.
+
+Or, you can just ask me a question, like “what’s Parkinsons?”",cody.md/sp/parkinsons
+Anxiety,"Hello!
+
+
+I'm Cody, your AI Doctor, specializing in Mental Health. I've been trained by licensed doctors.
+
+What health issue do you want to work on today?😄","We can work on diagnosing a pressing problem. Just tell me what’s wrong. You can say “anxiety”, or “I've been feeling very stressed”.
+
+We can work on an existing condition. You can say, “I have anxiety”.
+
+Or, you can just ask me a question, like “what’s anxiety?”",cody.md/sp/anxiety
+PolycysticOvarySyndrome,"Hello!
+
+
+I'm Cody, your AI Doctor, specializing in Women's Health. I've been trained by licensed doctors.
+
+What health issue do you want to work on today?😄","We can work on diagnosing a pressing problem. Just tell me what’s wrong. You can say “PCOS”, or “menstrual irregularities”, or “fertility issues”.
+
+We can work on an existing condition. You can say, “I have PCOS” or “I have menstrual irregularities”.
+
+Or, you can just ask me a question, like “what’s PCOS?”",cody.md/sp/PCOS
+Endometriosis,"Hello!
+
+
+I'm Cody, your AI Doctor, specializing in Women's Health. I've been trained by licensed doctors.
+
+What health issue do you want to work on today?😄","We can work on diagnosing a pressing problem. Just tell me what’s wrong. You can say “I am concerned about endometriosis”, or just “endometriosis”.
+
+We can work on an existing condition. You can say, “I have endometriosis”.
+
+Or, you can just ask me a question, like “what’s endometriosis?”",cody.md/sp/endometriosis
+Migraine,"Hello!
+
+
+I'm Cody, your AI Doctor, specializing in Neurology. I've been trained by licensed doctors.
+
+What health issue do you want to work on today?😄","We can work on diagnosing a pressing problem. Just tell me what’s wrong. You can say “migraine” or “concerned about migraines”.
+
+We can work on an existing condition. You can say, “I have migraine”.
+
+Or, you can just ask me a question, like “what’s migraine?”",cody.md/sp/migraine
+Acne,"Hello!
+
+
+I'm Cody, your AI Doctor, specializing in Dermatology. I've been trained by licensed doctors.
+
+What health issue do you want to work on today?😄","We can work on diagnosing a pressing problem. Just tell me what’s wrong. You can say “acne” or “concerned about pimples”.
+
+We can work on an existing condition. You can say, “I have pimples”.
+
+Or, you can just ask me a question, like “what’s acne?”",cody.md/sp/acne
+Depression,"Hello!
+
+
+I'm Cody, your AI Doctor, specializing in Mental Health. I've been trained by licensed doctors.
+
+What health issue do you want to work on today?😄","We can work on diagnosing a pressing problem. Just tell me what’s wrong. You can say “depression”, or “I've been feeling down”.
+
+We can work on an existing condition. You can say, “I have depression”.
+
+Or, you can just ask me a question, like “what’s depression?”",cody.md/sp/depression
+ADHD,"Hello!
+
+
+I'm Cody, your AI Doctor, specializing in Mental Health. I've been trained by licensed doctors.
+
+What health issue do you want to work on today?😄","We can work on diagnosing a pressing problem. Just tell me what’s wrong. You can say “difficulty concentrating”, or “easily distracted”.
+
+We can work on an existing condition. You can say, “I have ADHD”.
+
+Or, you can just ask me a question, like “what’s ADHD?”",cody.md/sp/adhd
+general,"Hello!
+
+
+I'm Cody, your AI Doctor, trained by licensed Doctors.
+
+As we work together on your health, I will introduce you to my licensed Doctor team to help you get your prescriptions, tests, referrals, everything you need to get well and stay well. 
+
+What health issue do you want to work on today?😄","We can work on a pressing problem. Just tell me what’s wrong. You can say  “sinus pressure” or “I have a sore throat”.
+
+We can work on an existing condition. You can say, “I have diabetes” or “I have endometriosis”.
+
+Or, you can just ask me a question, like “what’s cholesterol?”",cody.md

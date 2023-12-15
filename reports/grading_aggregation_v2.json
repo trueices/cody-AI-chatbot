@@ -1,0 +1,42 @@
+[
+  {
+    "$match": {
+      "current_agent_index": {
+        "$gte": 4
+      }
+    }
+  },
+  {
+    "$group": {
+      "_id": {
+        "__alias_0": "$created",
+        "__alias_1": "$username",
+        "__alias_2": "$patient_name"
+      }
+    }
+  },
+  {
+    "$project": {
+      "_id": 0,
+      "__alias_0": "$_id.__alias_0",
+      "__alias_1": "$_id.__alias_1",
+      "__alias_2": "$_id.__alias_2"
+    }
+  },
+  {
+    "$project": {
+      "created": "$__alias_0",
+      "conversation_id": "$__alias_1",
+      "patient_name": "$__alias_2",
+      "_id": 0
+    }
+  },
+  {
+    "$sort": {
+      "group_series_1": 1
+    }
+  },
+  {
+    "$limit": 50000
+  }
+]

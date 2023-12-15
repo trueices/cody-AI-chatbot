@@ -1,0 +1,237 @@
+{
+  "_id": {
+    "oid": "65d17e0ac8a471ef42260d99"
+  },
+  "username": "kXnbtoAt2MhAiW7GoUokgueHobzi731YAAWJiNtKU0Ae6ZgdPB",
+  "agent_names": [
+    "chief_complaint_agent",
+    "router_agent",
+    "name_enquiry_agent",
+    "followup_agent",
+    "magic_minute_agent",
+    "diagnosis_agent",
+    "concierge_agent",
+    "treatment_agent",
+    "find_care_agent",
+    "feedback_agent",
+    "end_agent",
+    "ad_demo_agent",
+    "followup_care_agent"
+  ],
+  "care_feedback_rating": null,
+  "character_src": "router",
+  "chief_complaint": "headache",
+  "completion_tokens": 1196,
+  "concierge_option": "detailed",
+  "confidence_score": 0,
+  "conv_hist": {
+    "chief_complaint_agent": [
+      {
+        "role": "assistant",
+        "content": "Hello!\n\nI'm Cody, your AI Doctor, here to help you get better. I've been trained by licensed doctors.\n\nPlease tell me one specific health problem you'd like help with today. 😄\n\nYou can say something like “sinus pressure” or “I have a sore throat.”"
+      },
+      {
+        "role": "user",
+        "content": "Headache "
+      },
+      {
+        "role": "assistant",
+        "content": "So you want to focus on your headache today, is that correct?"
+      },
+      {
+        "role": "user",
+        "content": "Yes"
+      },
+      {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "capture_chief_complaint_tool",
+          "arguments": "{\"chief_complaint\":\"headache\"}"
+        }
+      },
+      {
+        "role": "function",
+        "content": "Chief complaint captured",
+        "name": "capture_chief_complaint_tool"
+      }
+    ],
+    "router_agent": [
+      {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "categorize_chief_complaint",
+          "arguments": "{\"specialist\":\"Neurologist\"}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "categorize_chief_complaint",
+          "arguments": "{\"sub_speciality\":\"HeadAcheOther\",\"is_disease_name\":false}"
+        }
+      }
+    ],
+    "name_enquiry_agent": [
+      {
+        "role": "system",
+        "content": "\nYou are continuing a conversation with a patient. \nIn this stage, you are trying to capture the name of the patient.\nYour task is to ask the name of the patient.\nAs soon as you get a name, call the capture_name_tool to capture the name. \nIf the user does not provide a name, inform the user that you need a name to continue.\nDo not entertain any other questions, except for the name.\nIf the user responds with anything other than a name, inform the user that you need a name to continue.\nIf the user says that they dont want to share their name, inform the user that they can use a made up name.\nAs soon as you get a name, call the capture_name_tool to capture the name. \n"
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for confirming! Before I ask you a few questions, what should I call you?"
+      },
+      {
+        "role": "user",
+        "content": "dave"
+      },
+      {
+        "role": "assistant",
+        "content": "Great, Dave! Let me capture that name for our records.",
+        "function_call": {
+          "name": "capture_name_tool",
+          "arguments": "{\"name\":\"Dave\"}"
+        }
+      },
+      {
+        "role": "function",
+        "content": "Name captured",
+        "name": "capture_name_tool"
+      },
+      {
+        "role": "assistant",
+        "content": "Good to meet you, Dave! My goal is to provide you with an accurate diagnosis and plan. Let's talk about your concerns regarding headache.\n\n\n"
+      }
+    ],
+    "followup_agent": [
+      {
+        "role": "assistant",
+        "content": "Please describe your headache in detail. What are the specific symptoms you are experiencing?"
+      },
+      {
+        "role": "user",
+        "content": "Ok"
+      },
+      {
+        "role": "assistant",
+        "content": "When did you first start experiencing this headache?"
+      },
+      {
+        "role": "user",
+        "content": "Yesterday "
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been diagnosed with any medical conditions that could be related to your headache?"
+      },
+      {
+        "role": "user",
+        "content": "Diagnosis "
+      }
+    ],
+    "magic_minute_agent": [
+      {
+        "role": "assistant",
+        "content": "Dave, here's what I've understood so far:\n<h1>Summary of our conversation</h1>\n<ul>\n<li>You started experiencing the headache yesterday.</li>\n<li>You have not mentioned any specific symptoms related to your headache.</li>\n<li>You have not disclosed any previous medical conditions that could be related to your headache.</li>\n</ul>\n\n\n"
+      }
+    ],
+    "diagnosis_agent": [
+      {
+        "role": "assistant",
+        "content": "Based on what you've told me, I've prepared your Top 3 Diagnosis List:\n<h1>Your Top 3 Diagnosis List</h1>\n<b>1. Tension headache (40% probability)</b> Headache typically caused by stress or muscle tension.\n<b>2. Migraine (30% probability)</b> Recurrent headache that can be moderate to severe and often accompanied by other symptoms.\n<b>3. Sinusitis (20% probability)</b> Inflammation of the sinuses often causing headache and facial pain."
+      }
+    ],
+    "concierge_agent": [
+      {
+        "role": "assistant",
+        "content": "Dave, I have found the best doctors near you for Migraine.\nEnter the number of your option.\n\n1. Yes, show me the best doctors near me for Migraine. \n2. Show me treatment plans for other conditions.\n3. Other options."
+      },
+      {
+        "role": "user",
+        "content": "1"
+      }
+    ],
+    "treatment_agent": [
+      {
+        "role": "assistant",
+        "content": "Ok, to view a treatment plan enter the number of the diagnosis.\n1. Tension Headache\n2. Migraine\n3. Sinusitis"
+      },
+      {
+        "role": "user",
+        "content": "2"
+      },
+      {
+        "role": "assistant",
+        "content": "<div class='tx-plan'>\n\n<h1>Your Treatment Plan for Migraine</h1>\nMigraine is a neurological condition characterized by recurrent episodes of severe headaches, often accompanied by other symptoms such as nausea, vomiting, and sensitivity to light and sound.\n\n<h2>Health Professional Referrals</h2>\n<ul>\n    <li><b>Primary Care</b>: Migraines are commonly managed by primary care providers, including family physicians and internists. They can diagnose migraines, prescribe medications, and provide guidance on management strategies.</li>\n    <li><b>Specialists</b>: Neurologists are specialists who focus on conditions affecting the brain and nervous system. They can be consulted for complex cases of migraines or when initial treatments are not effective.</li>\n</ul>\n\n<h2>Tests to Confirm Diagnosis</h2>\n<ul>\n    <li><b>Laboratory Tests:</b> There are no specific laboratory tests to diagnose migraines. Diagnosis is usually based on symptoms and medical history.</li>\n    <li><b>Imaging such as MRI or CT scan:</b> Imaging tests may be ordered to rule out other underlying causes of headaches, especially if the headaches are atypical or accompanied by neurological symptoms.</li>\n</ul>\n\n<h2>Treatments</h2>\n<ul>\n    <li><b>Prescription Medication Options:</b> Medications commonly used to treat migraines include triptans, such as sumatriptan, to relieve pain and associated symptoms. Preventive medications like beta-blockers or anticonvulsants may be prescribed for frequent or severe migraines.</li>\n    <li><b>Over-the-Counter Medication Options:</b> Over-the-counter pain relievers like ibuprofen or acetaminophen can help alleviate mild to moderate migraine pain. Combination medications containing caffeine may also be effective.</li>\n    <li><b>Supplements, Natural Medicines, Alternative Therapies:</b> Some people find relief from migraines with supplements like magnesium, riboflavin (vitamin B2), or coenzyme Q10. Acupuncture, biofeedback, and relaxation techniques may also be beneficial.</li>\n</ul>\n\n<h2>Self Care</h2>\n<ul>\n    <li><b>Prevention:</b> Identify and avoid triggers that may precipitate migraines, such as certain foods, stress, lack of sleep, or hormonal changes.</li>\n    <li><b>Diet and Hydration:</b> Maintain a regular eating schedule, stay hydrated, and consider dietary modifications like avoiding potential trigger foods (e.g., aged cheeses, processed meats, artificial sweeteners).</li>\n    <li><b>Exercise:</b> Regular physical activity can help reduce the frequency and severity of migraines. However, intense exercise during a migraine attack may worsen symptoms.</li>\n    <li><b>Sleep:</b> Establish a consistent sleep routine and ensure an adequate amount of sleep each night to help prevent migraines.</li>\n    <li><b>Stress:</b> Practice stress-reducing techniques such as mindfulness, deep breathing, yoga, or meditation to manage stress levels and potentially prevent migraines.</li>\n    <li><b>Lifestyle:</b> Keep a headache diary to track triggers and patterns, and consider seeking support from a therapist or support group for coping strategies.</li>\n</ul>\n\n<h2>Expected Recovery Time: Variable</h2>\n<ul>\n    <li><b>Duration:</b> Migraine attacks can last anywhere from a few hours to several days. With appropriate treatment and lifestyle modifications, the frequency and intensity of migraines can be reduced over time.</li>\n    <li><b>Recovery Experience:</b> It is important to work closely with your healthcare provider to find an individualized treatment plan that works for you. Be patient and consistent with your treatment and self-care strategies to better manage migraines and improve your quality of life.</li>\n</ul></li></ul><h2>Best migraine treatment references for you:</h2></li></ul><h2>Best migraine treatment references for you:</h2><ul><li><a class=\"text-blue underline\" href=\"https://www.mayoclinic.org/diseases-conditions/migraine-headache/diagnosis-treatment/drc-20360207\" target=\"_blank\">Migraine - Diagnosis and treatment - Mayo Clinic</a>\n<p>\nJul 7, 2023\n<br>\nwww.mayoclinic.org\n<br>\nPrescription drugs such as sumatriptan (Imitrex, Tosymra) and rizatriptan (Maxalt, Maxalt-MLT) are used to treat migraine because they block ...\n</p>\n</li>\n<li><a class=\"text-blue underline\" href=\"https://www.uptodate.com/contents/acute-treatment-of-migraine-in-adults\" target=\"_blank\">Acute treatment of migraine in adults - UpToDate</a>\n<p>\nNov 27, 2023\n<br>\nwww.uptodate.com\n<br>\nOutline · Prochlorperazine · Metoclopramide · Others · Use in adjunctive therapy.\n</p>\n</li>\n<li><a class=\"text-blue underline\" href=\"https://migrainetrust.org/live-with-migraine/healthcare/treatments/\" target=\"_blank\">Treatment options - The Migraine Trust</a>\n<p>\nmigrainetrust.org\n<br>\nTreatment options · Acute medicines · Preventive medicines · Calcitonin Gene-Related Peptide (CGRP) monoclonal antibodies · Gepants · Botox injections · Greater ...\n</p>\n</li>\n</ul></div>"
+      },
+      {
+        "role": "assistant",
+        "content": "\n\n\n"
+      }
+    ],
+    "find_care_agent": [
+      {
+        "role": "assistant",
+        "content": "Please <a class=\"text-blue underline app-link\" href=\"/sign-in\">login</a> or <a class=\"text-blue underline app-link\" href=\"/register\">create an account</a> to view the best doctors near you."
+      }
+    ],
+    "feedback_agent": [],
+    "end_agent": [],
+    "ad_demo_agent": [],
+    "followup_care_agent": []
+  },
+  "created": "2024-02-18T03:48:26.548376",
+  "current_agent_index": 8,
+  "current_agent_name": "find_care_agent",
+  "deployed": "2024-02-17T23:29:06.907256",
+  "diagnosis_list": [
+    "TENSION HEADACHE",
+    "MIGRAINE",
+    "SINUSITIS"
+  ],
+  "dx_group_list": [
+    "Sinusitis",
+    "Migraine",
+    "HeadAcheOther"
+  ],
+  "dx_specialist_list": [
+    "otolaryngologist",
+    "neurologist"
+  ],
+  "dxg_version": "unified",
+  "engagement_minutes": 2.341800166666667,
+  "error_types": [],
+  "errors": [],
+  "errors_care": [],
+  "feedback_rating": null,
+  "followup_summary": null,
+  "hist_for_que_gen": "",
+  "ip_address": "8.8.8.8",
+  "last_human_input": "1",
+  "last_updated": "2024-02-18T03:50:47.056386",
+  "max_token_count": 2587,
+  "next_agent_name": null,
+  "patient_name": "David",
+  "priority_field_relevance": {},
+  "priority_field_src": "specialist",
+  "priority_fields_asked": [
+    "details of {chief complaint}",
+    "when started {chief complaint}"
+  ],
+  "prompt_tokens": 4125,
+  "specialist": "neurologist",
+  "subSpecialty": "general",
+  "successful_requests": 9,
+  "thought_process": "The field 'when started {chief complaint}' has been answered with the duration of 'yesterday'.",
+  "timeouts": 0,
+  "total_cost": 0.0085795,
+  "treatment_plans": {
+    "2": "<div class='tx-plan'>\n\n<h1>Your Treatment Plan for Migraine</h1>\nMigraine is a neurological condition characterized by recurrent episodes of severe headaches, often accompanied by other symptoms such as nausea, vomiting, and sensitivity to light and sound.\n\n<h2>Health Professional Referrals</h2>\n<ul>\n    <li><b>Primary Care</b>: Migraines are commonly managed by primary care providers, including family physicians and internists. They can diagnose migraines, prescribe medications, and provide guidance on management strategies.</li>\n    <li><b>Specialists</b>: Neurologists are specialists who focus on conditions affecting the brain and nervous system. They can be consulted for complex cases of migraines or when initial treatments are not effective.</li>\n</ul>\n\n<h2>Tests to Confirm Diagnosis</h2>\n<ul>\n    <li><b>Laboratory Tests:</b> There are no specific laboratory tests to diagnose migraines. Diagnosis is usually based on symptoms and medical history.</li>\n    <li><b>Imaging such as MRI or CT scan:</b> Imaging tests may be ordered to rule out other underlying causes of headaches, especially if the headaches are atypical or accompanied by neurological symptoms.</li>\n</ul>\n\n<h2>Treatments</h2>\n<ul>\n    <li><b>Prescription Medication Options:</b> Medications commonly used to treat migraines include triptans, such as sumatriptan, to relieve pain and associated symptoms. Preventive medications like beta-blockers or anticonvulsants may be prescribed for frequent or severe migraines.</li>\n    <li><b>Over-the-Counter Medication Options:</b> Over-the-counter pain relievers like ibuprofen or acetaminophen can help alleviate mild to moderate migraine pain. Combination medications containing caffeine may also be effective.</li>\n    <li><b>Supplements, Natural Medicines, Alternative Therapies:</b> Some people find relief from migraines with supplements like magnesium, riboflavin (vitamin B2), or coenzyme Q10. Acupuncture, biofeedback, and relaxation techniques may also be beneficial.</li>\n</ul>\n\n<h2>Self Care</h2>\n<ul>\n    <li><b>Prevention:</b> Identify and avoid triggers that may precipitate migraines, such as certain foods, stress, lack of sleep, or hormonal changes.</li>\n    <li><b>Diet and Hydration:</b> Maintain a regular eating schedule, stay hydrated, and consider dietary modifications like avoiding potential trigger foods (e.g., aged cheeses, processed meats, artificial sweeteners).</li>\n    <li><b>Exercise:</b> Regular physical activity can help reduce the frequency and severity of migraines. However, intense exercise during a migraine attack may worsen symptoms.</li>\n    <li><b>Sleep:</b> Establish a consistent sleep routine and ensure an adequate amount of sleep each night to help prevent migraines.</li>\n    <li><b>Stress:</b> Practice stress-reducing techniques such as mindfulness, deep breathing, yoga, or meditation to manage stress levels and potentially prevent migraines.</li>\n    <li><b>Lifestyle:</b> Keep a headache diary to track triggers and patterns, and consider seeking support from a therapist or support group for coping strategies.</li>\n</ul>\n\n<h2>Expected Recovery Time: Variable</h2>\n<ul>\n    <li><b>Duration:</b> Migraine attacks can last anywhere from a few hours to several days. With appropriate treatment and lifestyle modifications, the frequency and intensity of migraines can be reduced over time.</li>\n    <li><b>Recovery Experience:</b> It is important to work closely with your healthcare provider to find an individualized treatment plan that works for you. Be patient and consistent with your treatment and self-care strategies to better manage migraines and improve your quality of life.</li>\n</ul></li></ul><h2>Best migraine treatment references for you:</h2></li></ul><h2>Best migraine treatment references for you:</h2><ul><li><a class=\"text-blue underline\" href=\"https://www.mayoclinic.org/diseases-conditions/migraine-headache/diagnosis-treatment/drc-20360207\" target=\"_blank\">Migraine - Diagnosis and treatment - Mayo Clinic</a>\n<p>\nJul 7, 2023\n<br>\nwww.mayoclinic.org\n<br>\nPrescription drugs such as sumatriptan (Imitrex, Tosymra) and rizatriptan (Maxalt, Maxalt-MLT) are used to treat migraine because they block ...\n</p>\n</li>\n<li><a class=\"text-blue underline\" href=\"https://www.uptodate.com/contents/acute-treatment-of-migraine-in-adults\" target=\"_blank\">Acute treatment of migraine in adults - UpToDate</a>\n<p>\nNov 27, 2023\n<br>\nwww.uptodate.com\n<br>\nOutline · Prochlorperazine · Metoclopramide · Others · Use in adjunctive therapy.\n</p>\n</li>\n<li><a class=\"text-blue underline\" href=\"https://migrainetrust.org/live-with-migraine/healthcare/treatments/\" target=\"_blank\">Treatment options - The Migraine Trust</a>\n<p>\nmigrainetrust.org\n<br>\nTreatment options · Acute medicines · Preventive medicines · Calcitonin Gene-Related Peptide (CGRP) monoclonal antibodies · Gepants · Botox injections · Greater ...\n</p>\n</li>\n</ul></div>"
+  },
+  "treatment_plans_seen": [
+    2
+  ],
+  "version": "0.13.1-alpha"
+}

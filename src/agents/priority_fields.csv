@@ -1,0 +1,1031 @@
+SPECIALITY/DXGROUP,FIELD,FILL SCORE,MIN POINTS,CONFIDENCE INTERVAL,COMPULSORY,FIELD DATA ATTRIBUTES,EXAMPLES OF QUESTIONS,FIELD DATA ATTRIBUTE EXAMPLES
+ParkinsonsDisease,Diagnosed with Parkinson's Disease,5,40,80,,,,
+ParkinsonsDisease,Diagnosed with other Neurologic Conditions,3,,,,,,
+ParkinsonsDisease,Tremor,10,,,,,,
+ParkinsonsDisease,Year of birth,5,,,,,,
+ParkinsonsDisease,Sex,5,,,,,,
+ParkinsonsDisease,Slowness of movement,4,,,,,,
+ParkinsonsDisease,Muscle Rigidity,4,,,,,,
+ParkinsonsDisease,Change in Balance,4,,,,,,
+ParkinsonsDisease,Changes in how you walk,1,,,,,,
+ParkinsonsDisease,Handwriting Changes,1,,,,,,
+ParkinsonsDisease,Facial Expression changes,1,,,,,,
+ParkinsonsDisease,Voice Changes,1,,,,,,
+ParkinsonsDisease,Muscle Aches,1,,,,,,
+ParkinsonsDisease,Difficulty sleeping,1,,,,,,
+ParkinsonsDisease,Light headed,1,,,,,,
+ParkinsonsDisease,Mood changes,1,,,,,,
+ParkinsonsDisease,Thinking changes,1,,,,,,
+ParkinsonsDisease,Low blood pressure,1,,,,,,
+PolycysticOvarySyndrome,Sex,2,24,80,,,,
+PolycysticOvarySyndrome,Year of birth,2,,,,,,
+PolycysticOvarySyndrome,Gynecologic Diagnoses,2,,,,,,
+PolycysticOvarySyndrome,Irregular menstrual periods,5,,,,,,
+PolycysticOvarySyndrome,Polycystic ovaries determined with ultrasound,5,,,,,,
+PolycysticOvarySyndrome,Scalp hair loss,5,,,,,,
+PolycysticOvarySyndrome,Excessive body hair (hirsutism),5,,,,,,
+PolycysticOvarySyndrome,Excessive facial hair,5,,,,,,
+PolycysticOvarySyndrome,Acne,5,,,,,,
+PolycysticOvarySyndrome,Excessive weight,1,,,,,,
+PolycysticOvarySyndrome,Elevated blood sugar,1,,,,,,
+PolycysticOvarySyndrome,High cholesterol,1,,,,,,
+PolycysticOvarySyndrome,Mood swings,1,,,,,,
+PolycysticOvarySyndrome,Trouble sleeping ,1,,,,,,
+PolycysticOvarySyndrome,Difficulty getting pregnant (infertility),1,,,,,,
+Anxiety,Year of birth,3,38,80,,,,
+Anxiety,Mental Health Diagnoses,3,,,,,,
+Anxiety,"Feeling nervous, anxious, or on edge  ",5,,,,,,
+Anxiety,Not being able to stop or control worrying  ,5,,,,,,
+Anxiety,Worrying too much about different things,5,,,,,,
+Anxiety,Trouble relaxing,5,,,,,,
+Anxiety,Being so restless that it is hard to sit still,5,,,,,,
+Anxiety,Becoming easily annoyed or irritable,5,,,,,,
+Anxiety,"Feeling afraid, as if something awful might happen",5,,,,,,
+Anxiety,Difficulty sleeping,1,,,,,,
+Anxiety,Racing thoughts that are difficult to control.,1,,,,,,
+Anxiety,Rapid Heartbeat,1,,,,,,
+Anxiety,Excessive sweating even in non-stressful situations.,1,,,,,,
+Anxiety,"Stomach discomfort, diarrhea, or irritable bowel symptoms.",1,,,,,,
+Anxiety,Feeling lightheaded or dizzy.,1,,,,,,
+Anxiety,"Rapid or shallow breathing, sometimes leading to hyperventilation.",1,,,,,,
+Anxiety,Experiencing irrational or negative thought patterns.,1,,,,,,
+Anxiety,"Avoiding situations, places, or activities that trigger anxiety.",1,,,,,,
+Neurologist,Details of {Chief Complaint},7,21,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}","I am having change in feeling in my toes 
+It is on both sides
+The change is like a burning feeling
+"
+Neurologist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","2 years ago
+2 weeks ago"
+Neurologist,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,"Yes, I was diagnosed with neuropathy 3 years ago"
+Neurologist,Year of birth,4,,,,Year,In what year were you born?,1999
+Neurologist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Neurologist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,"My { } started suddenly , Two days ago."
+Neurologist,Location of {Chief Complaint},2,,,No,"In order to complete this data field you must determine the exact location of the { }. 
+Typical areas to ask about:
+- Right or left or both sides is the most important distinction
+- where does the symptom start and end anatomically (in the feet, up to the knees, in one hand or the other)
+- does it follow a specific dermatome or nerve
+
+IF the symptom is headache, then ask exactly where on the head the pain is:
+Temples
+Forehead
+Crown (Top of the head)
+Occiput (Back of the head)
+Vertex (Crown or apex of the head)
+Parietal Region
+Frontal Region
+Supraorbital Region
+Nasal Bridge
+",Where exactly is your pain located? Is it ...,"Pain in back , left side, and goes down the back of the left leg to the left knee."
+Neurologist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+Neurologist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,"Taking ibuprofen makes my { } better
+
+Walking long distances makes it worse"
+Neurologist,Associated Symptoms relevant to the {Chief Complaint},2,,,,"To complete this Field, determine if the patient is experiencing symptoms that may be associated with the Chief Complaint, and if the patient is experiencing associated symptoms, describe these symptoms.
+","Do you have dizziness?
+Do you have trouble walking?
+Do you have fever or chills?
+Do you have a tremor?
+Do you have weakness?
+Do you have loss of sensation / feeling?
+","Examples of Field Data Attributes in the case of a Chief Complaint of {headache} may include:
+
+Nausea and vomiting
+
+Fever
+
+Dizziness"
+Migraine,Diagnosed with Migraine,5,50,80,,,,
+Migraine,Diagnosed with other Neurologic Conditions,3,,,,,,
+Migraine,Headache,10,,,,,,
+Migraine,New headache or recurrent headache,5,,,,,,
+Migraine,Fever,5,,,,,,
+Migraine,Duration of typical headache,5,,,,,,
+Migraine,Onset of typical headache (sudden or gradual),5,,,,,,
+Migraine,Year of birth,2,,,,,,
+Migraine,Sex,2,,,,,,
+Migraine,Headache worsens with activity,4,,,,,,
+Migraine,Sensitivity to light,4,,,,,,
+Migraine,Sensitivty to noise,4,,,,,,
+Migraine,Family history of migraine,4,,,,,,
+Migraine,Recent changes in typical headache experience,2,,,,,,
+Migraine,Symptoms that start before typical headache (prodrome),2,,,,,,
+Migraine,Vision changes that accompany headache,4,,,,,,
+Migraine,Hearing changes that accompany your headache,3,,,,,,
+Migraine,Bodily sensations that accompany headache,3,,,,,,
+Migraine,Nause with headache,4,,,,,,
+Migraine,Vomiting with headache,4,,,,,,
+Endometriosis,Sex,5,36,80,,,,
+Endometriosis,Year of birth,5,,,,,,
+Endometriosis,Gynecologic Diagnoses,3,,,,,,
+Endometriosis,Severe pain during period,5,,,,,,
+Endometriosis,Chronic abdominal or pelvic pain not related menstruation,5,,,,,,
+Endometriosis,Heavy menstrual bleeding,5,,,,,,
+Endometriosis,Infertility,4,,,,,,
+Endometriosis,Irregular menstrual bleeding,4,,,,,,
+Endometriosis,Painful intercourse,3,,,,,,
+Endometriosis,pain during urination with no evidence of infection,3,,,,,,
+Endometriosis,Urinary frequency with no evidence of infection,3,,,,,,
+Endometriosis,Constipation ,2,,,,,,
+Endometriosis,Diarrhea,2,,,,,,
+Endometriosis,very painful bowel movements,3,,,,,,
+Endometriosis,Nausea or vomiting,2,,,,,,
+Endometriosis,Low energy,1,,,,,,
+Acne,Year of birth,5,35,80,,,,
+Acne,Sex,5,,,,,,
+Acne,Dermatologic diagnoses,5,,,,,,
+Acne,Age when it started,5,,,,,,
+Acne,"Location of lesions (face, back, chest, other)",3,,,,,,
+Acne,Blackheads,3,,,,,,
+Acne,White heads,3,,,,,,
+Acne,Inflammatory papules (red pimples),3,,,,,,
+Acne,Family history of acne,3,,,,,,
+Acne,Oily skin,3,,,,,,
+Acne,"current medication list includes androgens, corticosteroids (topical, oral, or injected), antiepileptic medications, isoniazid, lithium, ",3,,,,,,
+Acne,"current medical history includes endocrine disorders such as polycystic ovary syndrome, hyperandrogenism, or precocious puberty ",3,,,,,,
+Acne,Excessive weight,3,,,,,,
+Acne,Use of cosmetics such as make up,3,,,,,,
+Depression,Year of birth,3,50,80,,,,
+Depression,Mental Health Diagnoses,3,,,,,,
+Depression,Little interest or pleasure in doing things,5,,,,,,
+Depression,"Feeling down, depressed, or hopeless",5,,,,,,
+Depression,"Trouble falling or staying asleep, or sleeping too much",5,,,,,,
+Depression,Feeling tired or having little energy,5,,,,,,
+Depression,Poor appetite or overeating,5,,,,,,
+Depression,Feeling bad about yourself or that you are a failure or have let yourself or your family down,5,,,,,,
+Depression,"Trouble concentrating on things, such as reading the newspaper or watching television",5,,,,,,
+Depression,Moving or speaking so slowly that other people could have noticed. Or the opposite being so fidgety or restless that you have been moving around a lot more than usual,5,,,,,,
+Depression,"Thoughts that you would be better off dead, or of hurting yourself",5,,,,,,
+Depression,Periods of euphoria or very high mood,1,,,,,,
+Depression,Substance use,1,,,,,,
+Depression,Alcohol use ,1,,,,,,
+Depression,Chronic medical conditions,1,,,,,,
+Psychiatrist,Details of {Chief Complaint},7,25,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}
+Describe all you are experiencing with your { }","I am feeling down, blue
+I feel depressed
+I feel stressed "
+Psychiatrist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","2 years ago
+2 weeks ago"
+Psychiatrist,Previous mental health diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with mental health conditions.",Has a health professional ever diagnosed you with a mental health condition?,"Yes, I was diagnosed with ADHD 3 years ago"
+Psychiatrist,Year of birth,4,,,,Year,In what year were you born?,1999
+Psychiatrist,Sex ,3,,,,Determine the sex of the patient.,What is your sex?,Male
+Psychiatrist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Psychiatrist,Triggers,2,,,,"To complete this Field, define any suspected triggers of the {Chief Complaint}
+
+","How did your {} start?
+What triggered your { }?",My { } started after I returned from the war.
+Psychiatrist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+Psychiatrist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,"Meditation makes my { } better
+
+Lack of sleep makes it worse"
+Psychiatrist,Other mental health symptoms {Chief Complaint},2,,,,"To complete this Field, determine if the patient is experiencing symptoms that may be associated with the Chief Complaint, and if the patient is experiencing associated symptoms, describe these symptoms.
+","Do you have weight gain/ weight loss?
+
+Do you have anxiety?
+
+Do you have periods of excessive euphoria ?
+
+Do you use drugs ?
+
+Do you drink alcohol regularly ?
+
+Do you have hear voices?
+
+Do you have physical symptoms that occur with {chief complaint. }?
+","Examples of Field Data Attributes in the case of a Chief Complaint of {ADHD} may include:
+
+Depression 
+
+Anxiety 
+
+Calming down with alcohol "
+Gynecologist,Sex,3,23,80,,Determine the sex of the patient.,What is your sex?,Female
+Gynecologist,Details of {Chief Complaint},7,,,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}
+Describe all you are experiencing with your { }","I am having change in my period
+I have pain in my pelvic
+It is on both sides
+The pain is deep and burning
+"
+Gynecologist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","2 years ago
+2 weeks ago"
+Gynecologist,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,"Yes, I was diagnosed with a ruptured ovarian cyst 3 years ago"
+Gynecologist,Year of birth,4,,,,Year,In what year were you born?,1999
+Gynecologist,Location of {Chief Complaint},2,,,No,"In order to complete this data field you must determine the exact location of the { }. 
+Typical areas to ask about:
+- Right or left or both sides OF the PELVIS is the most important distinction
+- where does the symptom start and end anatomically (In the lower abdomen, in the vagina)
+- does it Radiate from one location to another
+IF the symptom is Pelvic pain , then ask exactly where on the pelvis the pain is:
+- Right , Left or both sides
+- does it radiate to the back or up to the belly
+- is there pain with movement ",Where exactly is your { } located?,"Pain in the pelvis , left side, and goes down in the vagina"
+Gynecologist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Gynecologist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,"My { } started suddenly , Two days ago."
+Gynecologist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+Gynecologist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,"Taking ibuprofen makes my { } better
+
+Movement or intercourse makes it worse"
+Gynecologist,Other symptoms,2,,,,"To complete this Field, determine if the patient is experiencing symptoms that may be associated with the Chief Complaint, and if the patient is experiencing associated symptoms, describe these symptoms.
+","Do you have dizziness?
+
+Do you have nausea or vomiting?
+
+Do you have fever or chills?
+
+Do you have a vaginal discharge
+
+Does the {. } change with your periods 
+
+Do you have pain in the back?
+
+
+","Examples of Field Data Attributes in the case of a Chief Complaint of {pelvic pain} may include:
+
+Nausea and vomiting
+
+Fever
+
+vaginal discharge"
+Gastroenterologist,Details of {Chief Complaint},7,23,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}
+Describe all you are experiencing with your { }","I am having abdominal pain 
+I have diarrhea
+I have nausea
+I have nausea and vomiting
+"
+Gastroenterologist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","2 years ago
+2 weeks ago"
+Gastroenterologist,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,"Yes, I was diagnosed with ulcerative colitis 3 years ago"
+Gastroenterologist,Year of birth,4,,,,Year,In what year were you born?,1999
+Gastroenterologist,Sex,3,,,,Determine the sex of the patient.,What is your sex?,Male
+Gastroenterologist,Location of {Chief Complaint},2,,,No,"In order to complete this data field you must determine the exact location of the { }. 
+The is most relevant for pain or lesions 
+Typical areas to ask about regarding abdominal pain:
+- Areas of the abdomen: 
+---- Right upper quadrant
+---- Left upper quadrant
+---- Right lower quadrant
+---- Left lower quadrant
+---- epigastric area
+---- suprapubic area
+---- periumbilical (around the belly button)
+--- back
+---- Flank
+- where does the symptom start and end anatomically (In the lower abdomen)
+- does it radiate to the back or up to the belly
+- is there pain with movement ",Where exactly is your { } located?,"Pain in the belly , upper left side, and goes to the right shoulder"
+Gastroenterologist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Gastroenterologist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,"My { } started suddenly , Two days ago."
+Gastroenterologist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+Gastroenterologist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,"Taking omeprazole or sleeping with my head elevated makes my { } better
+
+Eating makes it worse"
+Gastroenterologist,Other Symptoms,2,,,,"To complete this Field, determine if the patient is experiencing symptoms that may be associated with the Chief Complaint, and if the patient is experiencing associated symptoms, describe these symptoms.
+","Do you have diarrhea?
+
+Do you have nausea or vomiting?
+
+Do you have fever or chills?
+
+Do you have a vaginal discharge?
+
+Does the {. } change with eating?
+
+Do you have blood in your stool or your vomit?
+
+
+","Examples of Field Data Attributes in the case of a Chief Complaint of {diarrhea} may include:
+
+Nausea and vomiting
+
+Fever
+
+Blood in your diarrhea
+
+Abdominal cramps
+
+Dizziness
+
+Headache"
+Rheumatologist,Details of {Chief Complaint},7,23,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}
+Describe all you are experiencing with your { }
+Does it change with rest or activity","I am having pain in my hands 
+I have swelling in my knees
+I have stiffness when I wake up
+
+"
+Rheumatologist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","2 years ago
+2 weeks ago"
+Rheumatologist,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,"Yes, I was diagnosed with psoriatic arthritis 3 years ago"
+Rheumatologist,Year of birth,4,,,,Year,In what year were you born?,1999
+Rheumatologist,Sex,3,,,,Determine the sex of the patient.,What is your sex?,Male
+Rheumatologist,Location of {Chief Complaint},2,,,No,"In order to complete this data field you must determine the exact location of the { }. 
+The is most relevant for PAIN in JOINTS or location of Nodules:
+Typical areas to ask about regarding joint pain:
+- Hands
+- wrists
+- Shoulders
+- Knees
+- Low back 
+- Neck
+- other joints
+- When is the pain or stiffness most notable, when you just wake up or later in the days
+- is there pain with movement 
+- does the pain go away with more movement
+- are hte symptom on the right or the left or both
+Do you have skin changes",Where exactly is your { } located?,"Pain in the wrists and fingers worse in the morning, gets better with activity"
+Rheumatologist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Rheumatologist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,"My { } started suddenly , Two Years ago."
+Rheumatologist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+Rheumatologist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,"Taking ibuprofen makes my { } better
+
+Cold temperatures make it worse"
+Rheumatologist,Other Symptoms,2,,,,"To complete this Field, determine if the patient is experiencing symptoms that may be associated with the Chief Complaint, and if the patient is experiencing associated symptoms, describe these symptoms.
+","Do you have fever or chills?
+
+Headache?
+
+Rash or skin changes?
+
+Do you have nausea or vomiting?
+
+Do you have diarrhea?
+
+Trouble breathing?
+
+Weight loss?
+
+
+
+","Examples of Field Data Attributes in the case of a Chief Complaint of {hand pain } may include:
+
+
+
+Fever
+
+nodules under the skin
+
+depression 
+
+pain in chest with deep breaths"
+Cardiovascular_Specialist,Details of {Chief Complaint},7,23,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}
+Describe all you are experiencing with your { }","I am having chest pain
+I have palpitations 
+I have leg swelling
+
+"
+Cardiovascular_Specialist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","2 years ago
+2 weeks ago"
+Cardiovascular_Specialist,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,"Yes, I was diagnosed with clogged arteries 3 years ago"
+Cardiovascular_Specialist,Year of birth,4,,,,Year,In what year were you born?,1999
+Cardiovascular_Specialist,Sex,3,,,,Determine the sex of the patient.,What is your sex?,Male
+Cardiovascular_Specialist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Cardiovascular_Specialist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+","How did your {} start, suddenly or gradually?","My { } started suddenly , Two Years ago."
+Cardiovascular_Specialist,Location of {Chief Complaint},2,,,No,"In order to complete this data field you must determine the exact location of the { }. 
+The is most relevant for CHEST PAIN or the location of swelling or of preceived poor circulation.
+Examples of locations of Chest pain include:
+- Left side of chest
+- Right side 
+- Both sides
+- Middle 
+- Back
+and whether and where the pain radiates ",Where exactly is your { } located?,Pain is in the left side of chest radiates to my left arm
+Cardiovascular_Specialist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+Cardiovascular_Specialist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,"Taking rest or stopping exercise makes my { } better
+
+Exercise makes { }  worse"
+Cardiovascular_Specialist,Other Symptoms,2,,,,"To complete the field, list other symptoms the paitent is experiencing that may in the doctor's opinion not the patient's be associated with the chief conmplaint","Do you have fever or chills?
+
+Headache?
+
+Rash or skin changes?
+
+Do you have nausea or vomiting?
+
+Do you have diarrhea?
+
+Trouble breathing?
+
+Weight loss?
+
+
+
+","Examples of Field Data Attributes in the case of a Chief Complaint of {hand pain } may include:
+
+
+
+Fever
+
+nodules under the skin
+
+depression 
+
+pain in chest with deep breaths"
+Endocrinologist,Details of {Chief Complaint},7,23,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}
+Describe all you are experiencing with your { }","I am having increased thirst, increase urinartion and blurry vision"
+Endocrinologist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","2 years ago
+2 weeks ago"
+Endocrinologist,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,"Yes, I was diagnosed with clogged diabetes 3 years ago"
+Endocrinologist,Year of birth,4,,,,Year,In what year were you born?,1999
+Endocrinologist,Sex,3,,,,Determine the sex of the patient.,What is your sex?,Male
+Endocrinologist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Endocrinologist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,"My { } started suddenly , Two Years ago."
+Endocrinologist,Location of {Chief Complaint},2,,,No,"To complete this field, where appropriate, describe the location of the { chief complaint}.",Where exactly is your { } located?,Pain is in the left side of chest radiates to my left arm
+Endocrinologist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+Endocrinologist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,"Taking rest or stopping exercise makes my { } better
+
+Exercise makes { }  worse"
+Endocrinologist,Other Symptoms,2,,,,"To complete the field, list other symptoms the paitent is experiencing that may in the doctor's opinion not the patient's be associated with the chief conmplaint","With you fatigue, are you experiencing any of the following: thinning hair, always feeling cold, change in bowel habits, changing in skin","Yes, I have new constipation and I alays feel cold an my sking is thickening"
+Urologist,Details of {Chief Complaint},7,23,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}",
+Urologist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","2 years ago
+2 weeks ago"
+Urologist,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,"Yes, I was diagnosed with bladder cancer 3 years ago"
+Urologist,Year of birth,4,,,,Year,In what year were you born?,1999
+Urologist,Sex,3,,,,Determine the sex of the patient.,What is your sex?,Male
+Urologist,Location of {Chief Complaint},2,,,No,"To complete this field, where appropriate, describe the locatoin of the { chief complaint}, most relevant when the chief complaint is Pain or a Lesion. Examples of locations include:
+- suprapubic area
+- periumbilical (around the belly button)
+- back
+- Flank
+- Penis
+- Testicles
+- Tip urethra ",Where exactly is your { } located?,Pain is located in area of my bladder and radiates to the the tip of my penis
+Urologist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Urologist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,"My { } started suddenly , Two Years ago."
+Urologist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+Urologist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,Urinating makes the pain worse
+Urologist,Other Symptoms,2,,,,"To complete the field, list other symptoms the paitent is experiencing that may in the doctor's opinion not the patient's be associated with the chief conmplaint","Do you have:
+Fever or chills
+Urinary frequency, urgency, or hesitancy
+Blood in the urine
+Flank pain
+Sense of urinary retention
+Slow stream
+Uriniary dribbling
+urinary incontience
+",I have blood in my urine along with my flank pain
+Orthopedist,Details of {Chief Complaint},7,23,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}
+Describe all you are experiencing with your { }","I have knee pain 
+it is intense, on the outside of my right knee
+My knee gets swollen when I walk"
+Orthopedist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","2 years ago
+2 weeks ago"
+Orthopedist,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,"Yes, I was diagnosed with a hip fracture 3 years ago"
+Orthopedist,Year of birth,4,,,,Year,In what year were you born?,1999
+Orthopedist,Sex,3,,,,Determine the sex of the patient.,What is your sex?,Male
+Orthopedist,Location of {Chief Complaint},2,,,Yes,"To complete this field, where appropriate, describe the locatoin of the { chief complaint}.","Where exactly is your { } located?
+Location is particularly important with regard to chief complaints of pain or swelling or injury.
+For example: 
+- where is the pain in your back?
+- where is the pain in your knee?
+- where did you injure yourself when you fell?",Pain in the outside of my left knee when I walk 
+Orthopedist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Orthopedist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,"My { } started suddenly , when I tripped and fell on my left knee"
+Orthopedist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+Orthopedist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,"Taking rest or stopping exercise makes my { } better
+
+Exercise makes { }  worse"
+Orthopedist,Other Symptoms,2,,,,"To complete the field, list other symptoms the paitent is experiencing that may in the doctor's opinion not the patient's be associated with the chief conmplaint","Do you have swelling?
+Do you have redness ?
+Do you have limitation in range of motion?
+Can you bear weight when talking?",My knee is swollen and I cannot move it fully 
+Otolaryngologist,Details of {Chief Complaint},7,23,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}
+Describe all you are experiencing with your { }",I feel episodes of dizziness and I have trouble hearing
+Otolaryngologist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","2 years ago
+2 weeks ago"
+Otolaryngologist,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,"Yes, I was diagnosed with an acoustic neruoma 3 years ago"
+Otolaryngologist,Year of birth,4,,,,Year,In what year were you born?,1999
+Otolaryngologist,Sex,3,,,,Determine the sex of the patient.,What is your sex?,Male
+Otolaryngologist,Location of {Chief Complaint},2,,,No,"To complete this field, where appropriate, describe the locatoin of the { chief complaint}.","Where exactly is your { } located?
+This is most relevant when the symptom is pain:
+Pain in the throat?
+Pain in the ear?
+Pain in the face?",Pain feels like it is in my sinuses behind my checkbones
+Otolaryngologist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Otolaryngologist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,"My { } started suddenly , one week ago"
+Otolaryngologist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+Otolaryngologist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,"Staying very still makes my { } better
+Turning my head fast makes my {} worse"
+Otolaryngologist,Other Symptoms,2,,,,"To complete the field, list other symptoms the paitent is experiencing that may in the doctor's opinion not the patient's be associated with the chief conmplaint","Do you have headache?
+Do you have fever?
+Do you have change in vision?
+Do you have nause or vomiting
+Do you have pressure behind your eyes or in your sinuses?
+Do you have congestion or running of your nose?","I have no headache with my dizzness and no fever.
+I do have pressure behind my eyes "
+Dermatologist,Details of {Chief Complaint},7,23,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}
+Describe all you are experiencing with your { }",My rash is red and itchy and present on my left left. It is weeping and there are streaks of red and peeling of the skin.
+Dermatologist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","2 years ago
+2 weeks ago"
+Dermatologist,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,"Yes, I was diagnosed with skin cancer 3 years ago"
+Dermatologist,Year of birth,4,,,,Year,In what year were you born?,1999
+Dermatologist,Sex,3,,,,Determine the sex of the patient.,What is your sex?,Male
+Dermatologist,Location of {Chief Complaint},2,,,Yes,"To complete this field, where appropriate, describe the locatoin of the { chief complaint}.",Where exactly is your { } located?,The Rash is on my lower right leg
+Dermatologist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Dermatologist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,My { } started suddenly 
+Dermatologist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+Dermatologist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,"Warm water , moisture makes it worse
+Steroid cream makes it better"
+Dermatologist,Other Symptoms,2,,,,"To complete the field, list other symptoms the paitent is experiencing that may in the doctor's opinion not the patient's be associated with the chief conmplaint","Do you have fever or chills?
+
+Is the rash spreading?
+
+Is there warmth of the rash?
+
+Is the rash painful or itchy?
+
+
+
+
+
+","I have itchy rash that is red, but no spreading and no warmth or pain"
+Opthalmologist,Details of {Chief Complaint},7,22,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}
+Describe all you are experiencing with your { }","I have a red itchy Left eye, no pain , but it is stuck shut in the morning when I wake up"
+Opthalmologist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","1 day ago
+1 day ago"
+Opthalmologist,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,I was diagnosed with glaucoma three years ago.
+Opthalmologist,Year of birth,4,,,,Year,In what year were you born?,1999
+Opthalmologist,Location of {Chief Complaint},2,,,No,"To complete this field, where appropriate, describe the locatoin of the { chief complaint}.",Where is your {. } located?,My { } is in my left eye and upper eyelid
+Opthalmologist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Opthalmologist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,My { } started suddenly 
+Opthalmologist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+Opthalmologist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,"warm compresses help
+rubbing eye makes it worse"
+Opthalmologist,Other Symptoms,2,,,,"To complete the field, list other symptoms the paitent is experiencing that may in the doctor's opinion not the patient's be associated with the chief conmplaint","Do you have pain in your eye?
+Do you have change in vision ?
+Is your eye lid swollen?
+Do you feel like some thing is stuck in your eye?
+Do you wear contat lenses?
+","I have no pain in my eye and no change in vision?
+I do not wear contacts"
+Allergist,Details of {Chief Complaint},7,22,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}
+Describe all you are experiencing with your { }","I have nose plugged, runny eyes, constant sneezing"
+Allergist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","2 years ago
+7 days ago"
+Allergist,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,I was diagnosed with a peanut allergy three years ago.
+Allergist,Year of birth,4,,,,Year,In what year were you born?,1999
+Allergist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Allergist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,My { } started suddenly 
+Allergist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+Allergist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,"Avoiding pollens helps
+Spring time makes things worse"
+Allergist,Other Symptoms,2,,,,"To complete the field, list other symptoms the paitent is experiencing that may in the doctor's opinion not the patient's be associated with the chief conmplaint","Do you have any fever or chills?
+Is the discharge from your nose green and think ?
+Do you have a rash?
+Do you ahve shortneness of breath?","I have no fever or chills, and no thick green discharge from my nose
+But my nose is running constantly"
+renal_specialist,Details of {Chief Complaint},7,23,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}
+Describe all you are experiencing with your { }","I am told I have worsening kidney function due to diabetes. 
+I have itchy skin and decreased urine "
+renal_specialist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","2 years ago
+2 weeks ago"
+renal_specialist,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,"Yes, I was diagnosed with kidney failure three years ago."
+renal_specialist,Year of birth,4,,,,Year,In what year were you born?,1999
+renal_specialist,Sex,3,,,,Determine the sex of the patient.,What is your sex?,Male
+renal_specialist,Location of {Chief Complaint},2,,,No,"To complete this field, where appropriate, describe the locatoin of the { chief complaint}.",Where exactly is your { } located?,My pain is in my left flank and I have blood in my urine
+renal_specialist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+renal_specialist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,My { } started suddenly 
+renal_specialist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+renal_specialist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,"Drinking lots of water makes my {. } better 
+"
+renal_specialist,Other Symptoms,2,,,,"To complete the field, list other symptoms the paitent is experiencing that may in the doctor's opinion not the patient's be associated with the chief conmplaint","Do you have any fever or chills?
+Is the discharge from your nose green and think ?
+Do you have a rash?
+Do you ahve shortneness of breath?","I have no fever or chills, and no thick green discharge from my nose
+But my nose is running constantly"
+Hematologist,Details of {Chief Complaint},7,23,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}
+Describe all you are experiencing with your { }","I am told I have worsening kidney function due to diabetes. 
+I have itchy skin and decreased urine "
+Hematologist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","2 years ago
+2 weeks ago"
+Hematologist,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,"Yes, I was diagnosed with kidney failure three years ago."
+Hematologist,Year of birth,4,,,,Year,In what year were you born?,1999
+Hematologist,Sex,3,,,,Determine the sex of the patient.,What is your sex?,Male
+Hematologist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Hematologist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,My { } started suddenly 
+Hematologist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+Hematologist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,"Avoiding ibuprofen and aspirin makes my { } better
+Taking ibuprofen makes my { } much better
+"
+Hematologist,Other Symptoms,2,,,,"To complete the field, list other symptoms the paitent is experiencing that may in the doctor's opinion not the patient's be associated with the chief conmplaint","Do you have any fever or chills?
+Do you have spontaeous bleeding?
+Do you have change in the color of the skin?","Yes, I have fever and then bleeding from my nose"
+infectious_disease_specialist,Details of {Chief Complaint},7,22,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}
+Describe all you are experiencing with your { }","I am told I have worsening kidney function due to diabetes. 
+I have itchy skin and decreased urine "
+infectious_disease_specialist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","2 years ago
+2 weeks ago"
+infectious_disease_specialist,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,"Yes, I was diagnosed with Covid 19 twice since 2020."
+infectious_disease_specialist,Year of birth,4,,,,Year,In what year were you born?,1999
+infectious_disease_specialist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+infectious_disease_specialist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,My { } started suddenly 
+infectious_disease_specialist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+infectious_disease_specialist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,Taking tylenol helps with the fever
+infectious_disease_specialist,Other Symptoms,2,,,,"To complete the field, list other symptoms the paitent is experiencing that may in the doctor's opinion not the patient's be associated with the chief conmplaint","Do you have any fever or chills?
+Do you have a cough?
+Do you have pain with urination?
+Do you have headaches?
+Do you have diarrhea?","I have fever or chills 
+I have diarrhea"
+Pulmonologist,Details of {Chief Complaint},7,22,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}
+Describe all you are experiencing with your { }",I have wheezing and shortness of breath that happens especially at night or when I exercise
+Pulmonologist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","2 years ago
+2 weeks ago"
+Pulmonologist,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,"Yes, I was diagnosed with pneumonia and hospitalized for one week."
+Pulmonologist,Year of birth,4,,,,Year,In what year were you born?,1955
+Pulmonologist,Location of {Chief Complaint},2,,,No,"To complete this field, where appropriate, describe the locatoin of the { chief complaint}.",Where exactly is your { } located?,Pain is in the left side of chest radiates to my left arm
+Pulmonologist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Pulmonologist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,My { } started suddenly 
+Pulmonologist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+Pulmonologist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,"Exercise makes my { } worse.
+Once my {} starts nothing makes it better until it passes
+"
+Pulmonologist,Other Symptoms,2,,,,"To complete the field, list other symptoms the paitent is experiencing that may in the doctor's opinion not the patient's be associated with the chief conmplaint","Do you have any fever or chills?
+Do you have a cough?
+Are you coughing up mucus?
+Do you have swelling of your lower legs?
+Can you sleep flat at night?",I have a fever and am coughing up mucus?
+substance_use_disorder_specialist,Details of {Chief Complaint},7,22,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}
+Describe all you are experiencing with your { }","I have been using oxy and meth evry day for years 
+It totally dominates my life - i have lost my job, family and friends"
+substance_use_disorder_specialist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","2 years ago
+2 weeks ago"
+substance_use_disorder_specialist,Previous mental health diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with mental health conditions.",Has a health professional ever diagnosed you with a mental health condition?,"Yes, I was diagnosed with ADHD 3 years ago"
+substance_use_disorder_specialist,Year of birth,4,,,,Year,In what year were you born?,1955
+substance_use_disorder_specialist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+substance_use_disorder_specialist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,My { } started Gradually 
+substance_use_disorder_specialist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+substance_use_disorder_specialist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,"My { } is worse when I am stressed or feel depressed
+My { } better when I am with my famlily"
+substance_use_disorder_specialist,Other Symptoms,2,,,,"To complete the field, list other symptoms the paitent is experiencing that may in the doctor's opinion not the patient's be associated with the chief conmplaint","Do you have any fever or chills?
+Do you have a cough?
+Are you coughing up mucus?
+Do you have swelling of your lower legs?
+Can you sleep flat at night?",I have a fever and am coughing up mucus?
+Generalist,Details of {Chief Complaint},7,23,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}
+Describe all you are experiencing with your { }","I have low back pain that started wheen I picked up boxes this weakend. 
+I throw out my back several times per year"
+Generalist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","2 years ago
+2 weeks ago"
+Generalist,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,"Yes, I was diagnosed with pneumonia and hospitalized for one week."
+Generalist,Year of birth,4,,,,Year,In what year were you born?,1955
+Generalist,Sex ,3,,,,Determine the sex of the patient.,What is your sex?,Male
+Generalist,Location of {Chief Complaint},2,,,No,"To complete this field, where appropriate, describe the locatoin of the { chief complaint}.",Where exactly is your { } located?,My {. } is located in a big band across my lower back 
+Generalist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Generalist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,My { } started suddently  
+Generalist,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+Generalist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,"My { } is worse when I am lie down or twist
+My { } better when I stand up and stand still"
+Generalist,Other Symptoms,2,,,,"To complete the field, list other symptoms the paitent is experiencing that may in the doctor's opinion not the patient's be associated with the chief conmplaint","Do you have any fever or chills?
+Do you have any change in your bowel or bladder function?
+Do you have any pain in your legs?
+Do you have any numbness in our legs or feet?",I have numbness down the back of my left leg.
+Obstetrician,Sex,3,32,80,,Determine the sex of the patient.,What is your sex?,Female
+Obstetrician,Year of birth,4,,,,Year,In what year were you born?,1999
+Obstetrician,Currently Pregnant,4,,,,"To complete this Field, determine if your patient is pregnant or thinks she is pregnant",Do you have a positive pregnancy test?,"Yes, I just tested positive"
+Obstetrician,Previous pregancies,4,,,,"To complete this field, determine the number of times your patient has been pregnant",How many times have you been pregnant?,I have been pregnant once before
+Obstetrician,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,"Yes, I was diagnosed with a ruptured ovarian cyst 3 years ago"
+Obstetrician,Current medications,3,,,,"To complete this Field, determine the medicines your patient is taking",What medicines are you regularly taking ?,I take celexa 
+Obstetrician,Details of {Chief Complaint},7,,,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}
+Describe all you are experiencing with your { }",I have not had my period in 6 weeks and I am worried I am pregnant
+Obstetrician,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?","Last period was 6 weeks ago
+Normally everything is regular."
+Obstetrician,Alcohol use ,3,,,,To complete this field determine if your patient consumes alcohol and if yes how much and how often,Do you drink alcohol? How often? And how much?,"I drink occasionally at social settings about once per month, and usually just one drink"
+Obstetrician,Tobacco Use,3,,,,To complete this field determine if your patient uses tobacco and if yes how much and how often,Do you smoke or vape?,No never
+Obstetrician,Substance Use,3,,,,"To complete this field determine if your patient uses illicit drugs and if yes what type, and how much and how often",Do you use any drugs including marijuana ?,No never
+Obstetrician,Location of {Chief Complaint},2,,,No,"To complete this field, where appropriate, describe the locatoin of the { chief complaint}.
+This is most relevant for the location of pain. Examples include:
+Right lower side
+Left lower side
+Above the bladder
+In the back ",Where exactly is your { } located?,"Pain in the pelvis , left side, and goes down in the vagina"
+Obstetrician,Proposed: weeks gestation ,2,,,No,"To complete this field, where appropriate, describe how many weeks of gestation - esimated or exact -  is the pregnancy",How many weeks pregnant are you?,10 weeks
+Obstetrician,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Obstetrician,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,"My { } started suddenly , Two days ago."
+Obstetrician,Severity on scale of 1 to 10 where 1 is not severe and 10 is very severe,2,,,,"To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ",How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.,"Likert scale 
+1 = no problem
+10 = very severe
+proportional scale between 1 and 10"
+Obstetrician,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,"Taking ibuprofen makes my { } better
+
+Movement or intercourse makes it worse"
+Obstetrician,Other symptoms,2,,,,"To complete this Field, determine if the patient is experiencing symptoms that may be associated with the Chief Complaint, and if the patient is experiencing associated symptoms, describe these symptoms.
+","Do you have dizziness?
+
+Do you have nausea or vomiting?
+
+Do you have fever or chills?
+
+Do you have a vaginal discharge
+
+Do you have any vaginal bleeding or spotting?
+
+Do you have pain in the back?
+
+
+","Examples of Field Data Attributes in the case of a Chief Complaint of {pelvic pain} may include:
+
+Nausea and vomiting
+
+Fever
+
+vaginal discharge"
+Dentist,Details of {Chief Complaint},7,24,80,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe your {}. 
+What do you mean by {}",I have intense pain in tooth preventing me from eating
+Dentist,Location of {Chief Complaint},3,,,Yes,"To complete this field, where appropriate, describe the locatoin of the { chief complaint}.",Where exactly is your { } located?,Left back molar
+Dentist,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did you first start experiencing {}?
+When did this current episode of {} start?",2 weeks ago
+Dentist,Previous dental problems,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with dental conditions.",Have you been diagnosied by a health professional with any medical conditions?,I have had several fillings. I wear braces.
+Dentist,Previous medical diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.",Have you been diagnosied by a health professional with any medical conditions?,I have diabetes
+Dentist,Year of birth,4,,,,Year,In what year were you born?,1999
+Dentist,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Dentist,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did your {} start?,"My { } started suddenly , Two Weeks ago."
+Dentist,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,Eating makes { }  worse
+Dentist,Other Symptoms,2,,,,"To complete the field, list other symptoms the paitent is experiencing that may in the dentist's opinion not the patients be associated with the chief conmplaint.","Do you have any fever or chills?
+Do you have any bleeding from your gums? ",I have no fever.
+Pediatrician,User Relationshp to Patient,5,34,80,,"To complete this field, determine the relationship between the person using this AI and the patient.",What is your relationship to the child you are asking about?,I am the child's mother
+Pediatrician,Patient's Year of birth,5,,,,Year of birth of the patient,In what year what the child born?,2022
+Pediatrician,Patient's Sex,5,,,,Determine the sex of the patient.,What is the sex of the child?,Female
+Pediatrician,Details of Patient's {Chief Complaint},7,,,,"To complete this Field, describe the Chief Complaint in detail. 
+
+","Please describe the {}. 
+What do you mean by {}
+How is {} affecting the child.","My baby wakes up every night after sleeping just 1 hour, crying and seems uncomfortable and willl not fall back asleep."
+Pediatrician,Location of Patient's {Chief Complaint},3,,,No,"To complete this field, where appropriate, describe the locatoin of the { chief complaint}.",Where exactly is your { } located?,It seems to be in the belly.
+Pediatrician,When Started {Chief Complaint},4,,,,"To complete this Field, determine for how long your patient has experienced their Chief Complaint. 
+
+Denote the duration in: hours, days, weeks, months, years","When did your child first start experiencing {}?
+When did this current episode of {} start?",2 weeks ago
+Pediatrician,Gestation and delivery,3,,,,"To complete this field, determine if the patient was born premature.",Was your child born premature?,"No, she was born at 40 weeks."
+Pediatrician,Previous diagnoses,3,,,,"To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.","Has a health professional ever diagnosed your child with a medical condition, including any right at birth?",My child had jaundice when born.
+Pediatrician,"getting worse, getting better,  staying the same, or varies",2,,,,"To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning","Is the {} getting worse, getting better,  staying the the same, or does it vary day to day?",it's getting worse
+Pediatrician,sudden start or gradual start,2,,,,"To complete this Field, define the pattern of the onset of the Chief Complaint as either: 
+
+started suddenly, or
+started gradually 
+",How did the {} start?,"My { } started suddenly , at age 3 months"
+Pediatrician,Factors that make the {chief complaint} better or worse,2,,,,"To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.",Have you noticed anything that makes your {} worse or better?,Eating makes { }  worse
+Pediatrician,Other Symptoms,2,,,,"To complete the field, list other symptoms the paitent is experiencing that may in the doctor's  opinion not the patient's be associated with the chief conmplaint.","Does your child have any:
+Fever
+Vomiting
+Weight loss?",He has some regurgitation at night

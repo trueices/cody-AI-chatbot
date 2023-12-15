@@ -1,0 +1,469 @@
+{
+  "username": "NHdfId8aDTWJcTVcDqzCqY9bJTUeK5PToNwRfCS0pRduIt2yw3",
+  "address": "Oslo, Norway",
+  "agent_names": [
+    "navigation_agent",
+    "chief_complaint_agent",
+    "router_agent",
+    "name_enquiry_agent",
+    "followup_agent",
+    "magic_minute_agent",
+    "diagnosis_agent",
+    "concierge_agent",
+    "treatment_agent",
+    "find_care_agent",
+    "feedback_agent",
+    "end_agent",
+    "ad_demo_agent",
+    "followup_care_agent",
+    "dx_conversation_agent",
+    "tx_conversation_agent",
+    "question_agent",
+    "existing_diagnosis_agent"
+  ],
+  "care_feedback_rating": null,
+  "character_src": "router",
+  "chief_complaint": "Flatulence",
+  "completion_tokens": 2847,
+  "concierge_option": "detailed",
+  "confidence_score": 75,
+  "conv_hist": {
+    "navigation_agent": [],
+    "chief_complaint_agent": [
+      {
+        "role": "assistant",
+        "content": "Hello! नमस्ते Hola Kamust 你好 Bonjour\n\nI'm Cody, your AI Doctor, here to help you get better. I've been trained by licensed doctors.\n\nPlease tell me one specific health problem you'd like help with today. 😄\n\nYou can say something like “sinus pressure” or “I have a sore throat.”"
+      },
+      {
+        "role": "user",
+        "content": "Hello"
+      },
+      {
+        "role": "assistant",
+        "content": "Hello! 👋\nI'm here to help you with any health concerns you might have. Just let me know what specific health problem you're experiencing today."
+      },
+      {
+        "role": "user",
+        "content": "I fart a lot"
+      },
+      {
+        "role": "assistant",
+        "content": "So you want to focus on your frequent flatulence today, is that correct?"
+      },
+      {
+        "role": "user",
+        "content": "Yes and I have a bunch of other symptoms "
+      },
+      {
+        "role": "assistant",
+        "content": "Let's properly identify the health problem first. Could you please clarify the primary health issue you'd like to address today?"
+      },
+      {
+        "role": "user",
+        "content": "Flatulence"
+      },
+      {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "capture_chief_complaint_tool",
+          "arguments": "{\"chief_complaint\":\"Flatulence\"}"
+        }
+      },
+      {
+        "role": "function",
+        "content": "Chief complaint captured",
+        "name": "capture_chief_complaint_tool"
+      }
+    ],
+    "router_agent": [
+      {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "categorize_chief_complaint",
+          "arguments": "{\"specialist\":\"Gastroenterologist\"}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "categorize_chief_complaint",
+          "arguments": "{\"sub_speciality\":\"GastrointestinalDistressSx\",\"is_disease_name\":false}"
+        }
+      }
+    ],
+    "name_enquiry_agent": [
+      {
+        "role": "system",
+        "content": "\nYou are continuing a conversation with a patient. \nIn this stage, you are trying to capture the name of the patient.\nYour task is to ask the name of the patient.\nAs soon as you get a name, call the capture_name_tool to capture the name. \nIf the user does not provide a name, inform the user that you need a name to continue.\nDo not entertain any other questions, except for the name.\nIf the user responds with anything other than a name, inform the user that you need a name to continue.\nIf the user says that they dont want to share their name, inform the user that they can use a made up name.\nUsing a title like mr, dr, etc is also acceptable. For example \"dr dave\" means you need to capture \"Dr Dave\" as the name.\nHere are some examples of names:\n- \"liz\" should be captured as \"Liz\".\n- \"dr dave\" should be captured as \"Dr Dave\".\n- \"blah\" is not a name and should be informed that you need a name to continue.\n- \"i dont want to share my name\" should be informed that they can use a made up name.\nAs soon as you get a name, call the capture_name_tool to capture the name.\n"
+      },
+      {
+        "role": "assistant",
+        "content": "Thanks for confirming! Before I ask you a few questions, what should I call you?"
+      },
+      {
+        "role": "user",
+        "content": "Jamie"
+      },
+      {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "capture_name_tool",
+          "arguments": "{\"name\":\"Jamie\"}"
+        }
+      },
+      {
+        "role": "function",
+        "content": "Name captured",
+        "name": "capture_name_tool"
+      },
+      {
+        "role": "assistant",
+        "content": "Good to meet you, Jamie! My goal is to provide you with an accurate diagnosis and plan. Let's talk about your concerns regarding flatulence.\n\n\n"
+      }
+    ],
+    "followup_agent": [
+      {
+        "role": "assistant",
+        "content": "Please describe your concerns regarding flatulence. What symptoms are you experiencing related to flatulence?"
+      },
+      {
+        "role": "user",
+        "content": "Bloating"
+      },
+      {
+        "role": "assistant",
+        "content": "When did you first start experiencing bloating?"
+      },
+      {
+        "role": "user",
+        "content": "Today"
+      },
+      {
+        "role": "assistant",
+        "content": "Have you been diagnosed by a health professional with any medical conditions that could be related to your bloating today?"
+      },
+      {
+        "role": "user",
+        "content": "No"
+      },
+      {
+        "role": "assistant",
+        "content": "Hmm.. I see. May I ask in what year you were born?"
+      },
+      {
+        "role": "user",
+        "content": "2001"
+      },
+      {
+        "role": "assistant",
+        "content": "Thank you for sharing your year of birth. May I ask, what is your sex?"
+      },
+      {
+        "role": "user",
+        "content": "Male"
+      },
+      {
+        "role": "assistant",
+        "content": "Is your bloating getting worse, getting better, staying the same, or does it vary day to day since it started suddenly today?"
+      },
+      {
+        "role": "user",
+        "content": "Well it's just the same"
+      },
+      {
+        "role": "assistant",
+        "content": "On a scale of 1 to 10, with 1 being no problem and 10 being very severe, how would you rate the severity of your bloating that has been the same since today?"
+      },
+      {
+        "role": "user",
+        "content": "5"
+      },
+      {
+        "role": "assistant",
+        "content": "Have you noticed anything that makes your bloating better or worse since it started today?"
+      },
+      {
+        "role": "user",
+        "content": "No"
+      }
+    ],
+    "magic_minute_agent": [
+      {
+        "role": "assistant",
+        "content": "Cody, here's what I've understood so far:\n<h1>Summary of our conversation</h1>\n<ul>\n<li>You started experiencing bloating today.</li>\n<li>You have not been diagnosed with any medical conditions related to bloating.</li>\n<li>You were born in 2001 and are male.</li>\n<li>Your bloating has been consistent at a severity level of 5 since it started today.</li>\n<li>You have not noticed any specific triggers that make your bloating better or worse.</li>\n</ul>\n\n\n"
+      }
+    ],
+    "diagnosis_agent": [
+      {
+        "role": "assistant",
+        "content": "Based on what you've told me, I've prepared your Top 3 Diagnosis List:\n<h1>Your Top 3 Diagnosis List</h1>\n<b>1. Irritable Bowel Syndrome (IBS) (40% probability)</b> A common gastrointestinal disorder characterized by bloating, abdominal pain, and changes in bowel habits.\n<b>2. Gastritis (30% probability)</b> Inflammation of the stomach lining that can cause bloating, nausea, and abdominal pain.\n<b>3. Gastroenteritis (20% probability)</b> Infection or inflammation of the digestive tract leading to symptoms like bloating, diarrhea, and abdominal cramps."
+      }
+    ],
+    "concierge_agent": [
+      {
+        "role": "assistant",
+        "content": "Jamie, I have found the best doctors near you for Gastroenteritis.\nEnter the number of your option.\n\n1. Yes, show me the best doctors near me for Gastroenteritis. \n2. Show me treatment plans for other conditions.\n3. Other options."
+      },
+      {
+        "role": "user",
+        "content": "Okay let's try again"
+      },
+      {
+        "role": "user",
+        "content": "1"
+      }
+    ],
+    "treatment_agent": [
+      {
+        "role": "assistant",
+        "content": "Ok, to view a treatment plan enter the number of the diagnosis.\n1. Irritable Bowel Syndrome (Ibs)\n2. Gastritis\n3. Gastroenteritis"
+      },
+      {
+        "role": "user",
+        "content": "3"
+      },
+      {
+        "role": "assistant",
+        "content": "<div class='tx-plan'><h1>Your Treatment Plan for Gastroenteritis</h1><!--Provide a concise summary of the condition provided-->\nGastroenteritis is an inflammation of the stomach and intestines, commonly caused by viral or bacterial infections. Symptoms include diarrhea, vomiting, abdominal cramps, and sometimes fever.\n\n<h2>Health Professional Referrals</h2>\n<ul>\n    <li><b>Primary Care</b>: Gastroenteritis is typically managed by primary care providers such as family physicians or internists. They can diagnose the condition, provide treatment, and monitor your recovery.</li>\n    <li><b>Specialists</b>: In most cases, specialist referral is not necessary for the treatment of gastroenteritis. However, if complications arise or if symptoms persist, a gastroenterologist may be consulted for further evaluation and management.</li>\n</ul>\n\n<h2>Tests to Confirm Diagnosis</h2>\n<ul>\n    <li><b>Laboratory Tests:</b>\n    <ul>\n      <li>Stool Culture: A stool sample may be collected and tested to identify the specific virus, bacteria, or parasite causing gastroenteritis.</li>\n      <li>Complete Blood Count (CBC): This test can help assess if there is an infection present by looking at the levels of different blood cells.</li>\n    </ul>    \n    </li>\n    <li><b>Imaging such as X-Ray, MRI, CT</b>: Imaging studies are not typically needed to diagnose gastroenteritis.</li>\n    <li><b>Other Tests</b>: In some cases, a test for electrolyte levels may be done to check for dehydration due to vomiting and diarrhea.</li>\n</ul>\n\n<h2>Treatments</h2>\n<ul>\n    <li><b>Prescription Medication Options</b>: Antibiotics are not usually prescribed for viral gastroenteritis. If a bacterial infection is the cause, antibiotics may be considered. Antiemetic medications can be prescribed to help control nausea and vomiting.</li>\n    <li><b>Over-the-Counter Medication Options</b>: Over-the-counter medications like loperamide (Imodium) can help reduce diarrhea. Electrolyte solutions can help prevent dehydration by replacing lost fluids and minerals.</li>\n    <li><b>Supplements, Natural Medicines, Alternative Therapies</b>: Probiotics may help restore the balance of gut bacteria and alleviate symptoms of gastroenteritis. Ginger tea or peppermint tea can help soothe the stomach.</li>\n</ul>\n\n<h2>Self Care</h2>\n<ul>\n    <li><b>Prevention</b>: Wash hands frequently, especially before eating and after using the bathroom, to prevent the spread of gastroenteritis.</li>\n    <li><b>Diet and Hydration</b>: Stick to bland, easily digestible foods like rice, bananas, toast, and applesauce (BRAT diet). Drink plenty of fluids to stay hydrated, including water, clear broths, and oral rehydration solutions.</li>\n    <li><b>Exercise</b>: Rest is important during the acute phase of gastroenteritis. Avoid strenuous exercise until symptoms improve.</li>\n    <li><b>Sleep</b>: Get adequate rest to help your body recover from the infection.</li>\n    <li><b>Stress</b>: Manage stress levels as stress can impact the immune system. Practice relaxation techniques like deep breathing or meditation.</li>\n    <li><b>Lifestyle</b>: Avoid alcohol and caffeine, as they can irritate the stomach. Use a heating pad on your abdomen for comfort if you have cramps.</li>\n</ul>\n\n<h2>Expected Recovery Time: 1-2 Weeks</h2>\n<ul>\n    <li><b>Duration</b>: Most cases of gastroenteritis resolve within a week or two with proper treatment and self-care measures.</li>\n    <li><b>Recovery Experience</b>: It is common to feel fatigued and weak during recovery. Monitor for signs of dehydration such as dark urine, dry mouth, or dizziness. If symptoms worsen or persist, seek medical attention promptly.</li>\n</ul></li></ul><h2>Best gastroenteritis treatment references for you:</h2></li></ul><h2>Best gastroenteritis treatment references for you:</h2><ul><li><a class=\"text-blue underline\" href=\"https://www.mayoclinic.org/diseases-conditions/viral-gastroenteritis/diagnosis-treatment/drc-20378852\" target=\"_blank\">Viral gastroenteritis (stomach flu) - Diagnosis & treatment - Mayo Clinic</a>\n<p>\nwww.mayoclinic.org\n<br>\nTry anti-diarrhea medications. Some adults may find it helpful to take loperamide (Imodium A-D) or bismuth subsalicylate (Pepto-Bismol, others) to manage their ...\n</p>\n</li>\n<li><a class=\"text-blue underline\" href=\"https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/gastroenteritis\" target=\"_blank\">Gastroenteritis - Better Health Channel</a>\n<p>\nwww.betterhealth.vic.gov.au\n<br>\nTreatment for gastroenteritis · Plenty of fluids. · Oral rehydration drinks, available from your pharmacist. · Admission to hospital and intravenous fluid ...\n</p>\n</li>\n<li><a class=\"text-blue underline\" href=\"https://my.clevelandclinic.org/health/diseases/gastroenteritis\" target=\"_blank\">Gastroenteritis: What It Is, Symptoms, Medication & Treatment</a>\n<p>\nSep 25, 2023\n<br>\nmy.clevelandclinic.org\n<br>\nBut some causes of acute gastroenteritis may need medication to go away. For example, you may need a specific antibiotic or antiparasitic ...\n</p>\n</li>\n</ul></div>"
+      },
+      {
+        "role": "assistant",
+        "content": "\n\n\n"
+      }
+    ],
+    "find_care_agent": [
+      {
+        "role": "assistant",
+        "content": "Should I proceed with the address Timaru, New Zealand?"
+      },
+      {
+        "role": "user",
+        "content": "Yes"
+      },
+      {
+        "role": "assistant",
+        "content": null,
+        "function_call": {
+          "name": "find_care_address_tool",
+          "arguments": "{\"address\":\"Timaru, New Zealand\"}"
+        }
+      },
+      {
+        "role": "function",
+        "content": "Address captured",
+        "name": "find_care_address_tool"
+      },
+      {
+        "role": "assistant",
+        "content": "Sure thing. I have found 3 best doctors near you.<div class='tx-plan'>\n<span>1. <a class=\"text-blue underline\" href=\"None\" target=\"_blank\">Dr Daniel Ching</a></span>\n<ul style=\"list-style-type:none;\">\n<li>28 Carlisle Pl, Marchwiel, Timaru</li>\n<li><a class='text-blue underline' href='tel:+64 3 686 1994' target='_blank'>+64 3 686 1994</a></li>\n<li>5 ⭐, 1 reviews</li>\n</ul>\n</div>\n<div class='tx-plan'>\n<span>2. <a class=\"text-blue underline\" href=\"https://primarycare.co.nz/\" target=\"_blank\">Dee Street Primary Care</a></span>\n<ul style=\"list-style-type:none;\">\n<li>4A Dee St, Timaru</li>\n<li><a class='text-blue underline' href='tel:+64 3 687 2680' target='_blank'>+64 3 687 2680</a></li>\n<li>3.5 ⭐, 16 reviews</li>\n</ul>\n</div>\n<div class='tx-plan'>\n<span>3. <a class=\"text-blue underline\" href=\"http://www.timarueyeclinic.co.nz/\" target=\"_blank\">South Canterbury Eye Clinic</a></span>\n<ul style=\"list-style-type:none;\">\n<li>82 High St, Kensington, Timaru</li>\n<li><a class='text-blue underline' href='tel:+64 3 684 8515' target='_blank'>+64 3 684 8515</a></li>\n<li>4.4 ⭐, 31 reviews</li>\n</ul>\n</div>\n\n\n\n"
+      }
+    ],
+    "feedback_agent": [],
+    "end_agent": [],
+    "ad_demo_agent": [],
+    "followup_care_agent": [],
+    "dx_conversation_agent": [],
+    "tx_conversation_agent": [],
+    "question_agent": [],
+    "existing_diagnosis_agent": []
+  },
+  "conv_train_msgs": [],
+  "created": "2024-03-10T12:02:22.607744",
+  "current_agent_index": 7,
+  "current_agent_name": "concierge_agent",
+  "debug_messages_list": [
+    "-------",
+    "System prompt: \nYou are Cody, a specialist doctor in Gastroenterologist.\nYou are treating a patient who have expressed concerns regarding the topic: Flatulence\n\nHere is a suggested LIST OF FIELDS you can ask about:\n['details of {chief complaint}', 'when started {chief complaint}', 'previous medical diagnoses']\n\nEach field has some attributes associated with it. These attributes contain information about how to generate a question from the corresponding field.\nThe attributes are:\n{'details of {chief complaint}': {'FIELD DATA ATTRIBUTES': 'To complete this Field, describe the Chief Complaint in detail. \\n\\n', 'EXAMPLES OF QUESTIONS': 'Please describe your {}. \\nWhat do you mean by {}\\nDescribe all you are experiencing with your { }', 'FIELD DATA ATTRIBUTE EXAMPLES': 'I am having abdominal pain \\nI have diarrhea\\nI have nausea\\nI have nausea and vomiting\\n'}, 'when started {chief complaint}': {'FIELD DATA ATTRIBUTES': 'To complete this Field, determine for how long your patient has experienced their Chief Complaint. \\n\\nDenote the duration in: hours, days, weeks, months, years', 'EXAMPLES OF QUESTIONS': 'When did you first start experiencing {}?\\nWhen did this current episode of {} start?', 'FIELD DATA ATTRIBUTE EXAMPLES': '2 years ago\\n2 weeks ago'}, 'previous medical diagnoses': {'FIELD DATA ATTRIBUTES': 'To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.', 'EXAMPLES OF QUESTIONS': 'Have you been diagnosied by a health professional with any medical conditions?', 'FIELD DATA ATTRIBUTE EXAMPLES': 'Yes, I was diagnosed with ulcerative colitis 3 years ago'}}\n\nUse this LIST OF FIELDS to select the next field to ask, based on the conversation history.\nSelect only one field from the list. Maintain the sequence of the fields.\nYour output should be a JSON with the following keys:\n\nthought: A few words, describing your thought process.\nfields_answered: list of strings (the fields that are already answered by the patient/user. Can be empty. Should be among ['details of {chief complaint}', 'when started {chief complaint}', 'previous medical diagnoses'])\nnext_field: string (the field selected to create the next question. Should be one among ['details of {chief complaint}', 'when started {chief complaint}', 'previous medical diagnoses'])\nquestion: string (The next question to ask regarding the next_field)\n\nNote:\n1. If the user responds to a field saying that they dont know, you should consider the field filled/answered.\n2. But if the user responds by asking a question or by responding in a way that doesnt make sense, you should consider the field not filled/answered.\n3. Your volcabulary of fields should only be among the list ['details of {chief complaint}', 'when started {chief complaint}', 'previous medical diagnoses'].\n4. DO not hallucinate or make up any information.\n5. If a field in ['details of {chief complaint}', 'when started {chief complaint}', 'previous medical diagnoses'] is filled, you should include it in the list of fields_answered. The next_field should be a field that you have not asked yet.\n6. The priority of fields is based on the sequence of the list of fields. The first field in the list has the highest priority.\n\nExample 1:\nCHIEF COMPLAINT: concerned about Tremor\nLIST OF FIELDS: ['Diagnosed with Neurologic Condition' , 'Headache', 'Balance changes', 'Intensity']\nCONVERSATION HISTORY:\nai: What is you age?\nuser: 60\nai: Have you been diagnosed with any neurologic condition?\nuser: No\nai: Ok.. Have you had headaches associated with your tremors?\nuser: Yes, sometimes\nOUTPUT:\n{\n\"thought\": \"Among the LIST OF FIELDS, the fields \"Diagnosed with Neurologic Condition\" and \"Headache\" have been asked and answered. So, both are marked as filled.\",\n\"fields_answered\": [\"Diagnosed with Neurologic Condition\", \"Headache\"],\n\"next_field\": \"Balance changes\",\n\"question\": \"Have you had any changes in the way you balance yourself?\",\n}\n\nExample 2:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['Sex' , 'Year of birth', 'dermatological conditions']\nCONVERSATION HISTORY:\nOUTPUT:\n{\n\"thought\": \"There's no conversation history, so no fields are answered. The first field \"Sex\" has the highest priority since it comes first in the list. Hence it is used as the next_field to ask.\",\n\"fields_answered\": [],\n\"next_field\": \"Sex\",\n\"question\": \"What is your sex?\",\n}\n\nExample 3:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: yes\nOUTPUT:\n{\n\"thought\": \"This response does not provide the year of birth. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n\nExample 4:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['whiteheads', 'blackheads']\nCONVERSATION HISTORY:\nai: Do you have any whiteheads?\nuser: what is whitehead?\nOUTPUT:\n{\n\"thought\": \"Human has enquired about whiteheads. But I still dont know if the user has whiteheads or not. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"whiteheads\",\n\"question\": \"Do you have any whiteheads?\",\n}\n\nExample 5:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: male\nOUTPUT:\n{\n\"thought\": \"Human's last response to the question about year of birth doesnt make sense. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n",
+    "--------",
+    "Additional Prompt: \nCHIEF COMPLAINT: concerned about the topic Flatulence\nLIST OF FIELDS: ['details of {chief complaint}', 'when started {chief complaint}', 'previous medical diagnoses']\nCONVERSATION HISTORY:\n",
+    "-------",
+    "-------",
+    "Thought: There's no conversation history, so no fields are answered. The first field 'details of {chief complaint}' has the highest priority since it comes first in the list. Hence it is used as the next_field to ask.",
+    "Fields answered: []",
+    "Next Field: details of {chief complaint}",
+    "Question: Please describe your concerns regarding flatulence. What symptoms are you experiencing related to flatulence?",
+    "Total score: 0",
+    "--------",
+    "-------",
+    "System prompt: \nYou are Cody, a specialist doctor in Gastroenterologist.\nYou are treating a patient who have expressed concerns regarding the topic: Flatulence\n\nHere is a suggested LIST OF FIELDS you can ask about:\n['details of {chief complaint}', 'when started {chief complaint}', 'previous medical diagnoses']\n\nEach field has some attributes associated with it. These attributes contain information about how to generate a question from the corresponding field.\nThe attributes are:\n{'details of {chief complaint}': {'FIELD DATA ATTRIBUTES': 'To complete this Field, describe the Chief Complaint in detail. \\n\\n', 'EXAMPLES OF QUESTIONS': 'Please describe your {}. \\nWhat do you mean by {}\\nDescribe all you are experiencing with your { }', 'FIELD DATA ATTRIBUTE EXAMPLES': 'I am having abdominal pain \\nI have diarrhea\\nI have nausea\\nI have nausea and vomiting\\n'}, 'when started {chief complaint}': {'FIELD DATA ATTRIBUTES': 'To complete this Field, determine for how long your patient has experienced their Chief Complaint. \\n\\nDenote the duration in: hours, days, weeks, months, years', 'EXAMPLES OF QUESTIONS': 'When did you first start experiencing {}?\\nWhen did this current episode of {} start?', 'FIELD DATA ATTRIBUTE EXAMPLES': '2 years ago\\n2 weeks ago'}, 'previous medical diagnoses': {'FIELD DATA ATTRIBUTES': 'To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.', 'EXAMPLES OF QUESTIONS': 'Have you been diagnosied by a health professional with any medical conditions?', 'FIELD DATA ATTRIBUTE EXAMPLES': 'Yes, I was diagnosed with ulcerative colitis 3 years ago'}}\n\nUse this LIST OF FIELDS to select the next field to ask, based on the conversation history.\nSelect only one field from the list. Maintain the sequence of the fields.\nYour output should be a JSON with the following keys:\n\nthought: A few words, describing your thought process.\nfields_answered: list of strings (the fields that are already answered by the patient/user. Can be empty. Should be among ['details of {chief complaint}', 'when started {chief complaint}', 'previous medical diagnoses'])\nnext_field: string (the field selected to create the next question. Should be one among ['details of {chief complaint}', 'when started {chief complaint}', 'previous medical diagnoses'])\nquestion: string (The next question to ask regarding the next_field)\n\nNote:\n1. If the user responds to a field saying that they dont know, you should consider the field filled/answered.\n2. But if the user responds by asking a question or by responding in a way that doesnt make sense, you should consider the field not filled/answered.\n3. Your volcabulary of fields should only be among the list ['details of {chief complaint}', 'when started {chief complaint}', 'previous medical diagnoses'].\n4. DO not hallucinate or make up any information.\n5. If a field in ['details of {chief complaint}', 'when started {chief complaint}', 'previous medical diagnoses'] is filled, you should include it in the list of fields_answered. The next_field should be a field that you have not asked yet.\n6. The priority of fields is based on the sequence of the list of fields. The first field in the list has the highest priority.\n\nExample 1:\nCHIEF COMPLAINT: concerned about Tremor\nLIST OF FIELDS: ['Diagnosed with Neurologic Condition' , 'Headache', 'Balance changes', 'Intensity']\nCONVERSATION HISTORY:\nai: What is you age?\nuser: 60\nai: Have you been diagnosed with any neurologic condition?\nuser: No\nai: Ok.. Have you had headaches associated with your tremors?\nuser: Yes, sometimes\nOUTPUT:\n{\n\"thought\": \"Among the LIST OF FIELDS, the fields \"Diagnosed with Neurologic Condition\" and \"Headache\" have been asked and answered. So, both are marked as filled.\",\n\"fields_answered\": [\"Diagnosed with Neurologic Condition\", \"Headache\"],\n\"next_field\": \"Balance changes\",\n\"question\": \"Have you had any changes in the way you balance yourself?\",\n}\n\nExample 2:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['Sex' , 'Year of birth', 'dermatological conditions']\nCONVERSATION HISTORY:\nOUTPUT:\n{\n\"thought\": \"There's no conversation history, so no fields are answered. The first field \"Sex\" has the highest priority since it comes first in the list. Hence it is used as the next_field to ask.\",\n\"fields_answered\": [],\n\"next_field\": \"Sex\",\n\"question\": \"What is your sex?\",\n}\n\nExample 3:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: yes\nOUTPUT:\n{\n\"thought\": \"This response does not provide the year of birth. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n\nExample 4:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['whiteheads', 'blackheads']\nCONVERSATION HISTORY:\nai: Do you have any whiteheads?\nuser: what is whitehead?\nOUTPUT:\n{\n\"thought\": \"Human has enquired about whiteheads. But I still dont know if the user has whiteheads or not. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"whiteheads\",\n\"question\": \"Do you have any whiteheads?\",\n}\n\nExample 5:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: male\nOUTPUT:\n{\n\"thought\": \"Human's last response to the question about year of birth doesnt make sense. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n",
+    "--------",
+    "Additional Prompt: \nCHIEF COMPLAINT: concerned about the topic Flatulence\nLIST OF FIELDS: ['details of {chief complaint}', 'when started {chief complaint}', 'previous medical diagnoses']\nCONVERSATION HISTORY:ai: Please describe your concerns regarding flatulence. What symptoms are you experiencing related to flatulence?\nhuman: Bloating\n",
+    "-------",
+    "-------",
+    "Thought: The patient has provided details of their chief complaint, mentioning bloating. This fills the field 'details of {chief complaint}'.",
+    "Fields answered: ['details of {chief complaint}']",
+    "Next Field: when started {chief complaint}",
+    "Question: When did you first start experiencing bloating?",
+    "Total score: 7",
+    "--------",
+    "-------",
+    "System prompt: \nYou are Cody, a specialist doctor in Gastroenterologist.\nYou are treating a patient who have expressed concerns regarding the topic: Flatulence\n\nHere is a suggested LIST OF FIELDS you can ask about:\n['when started {chief complaint}', 'previous medical diagnoses', 'year of birth']\n\nEach field has some attributes associated with it. These attributes contain information about how to generate a question from the corresponding field.\nThe attributes are:\n{'when started {chief complaint}': {'FIELD DATA ATTRIBUTES': 'To complete this Field, determine for how long your patient has experienced their Chief Complaint. \\n\\nDenote the duration in: hours, days, weeks, months, years', 'EXAMPLES OF QUESTIONS': 'When did you first start experiencing {}?\\nWhen did this current episode of {} start?', 'FIELD DATA ATTRIBUTE EXAMPLES': '2 years ago\\n2 weeks ago'}, 'previous medical diagnoses': {'FIELD DATA ATTRIBUTES': 'To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.', 'EXAMPLES OF QUESTIONS': 'Have you been diagnosied by a health professional with any medical conditions?', 'FIELD DATA ATTRIBUTE EXAMPLES': 'Yes, I was diagnosed with ulcerative colitis 3 years ago'}, 'year of birth': {'FIELD DATA ATTRIBUTES': 'Year', 'EXAMPLES OF QUESTIONS': 'In what year were you born?', 'FIELD DATA ATTRIBUTE EXAMPLES': '1999'}}\n\nUse this LIST OF FIELDS to select the next field to ask, based on the conversation history.\nSelect only one field from the list. Maintain the sequence of the fields.\nYour output should be a JSON with the following keys:\n\nthought: A few words, describing your thought process.\nfields_answered: list of strings (the fields that are already answered by the patient/user. Can be empty. Should be among ['when started {chief complaint}', 'previous medical diagnoses', 'year of birth'])\nnext_field: string (the field selected to create the next question. Should be one among ['when started {chief complaint}', 'previous medical diagnoses', 'year of birth'])\nquestion: string (The next question to ask regarding the next_field)\n\nNote:\n1. If the user responds to a field saying that they dont know, you should consider the field filled/answered.\n2. But if the user responds by asking a question or by responding in a way that doesnt make sense, you should consider the field not filled/answered.\n3. Your volcabulary of fields should only be among the list ['when started {chief complaint}', 'previous medical diagnoses', 'year of birth'].\n4. DO not hallucinate or make up any information.\n5. If a field in ['when started {chief complaint}', 'previous medical diagnoses', 'year of birth'] is filled, you should include it in the list of fields_answered. The next_field should be a field that you have not asked yet.\n6. The priority of fields is based on the sequence of the list of fields. The first field in the list has the highest priority.\n\nExample 1:\nCHIEF COMPLAINT: concerned about Tremor\nLIST OF FIELDS: ['Diagnosed with Neurologic Condition' , 'Headache', 'Balance changes', 'Intensity']\nCONVERSATION HISTORY:\nai: What is you age?\nuser: 60\nai: Have you been diagnosed with any neurologic condition?\nuser: No\nai: Ok.. Have you had headaches associated with your tremors?\nuser: Yes, sometimes\nOUTPUT:\n{\n\"thought\": \"Among the LIST OF FIELDS, the fields \"Diagnosed with Neurologic Condition\" and \"Headache\" have been asked and answered. So, both are marked as filled.\",\n\"fields_answered\": [\"Diagnosed with Neurologic Condition\", \"Headache\"],\n\"next_field\": \"Balance changes\",\n\"question\": \"Have you had any changes in the way you balance yourself?\",\n}\n\nExample 2:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['Sex' , 'Year of birth', 'dermatological conditions']\nCONVERSATION HISTORY:\nOUTPUT:\n{\n\"thought\": \"There's no conversation history, so no fields are answered. The first field \"Sex\" has the highest priority since it comes first in the list. Hence it is used as the next_field to ask.\",\n\"fields_answered\": [],\n\"next_field\": \"Sex\",\n\"question\": \"What is your sex?\",\n}\n\nExample 3:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: yes\nOUTPUT:\n{\n\"thought\": \"This response does not provide the year of birth. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n\nExample 4:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['whiteheads', 'blackheads']\nCONVERSATION HISTORY:\nai: Do you have any whiteheads?\nuser: what is whitehead?\nOUTPUT:\n{\n\"thought\": \"Human has enquired about whiteheads. But I still dont know if the user has whiteheads or not. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"whiteheads\",\n\"question\": \"Do you have any whiteheads?\",\n}\n\nExample 5:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: male\nOUTPUT:\n{\n\"thought\": \"Human's last response to the question about year of birth doesnt make sense. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n",
+    "--------",
+    "Additional Prompt: \nCHIEF COMPLAINT: concerned about the topic Flatulence\nLIST OF FIELDS: ['when started {chief complaint}', 'previous medical diagnoses', 'year of birth']\nCONVERSATION HISTORY:ai: Please describe your concerns regarding flatulence. What symptoms are you experiencing related to flatulence?\nhuman: Bloating\nai: When did you first start experiencing bloating?\nhuman: Today\n",
+    "-------",
+    "-------",
+    "Thought: The patient mentioned experiencing bloating today, indicating a recent onset. The field 'when started {chief complaint}' is now filled.",
+    "Fields answered: ['when started {chief complaint}']",
+    "Next Field: previous medical diagnoses",
+    "Question: Have you been diagnosed by a health professional with any medical conditions?",
+    "Total score: 11",
+    "--------",
+    "-------",
+    "System prompt: \nYou are Cody, a specialist doctor in Gastroenterologist.\nYou are treating a patient who have expressed concerns regarding the topic: Flatulence\n\nHere is a suggested LIST OF FIELDS you can ask about:\n['previous medical diagnoses', 'year of birth', 'sex']\n\nEach field has some attributes associated with it. These attributes contain information about how to generate a question from the corresponding field.\nThe attributes are:\n{'previous medical diagnoses': {'FIELD DATA ATTRIBUTES': 'To complete this Field, determine if the patient has been diagnosed by a health professional with medical conditions.', 'EXAMPLES OF QUESTIONS': 'Have you been diagnosied by a health professional with any medical conditions?', 'FIELD DATA ATTRIBUTE EXAMPLES': 'Yes, I was diagnosed with ulcerative colitis 3 years ago'}, 'year of birth': {'FIELD DATA ATTRIBUTES': 'Year', 'EXAMPLES OF QUESTIONS': 'In what year were you born?', 'FIELD DATA ATTRIBUTE EXAMPLES': '1999'}, 'sex': {'FIELD DATA ATTRIBUTES': 'Determine the sex of the patient.', 'EXAMPLES OF QUESTIONS': 'What is your sex?', 'FIELD DATA ATTRIBUTE EXAMPLES': 'Male'}}\n\nUse this LIST OF FIELDS to select the next field to ask, based on the conversation history.\nSelect only one field from the list. Maintain the sequence of the fields.\nYour output should be a JSON with the following keys:\n\nthought: A few words, describing your thought process.\nfields_answered: list of strings (the fields that are already answered by the patient/user. Can be empty. Should be among ['previous medical diagnoses', 'year of birth', 'sex'])\nnext_field: string (the field selected to create the next question. Should be one among ['previous medical diagnoses', 'year of birth', 'sex'])\nquestion: string (The next question to ask regarding the next_field)\n\nNote:\n1. If the user responds to a field saying that they dont know, you should consider the field filled/answered.\n2. But if the user responds by asking a question or by responding in a way that doesnt make sense, you should consider the field not filled/answered.\n3. Your volcabulary of fields should only be among the list ['previous medical diagnoses', 'year of birth', 'sex'].\n4. DO not hallucinate or make up any information.\n5. If a field in ['previous medical diagnoses', 'year of birth', 'sex'] is filled, you should include it in the list of fields_answered. The next_field should be a field that you have not asked yet.\n6. The priority of fields is based on the sequence of the list of fields. The first field in the list has the highest priority.\n\nExample 1:\nCHIEF COMPLAINT: concerned about Tremor\nLIST OF FIELDS: ['Diagnosed with Neurologic Condition' , 'Headache', 'Balance changes', 'Intensity']\nCONVERSATION HISTORY:\nai: What is you age?\nuser: 60\nai: Have you been diagnosed with any neurologic condition?\nuser: No\nai: Ok.. Have you had headaches associated with your tremors?\nuser: Yes, sometimes\nOUTPUT:\n{\n\"thought\": \"Among the LIST OF FIELDS, the fields \"Diagnosed with Neurologic Condition\" and \"Headache\" have been asked and answered. So, both are marked as filled.\",\n\"fields_answered\": [\"Diagnosed with Neurologic Condition\", \"Headache\"],\n\"next_field\": \"Balance changes\",\n\"question\": \"Have you had any changes in the way you balance yourself?\",\n}\n\nExample 2:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['Sex' , 'Year of birth', 'dermatological conditions']\nCONVERSATION HISTORY:\nOUTPUT:\n{\n\"thought\": \"There's no conversation history, so no fields are answered. The first field \"Sex\" has the highest priority since it comes first in the list. Hence it is used as the next_field to ask.\",\n\"fields_answered\": [],\n\"next_field\": \"Sex\",\n\"question\": \"What is your sex?\",\n}\n\nExample 3:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: yes\nOUTPUT:\n{\n\"thought\": \"This response does not provide the year of birth. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n\nExample 4:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['whiteheads', 'blackheads']\nCONVERSATION HISTORY:\nai: Do you have any whiteheads?\nuser: what is whitehead?\nOUTPUT:\n{\n\"thought\": \"Human has enquired about whiteheads. But I still dont know if the user has whiteheads or not. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"whiteheads\",\n\"question\": \"Do you have any whiteheads?\",\n}\n\nExample 5:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: male\nOUTPUT:\n{\n\"thought\": \"Human's last response to the question about year of birth doesnt make sense. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n",
+    "--------",
+    "Additional Prompt: \nCHIEF COMPLAINT: concerned about the topic Flatulence\nLIST OF FIELDS: ['previous medical diagnoses', 'year of birth', 'sex']\nCONVERSATION HISTORY:ai: Please describe your concerns regarding flatulence. What symptoms are you experiencing related to flatulence?\nhuman: Bloating\nai: When did you first start experiencing bloating?\nhuman: Today\nai: Have you been diagnosed by a health professional with any medical conditions that could be related to your bloating today?\nhuman: No\n",
+    "-------",
+    "-------",
+    "Thought: The patient has not been diagnosed with any medical conditions related to flatulence. The field 'previous medical diagnoses' is answered.",
+    "Fields answered: ['previous medical diagnoses']",
+    "Next Field: year of birth",
+    "Question: In what year were you born?",
+    "Total score: 14",
+    "--------",
+    "----relevant?----",
+    "FIELD NAME: Location of {Chief Complaint}",
+    "reasoning: The location of flatulence is not a relevant factor to consider in this case.",
+    "relevant: False",
+    "-------",
+    "System prompt: \nYou are Cody, a specialist doctor in Gastroenterologist.\nYou are treating a patient who have expressed concerns regarding the topic: Flatulence\n\nHere is a suggested LIST OF FIELDS you can ask about:\n['year of birth', 'sex', 'getting worse, getting better,  staying the the same, or varies']\n\nEach field has some attributes associated with it. These attributes contain information about how to generate a question from the corresponding field.\nThe attributes are:\n{'year of birth': {'FIELD DATA ATTRIBUTES': 'Year', 'EXAMPLES OF QUESTIONS': 'In what year were you born?', 'FIELD DATA ATTRIBUTE EXAMPLES': '1999'}, 'sex': {'FIELD DATA ATTRIBUTES': 'Determine the sex of the patient.', 'EXAMPLES OF QUESTIONS': 'What is your sex?', 'FIELD DATA ATTRIBUTE EXAMPLES': 'Male'}, 'getting worse, getting better,  staying the the same, or varies': {'FIELD DATA ATTRIBUTES': 'To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning', 'EXAMPLES OF QUESTIONS': 'Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?', 'FIELD DATA ATTRIBUTE EXAMPLES': \"it's getting worse\"}}\n\nUse this LIST OF FIELDS to select the next field to ask, based on the conversation history.\nSelect only one field from the list. Maintain the sequence of the fields.\nYour output should be a JSON with the following keys:\n\nthought: A few words, describing your thought process.\nfields_answered: list of strings (the fields that are already answered by the patient/user. Can be empty. Should be among ['year of birth', 'sex', 'getting worse, getting better,  staying the the same, or varies'])\nnext_field: string (the field selected to create the next question. Should be one among ['year of birth', 'sex', 'getting worse, getting better,  staying the the same, or varies'])\nquestion: string (The next question to ask regarding the next_field)\n\nNote:\n1. If the user responds to a field saying that they dont know, you should consider the field filled/answered.\n2. But if the user responds by asking a question or by responding in a way that doesnt make sense, you should consider the field not filled/answered.\n3. Your volcabulary of fields should only be among the list ['year of birth', 'sex', 'getting worse, getting better,  staying the the same, or varies'].\n4. DO not hallucinate or make up any information.\n5. If a field in ['year of birth', 'sex', 'getting worse, getting better,  staying the the same, or varies'] is filled, you should include it in the list of fields_answered. The next_field should be a field that you have not asked yet.\n6. The priority of fields is based on the sequence of the list of fields. The first field in the list has the highest priority.\n\nExample 1:\nCHIEF COMPLAINT: concerned about Tremor\nLIST OF FIELDS: ['Diagnosed with Neurologic Condition' , 'Headache', 'Balance changes', 'Intensity']\nCONVERSATION HISTORY:\nai: What is you age?\nuser: 60\nai: Have you been diagnosed with any neurologic condition?\nuser: No\nai: Ok.. Have you had headaches associated with your tremors?\nuser: Yes, sometimes\nOUTPUT:\n{\n\"thought\": \"Among the LIST OF FIELDS, the fields \"Diagnosed with Neurologic Condition\" and \"Headache\" have been asked and answered. So, both are marked as filled.\",\n\"fields_answered\": [\"Diagnosed with Neurologic Condition\", \"Headache\"],\n\"next_field\": \"Balance changes\",\n\"question\": \"Have you had any changes in the way you balance yourself?\",\n}\n\nExample 2:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['Sex' , 'Year of birth', 'dermatological conditions']\nCONVERSATION HISTORY:\nOUTPUT:\n{\n\"thought\": \"There's no conversation history, so no fields are answered. The first field \"Sex\" has the highest priority since it comes first in the list. Hence it is used as the next_field to ask.\",\n\"fields_answered\": [],\n\"next_field\": \"Sex\",\n\"question\": \"What is your sex?\",\n}\n\nExample 3:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: yes\nOUTPUT:\n{\n\"thought\": \"This response does not provide the year of birth. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n\nExample 4:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['whiteheads', 'blackheads']\nCONVERSATION HISTORY:\nai: Do you have any whiteheads?\nuser: what is whitehead?\nOUTPUT:\n{\n\"thought\": \"Human has enquired about whiteheads. But I still dont know if the user has whiteheads or not. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"whiteheads\",\n\"question\": \"Do you have any whiteheads?\",\n}\n\nExample 5:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: male\nOUTPUT:\n{\n\"thought\": \"Human's last response to the question about year of birth doesnt make sense. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n",
+    "--------",
+    "Additional Prompt: \nCHIEF COMPLAINT: concerned about the topic Flatulence\nLIST OF FIELDS: ['year of birth', 'sex', 'getting worse, getting better,  staying the the same, or varies']\nCONVERSATION HISTORY:ai: Please describe your concerns regarding flatulence. What symptoms are you experiencing related to flatulence?\nhuman: Bloating\nai: When did you first start experiencing bloating?\nhuman: Today\nai: Have you been diagnosed by a health professional with any medical conditions that could be related to your bloating today?\nhuman: No\nai: Hmm.. I see. May I ask in what year you were born?\nhuman: 2001\n",
+    "-------",
+    "-------",
+    "Thought: The user has provided their year of birth, so this field is considered filled.",
+    "Fields answered: ['year of birth']",
+    "Next Field: sex",
+    "Question: What is your sex?",
+    "Total score: 18",
+    "--------",
+    "-------",
+    "System prompt: \nYou are Cody, a specialist doctor in Gastroenterologist.\nYou are treating a patient who have expressed concerns regarding the topic: Flatulence\n\nHere is a suggested LIST OF FIELDS you can ask about:\n['sex', 'getting worse, getting better,  staying the the same, or varies', 'started suddenly or gradually']\n\nEach field has some attributes associated with it. These attributes contain information about how to generate a question from the corresponding field.\nThe attributes are:\n{'sex': {'FIELD DATA ATTRIBUTES': 'Determine the sex of the patient.', 'EXAMPLES OF QUESTIONS': 'What is your sex?', 'FIELD DATA ATTRIBUTE EXAMPLES': 'Male'}, 'getting worse, getting better,  staying the the same, or varies': {'FIELD DATA ATTRIBUTES': 'To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning', 'EXAMPLES OF QUESTIONS': 'Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?', 'FIELD DATA ATTRIBUTE EXAMPLES': \"it's getting worse\"}, 'started suddenly or gradually': {'FIELD DATA ATTRIBUTES': 'To complete this Field, define the pattern of the onset of the Chief Complaint as either: \\n\\nstarted suddenly, or\\nstarted gradually \\n', 'EXAMPLES OF QUESTIONS': 'How did your {} start?', 'FIELD DATA ATTRIBUTE EXAMPLES': 'My { } started suddenly , Two days ago.'}}\n\nUse this LIST OF FIELDS to select the next field to ask, based on the conversation history.\nSelect only one field from the list. Maintain the sequence of the fields.\nYour output should be a JSON with the following keys:\n\nthought: A few words, describing your thought process.\nfields_answered: list of strings (the fields that are already answered by the patient/user. Can be empty. Should be among ['sex', 'getting worse, getting better,  staying the the same, or varies', 'started suddenly or gradually'])\nnext_field: string (the field selected to create the next question. Should be one among ['sex', 'getting worse, getting better,  staying the the same, or varies', 'started suddenly or gradually'])\nquestion: string (The next question to ask regarding the next_field)\n\nNote:\n1. If the user responds to a field saying that they dont know, you should consider the field filled/answered.\n2. But if the user responds by asking a question or by responding in a way that doesnt make sense, you should consider the field not filled/answered.\n3. Your volcabulary of fields should only be among the list ['sex', 'getting worse, getting better,  staying the the same, or varies', 'started suddenly or gradually'].\n4. DO not hallucinate or make up any information.\n5. If a field in ['sex', 'getting worse, getting better,  staying the the same, or varies', 'started suddenly or gradually'] is filled, you should include it in the list of fields_answered. The next_field should be a field that you have not asked yet.\n6. The priority of fields is based on the sequence of the list of fields. The first field in the list has the highest priority.\n\nExample 1:\nCHIEF COMPLAINT: concerned about Tremor\nLIST OF FIELDS: ['Diagnosed with Neurologic Condition' , 'Headache', 'Balance changes', 'Intensity']\nCONVERSATION HISTORY:\nai: What is you age?\nuser: 60\nai: Have you been diagnosed with any neurologic condition?\nuser: No\nai: Ok.. Have you had headaches associated with your tremors?\nuser: Yes, sometimes\nOUTPUT:\n{\n\"thought\": \"Among the LIST OF FIELDS, the fields \"Diagnosed with Neurologic Condition\" and \"Headache\" have been asked and answered. So, both are marked as filled.\",\n\"fields_answered\": [\"Diagnosed with Neurologic Condition\", \"Headache\"],\n\"next_field\": \"Balance changes\",\n\"question\": \"Have you had any changes in the way you balance yourself?\",\n}\n\nExample 2:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['Sex' , 'Year of birth', 'dermatological conditions']\nCONVERSATION HISTORY:\nOUTPUT:\n{\n\"thought\": \"There's no conversation history, so no fields are answered. The first field \"Sex\" has the highest priority since it comes first in the list. Hence it is used as the next_field to ask.\",\n\"fields_answered\": [],\n\"next_field\": \"Sex\",\n\"question\": \"What is your sex?\",\n}\n\nExample 3:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: yes\nOUTPUT:\n{\n\"thought\": \"This response does not provide the year of birth. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n\nExample 4:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['whiteheads', 'blackheads']\nCONVERSATION HISTORY:\nai: Do you have any whiteheads?\nuser: what is whitehead?\nOUTPUT:\n{\n\"thought\": \"Human has enquired about whiteheads. But I still dont know if the user has whiteheads or not. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"whiteheads\",\n\"question\": \"Do you have any whiteheads?\",\n}\n\nExample 5:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: male\nOUTPUT:\n{\n\"thought\": \"Human's last response to the question about year of birth doesnt make sense. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n",
+    "--------",
+    "Additional Prompt: \nCHIEF COMPLAINT: concerned about the topic Flatulence\nLIST OF FIELDS: ['sex', 'getting worse, getting better,  staying the the same, or varies', 'started suddenly or gradually']\nCONVERSATION HISTORY:ai: Please describe your concerns regarding flatulence. What symptoms are you experiencing related to flatulence?\nhuman: Bloating\nai: When did you first start experiencing bloating?\nhuman: Today\nai: Have you been diagnosed by a health professional with any medical conditions that could be related to your bloating today?\nhuman: No\nai: Hmm.. I see. May I ask in what year you were born?\nhuman: 2001\nai: Thank you for sharing your year of birth. May I ask, what is your sex?\nhuman: Male\n",
+    "-------",
+    "-------",
+    "Thought: The fields 'sex', 'year of birth', and 'started suddenly or gradually' have been asked and answered. The next field to ask is 'getting worse, getting better,  staying the the same, or varies'.",
+    "Fields answered: ['sex', 'year of birth', 'started suddenly or gradually']",
+    "Next Field: getting worse, getting better,  staying the the same, or varies",
+    "Question: Is your bloating getting worse, getting better, staying the same, or does it vary day to day?",
+    "Total score: 23",
+    "---confidence---",
+    "Thought: The patient is a young male experiencing bloating for the first time today with no known medical conditions. Given the limited information provided, I will consider common causes of bloating in young individuals.",
+    "Diagnosis: ['Dietary Indiscretion', 'Gastroenteritis', 'Excessive Gas Production']",
+    "Confidence Score: 70",
+    "--------",
+    "-------",
+    "System prompt: \nYou are Cody, a specialist doctor in Gastroenterologist.\nYou are treating a patient who have expressed concerns regarding the topic: Flatulence\n\nHere is a suggested LIST OF FIELDS you can ask about:\n['getting worse, getting better,  staying the the same, or varies', 'severity on scale of 1 to 10 where 1 is not severe and 10 is very severe', 'factors that make the {chief complaint} better or worse']\n\nEach field has some attributes associated with it. These attributes contain information about how to generate a question from the corresponding field.\nThe attributes are:\n{'getting worse, getting better,  staying the the same, or varies': {'FIELD DATA ATTRIBUTES': 'To complete this Field, define the course of the Chief Complaint as: getting better, getting worse, staying the same, waxing and waning', 'EXAMPLES OF QUESTIONS': 'Is your {} getting worse, getting better,  staying the the same, or does it vary day to day?', 'FIELD DATA ATTRIBUTE EXAMPLES': \"it's getting worse\"}, 'severity on scale of 1 to 10 where 1 is not severe and 10 is very severe': {'FIELD DATA ATTRIBUTES': 'To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ', 'EXAMPLES OF QUESTIONS': 'How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.', 'FIELD DATA ATTRIBUTE EXAMPLES': 'Likert scale \\n1 = no problem\\n10 = very severe\\nproportional scale between 1 and 10'}, 'factors that make the {chief complaint} better or worse': {'FIELD DATA ATTRIBUTES': 'To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.', 'EXAMPLES OF QUESTIONS': 'Have you noticed anything that makes your {} worse or better?', 'FIELD DATA ATTRIBUTE EXAMPLES': 'Taking omeprazole or sleeping with my head elevated makes my { } better\\n\\nEating makes it worse'}}\n\nUse this LIST OF FIELDS to select the next field to ask, based on the conversation history.\nSelect only one field from the list. Maintain the sequence of the fields.\nYour output should be a JSON with the following keys:\n\nthought: A few words, describing your thought process.\nfields_answered: list of strings (the fields that are already answered by the patient/user. Can be empty. Should be among ['getting worse, getting better,  staying the the same, or varies', 'severity on scale of 1 to 10 where 1 is not severe and 10 is very severe', 'factors that make the {chief complaint} better or worse'])\nnext_field: string (the field selected to create the next question. Should be one among ['getting worse, getting better,  staying the the same, or varies', 'severity on scale of 1 to 10 where 1 is not severe and 10 is very severe', 'factors that make the {chief complaint} better or worse'])\nquestion: string (The next question to ask regarding the next_field)\n\nNote:\n1. If the user responds to a field saying that they dont know, you should consider the field filled/answered.\n2. But if the user responds by asking a question or by responding in a way that doesnt make sense, you should consider the field not filled/answered.\n3. Your volcabulary of fields should only be among the list ['getting worse, getting better,  staying the the same, or varies', 'severity on scale of 1 to 10 where 1 is not severe and 10 is very severe', 'factors that make the {chief complaint} better or worse'].\n4. DO not hallucinate or make up any information.\n5. If a field in ['getting worse, getting better,  staying the the same, or varies', 'severity on scale of 1 to 10 where 1 is not severe and 10 is very severe', 'factors that make the {chief complaint} better or worse'] is filled, you should include it in the list of fields_answered. The next_field should be a field that you have not asked yet.\n6. The priority of fields is based on the sequence of the list of fields. The first field in the list has the highest priority.\n\nExample 1:\nCHIEF COMPLAINT: concerned about Tremor\nLIST OF FIELDS: ['Diagnosed with Neurologic Condition' , 'Headache', 'Balance changes', 'Intensity']\nCONVERSATION HISTORY:\nai: What is you age?\nuser: 60\nai: Have you been diagnosed with any neurologic condition?\nuser: No\nai: Ok.. Have you had headaches associated with your tremors?\nuser: Yes, sometimes\nOUTPUT:\n{\n\"thought\": \"Among the LIST OF FIELDS, the fields \"Diagnosed with Neurologic Condition\" and \"Headache\" have been asked and answered. So, both are marked as filled.\",\n\"fields_answered\": [\"Diagnosed with Neurologic Condition\", \"Headache\"],\n\"next_field\": \"Balance changes\",\n\"question\": \"Have you had any changes in the way you balance yourself?\",\n}\n\nExample 2:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['Sex' , 'Year of birth', 'dermatological conditions']\nCONVERSATION HISTORY:\nOUTPUT:\n{\n\"thought\": \"There's no conversation history, so no fields are answered. The first field \"Sex\" has the highest priority since it comes first in the list. Hence it is used as the next_field to ask.\",\n\"fields_answered\": [],\n\"next_field\": \"Sex\",\n\"question\": \"What is your sex?\",\n}\n\nExample 3:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: yes\nOUTPUT:\n{\n\"thought\": \"This response does not provide the year of birth. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n\nExample 4:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['whiteheads', 'blackheads']\nCONVERSATION HISTORY:\nai: Do you have any whiteheads?\nuser: what is whitehead?\nOUTPUT:\n{\n\"thought\": \"Human has enquired about whiteheads. But I still dont know if the user has whiteheads or not. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"whiteheads\",\n\"question\": \"Do you have any whiteheads?\",\n}\n\nExample 5:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: male\nOUTPUT:\n{\n\"thought\": \"Human's last response to the question about year of birth doesnt make sense. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n",
+    "--------",
+    "Additional Prompt: \nCHIEF COMPLAINT: concerned about the topic Flatulence\nLIST OF FIELDS: ['getting worse, getting better,  staying the the same, or varies', 'severity on scale of 1 to 10 where 1 is not severe and 10 is very severe', 'factors that make the {chief complaint} better or worse']\nCONVERSATION HISTORY:ai: Please describe your concerns regarding flatulence. What symptoms are you experiencing related to flatulence?\nhuman: Bloating\nai: When did you first start experiencing bloating?\nhuman: Today\nai: Have you been diagnosed by a health professional with any medical conditions that could be related to your bloating today?\nhuman: No\nai: Hmm.. I see. May I ask in what year you were born?\nhuman: 2001\nai: Thank you for sharing your year of birth. May I ask, what is your sex?\nhuman: Male\nai: Is your bloating getting worse, getting better, staying the same, or does it vary day to day since it started suddenly today?\nhuman: Well it's just the same\n",
+    "-------",
+    "-------",
+    "Thought: The patient mentioned that the bloating is staying the same. This field is now filled.",
+    "Fields answered: ['getting worse, getting better,  staying the the same, or varies']",
+    "Next Field: severity on scale of 1 to 10 where 1 is not severe and 10 is very severe",
+    "Question: On a scale of 1 to 10 where 1 is no problem and 10 is very severe, how would you rate the severity of your bloating?",
+    "Total score: 25",
+    "---confidence---",
+    "Thought: The patient is a young male experiencing sudden bloating with no known medical conditions. The symptoms have remained the same since onset today.",
+    "Diagnosis: ['Dietary Indiscretion', 'Gastroenteritis', 'Irritable Bowel Syndrome (IBS)']",
+    "Confidence Score: 70",
+    "--------",
+    "-------",
+    "System prompt: \nYou are Cody, a specialist doctor in Gastroenterologist.\nYou are treating a patient who have expressed concerns regarding the topic: Flatulence\n\nHere is a suggested LIST OF FIELDS you can ask about:\n['severity on scale of 1 to 10 where 1 is not severe and 10 is very severe', 'factors that make the {chief complaint} better or worse', 'other symptoms']\n\nEach field has some attributes associated with it. These attributes contain information about how to generate a question from the corresponding field.\nThe attributes are:\n{'severity on scale of 1 to 10 where 1 is not severe and 10 is very severe': {'FIELD DATA ATTRIBUTES': 'To complete this Field, rate the severity of the Chief Complaint on a scale of 1 to 10 where 1 is no problem and 10 is very severe. ', 'EXAMPLES OF QUESTIONS': 'How bad is your {} on a scale of 1 to 10 where is 1 is no problem and 10 is very severe.', 'FIELD DATA ATTRIBUTE EXAMPLES': 'Likert scale \\n1 = no problem\\n10 = very severe\\nproportional scale between 1 and 10'}, 'factors that make the {chief complaint} better or worse': {'FIELD DATA ATTRIBUTES': 'To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.', 'EXAMPLES OF QUESTIONS': 'Have you noticed anything that makes your {} worse or better?', 'FIELD DATA ATTRIBUTE EXAMPLES': 'Taking omeprazole or sleeping with my head elevated makes my { } better\\n\\nEating makes it worse'}, 'other symptoms': {'FIELD DATA ATTRIBUTES': 'To complete this Field, determine if the patient is experiencing symptoms that may be associated with the Chief Complaint, and if the patient is experiencing associated symptoms, describe these symptoms.\\n', 'EXAMPLES OF QUESTIONS': 'Do you have diarrhea?\\n\\nDo you have nausea or vomiting?\\n\\nDo you have fever or chills?\\n\\nDo you have a vaginal discharge?\\n\\nDoes the {. } change with eating?\\n\\nDo you have blood in your stool or your vomit?\\n\\n\\n', 'FIELD DATA ATTRIBUTE EXAMPLES': 'Examples of Field Data Attributes in the case of a Chief Complaint of {diarrhea} may include:\\n\\nNausea and vomiting\\n\\nFever\\n\\nBlood in your diarrhea\\n\\nAbdominal cramps\\n\\nDizziness\\n\\nHeadache'}}\n\nUse this LIST OF FIELDS to select the next field to ask, based on the conversation history.\nSelect only one field from the list. Maintain the sequence of the fields.\nYour output should be a JSON with the following keys:\n\nthought: A few words, describing your thought process.\nfields_answered: list of strings (the fields that are already answered by the patient/user. Can be empty. Should be among ['severity on scale of 1 to 10 where 1 is not severe and 10 is very severe', 'factors that make the {chief complaint} better or worse', 'other symptoms'])\nnext_field: string (the field selected to create the next question. Should be one among ['severity on scale of 1 to 10 where 1 is not severe and 10 is very severe', 'factors that make the {chief complaint} better or worse', 'other symptoms'])\nquestion: string (The next question to ask regarding the next_field)\n\nNote:\n1. If the user responds to a field saying that they dont know, you should consider the field filled/answered.\n2. But if the user responds by asking a question or by responding in a way that doesnt make sense, you should consider the field not filled/answered.\n3. Your volcabulary of fields should only be among the list ['severity on scale of 1 to 10 where 1 is not severe and 10 is very severe', 'factors that make the {chief complaint} better or worse', 'other symptoms'].\n4. DO not hallucinate or make up any information.\n5. If a field in ['severity on scale of 1 to 10 where 1 is not severe and 10 is very severe', 'factors that make the {chief complaint} better or worse', 'other symptoms'] is filled, you should include it in the list of fields_answered. The next_field should be a field that you have not asked yet.\n6. The priority of fields is based on the sequence of the list of fields. The first field in the list has the highest priority.\n\nExample 1:\nCHIEF COMPLAINT: concerned about Tremor\nLIST OF FIELDS: ['Diagnosed with Neurologic Condition' , 'Headache', 'Balance changes', 'Intensity']\nCONVERSATION HISTORY:\nai: What is you age?\nuser: 60\nai: Have you been diagnosed with any neurologic condition?\nuser: No\nai: Ok.. Have you had headaches associated with your tremors?\nuser: Yes, sometimes\nOUTPUT:\n{\n\"thought\": \"Among the LIST OF FIELDS, the fields \"Diagnosed with Neurologic Condition\" and \"Headache\" have been asked and answered. So, both are marked as filled.\",\n\"fields_answered\": [\"Diagnosed with Neurologic Condition\", \"Headache\"],\n\"next_field\": \"Balance changes\",\n\"question\": \"Have you had any changes in the way you balance yourself?\",\n}\n\nExample 2:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['Sex' , 'Year of birth', 'dermatological conditions']\nCONVERSATION HISTORY:\nOUTPUT:\n{\n\"thought\": \"There's no conversation history, so no fields are answered. The first field \"Sex\" has the highest priority since it comes first in the list. Hence it is used as the next_field to ask.\",\n\"fields_answered\": [],\n\"next_field\": \"Sex\",\n\"question\": \"What is your sex?\",\n}\n\nExample 3:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: yes\nOUTPUT:\n{\n\"thought\": \"This response does not provide the year of birth. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n\nExample 4:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['whiteheads', 'blackheads']\nCONVERSATION HISTORY:\nai: Do you have any whiteheads?\nuser: what is whitehead?\nOUTPUT:\n{\n\"thought\": \"Human has enquired about whiteheads. But I still dont know if the user has whiteheads or not. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"whiteheads\",\n\"question\": \"Do you have any whiteheads?\",\n}\n\nExample 5:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: male\nOUTPUT:\n{\n\"thought\": \"Human's last response to the question about year of birth doesnt make sense. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n",
+    "--------",
+    "Additional Prompt: \nCHIEF COMPLAINT: concerned about the topic Flatulence\nLIST OF FIELDS: ['severity on scale of 1 to 10 where 1 is not severe and 10 is very severe', 'factors that make the {chief complaint} better or worse', 'other symptoms']\nCONVERSATION HISTORY:ai: Please describe your concerns regarding flatulence. What symptoms are you experiencing related to flatulence?\nhuman: Bloating\nai: When did you first start experiencing bloating?\nhuman: Today\nai: Have you been diagnosed by a health professional with any medical conditions that could be related to your bloating today?\nhuman: No\nai: Hmm.. I see. May I ask in what year you were born?\nhuman: 2001\nai: Thank you for sharing your year of birth. May I ask, what is your sex?\nhuman: Male\nai: Is your bloating getting worse, getting better, staying the same, or does it vary day to day since it started suddenly today?\nhuman: Well it's just the same\nai: On a scale of 1 to 10, with 1 being no problem and 10 being very severe, how would you rate the severity of your bloating that has been the same since today?\nhuman: 5\n",
+    "-------",
+    "-------",
+    "Thought: The severity of bloating has been rated by the patient. The year of birth and sex have also been provided. The next field to ask is 'factors that make the {chief complaint} better or worse'.",
+    "Fields answered: ['severity on scale of 1 to 10 where 1 is not severe and 10 is very severe', 'Sex', 'year of birth']",
+    "Next Field: factors that make the {chief complaint} better or worse",
+    "Question: Have you noticed anything that makes your bloating better or worse?",
+    "Total score: 27",
+    "---confidence---",
+    "Thought: Based on the symptoms of bloating that started suddenly today and has remained the same with a severity rating of 5, the top 3 diagnoses could be related to gastrointestinal issues.",
+    "Diagnosis: ['Acute gastritis', 'Irritable bowel syndrome (IBS)', 'Food intolerance']",
+    "Confidence Score: 75",
+    "--------",
+    "-------",
+    "System prompt: \nYou are Cody, a specialist doctor in Gastroenterologist.\nYou are treating a patient who have expressed concerns regarding the topic: Flatulence\n\nHere is a suggested LIST OF FIELDS you can ask about:\n['factors that make the {chief complaint} better or worse', 'other symptoms']\n\nEach field has some attributes associated with it. These attributes contain information about how to generate a question from the corresponding field.\nThe attributes are:\n{'factors that make the {chief complaint} better or worse': {'FIELD DATA ATTRIBUTES': 'To complete this Field, describe factors or situations that relieve or worsen the Chief Complaint.', 'EXAMPLES OF QUESTIONS': 'Have you noticed anything that makes your {} worse or better?', 'FIELD DATA ATTRIBUTE EXAMPLES': 'Taking omeprazole or sleeping with my head elevated makes my { } better\\n\\nEating makes it worse'}, 'other symptoms': {'FIELD DATA ATTRIBUTES': 'To complete this Field, determine if the patient is experiencing symptoms that may be associated with the Chief Complaint, and if the patient is experiencing associated symptoms, describe these symptoms.\\n', 'EXAMPLES OF QUESTIONS': 'Do you have diarrhea?\\n\\nDo you have nausea or vomiting?\\n\\nDo you have fever or chills?\\n\\nDo you have a vaginal discharge?\\n\\nDoes the {. } change with eating?\\n\\nDo you have blood in your stool or your vomit?\\n\\n\\n', 'FIELD DATA ATTRIBUTE EXAMPLES': 'Examples of Field Data Attributes in the case of a Chief Complaint of {diarrhea} may include:\\n\\nNausea and vomiting\\n\\nFever\\n\\nBlood in your diarrhea\\n\\nAbdominal cramps\\n\\nDizziness\\n\\nHeadache'}}\n\nUse this LIST OF FIELDS to select the next field to ask, based on the conversation history.\nSelect only one field from the list. Maintain the sequence of the fields.\nYour output should be a JSON with the following keys:\n\nthought: A few words, describing your thought process.\nfields_answered: list of strings (the fields that are already answered by the patient/user. Can be empty. Should be among ['factors that make the {chief complaint} better or worse', 'other symptoms'])\nnext_field: string (the field selected to create the next question. Should be one among ['factors that make the {chief complaint} better or worse', 'other symptoms'])\nquestion: string (The next question to ask regarding the next_field)\n\nNote:\n1. If the user responds to a field saying that they dont know, you should consider the field filled/answered.\n2. But if the user responds by asking a question or by responding in a way that doesnt make sense, you should consider the field not filled/answered.\n3. Your volcabulary of fields should only be among the list ['factors that make the {chief complaint} better or worse', 'other symptoms'].\n4. DO not hallucinate or make up any information.\n5. If a field in ['factors that make the {chief complaint} better or worse', 'other symptoms'] is filled, you should include it in the list of fields_answered. The next_field should be a field that you have not asked yet.\n6. The priority of fields is based on the sequence of the list of fields. The first field in the list has the highest priority.\n\nExample 1:\nCHIEF COMPLAINT: concerned about Tremor\nLIST OF FIELDS: ['Diagnosed with Neurologic Condition' , 'Headache', 'Balance changes', 'Intensity']\nCONVERSATION HISTORY:\nai: What is you age?\nuser: 60\nai: Have you been diagnosed with any neurologic condition?\nuser: No\nai: Ok.. Have you had headaches associated with your tremors?\nuser: Yes, sometimes\nOUTPUT:\n{\n\"thought\": \"Among the LIST OF FIELDS, the fields \"Diagnosed with Neurologic Condition\" and \"Headache\" have been asked and answered. So, both are marked as filled.\",\n\"fields_answered\": [\"Diagnosed with Neurologic Condition\", \"Headache\"],\n\"next_field\": \"Balance changes\",\n\"question\": \"Have you had any changes in the way you balance yourself?\",\n}\n\nExample 2:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['Sex' , 'Year of birth', 'dermatological conditions']\nCONVERSATION HISTORY:\nOUTPUT:\n{\n\"thought\": \"There's no conversation history, so no fields are answered. The first field \"Sex\" has the highest priority since it comes first in the list. Hence it is used as the next_field to ask.\",\n\"fields_answered\": [],\n\"next_field\": \"Sex\",\n\"question\": \"What is your sex?\",\n}\n\nExample 3:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: yes\nOUTPUT:\n{\n\"thought\": \"This response does not provide the year of birth. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n\nExample 4:\nCHIEF COMPLAINT: concerned about acne\nLIST OF FIELDS: ['whiteheads', 'blackheads']\nCONVERSATION HISTORY:\nai: Do you have any whiteheads?\nuser: what is whitehead?\nOUTPUT:\n{\n\"thought\": \"Human has enquired about whiteheads. But I still dont know if the user has whiteheads or not. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"whiteheads\",\n\"question\": \"Do you have any whiteheads?\",\n}\n\nExample 5:\nCHIEF COMPLAINT: concerned about severe headache\nLIST OF FIELDS: ['year of birth', 'Sex', 'Intensity']\nCONVERSATION HISTORY:\nai: What is your year of birth?\nuser: male\nOUTPUT:\n{\n\"thought\": \"Human's last response to the question about year of birth doesnt make sense. So, year of birth is not filled. Let me ask again.\",\n\"fields_answered\": [],\n\"next_field\": \"year of birth\",\n\"question\": \"What is your year of birth?\",\n}\n",
+    "--------",
+    "Additional Prompt: \nCHIEF COMPLAINT: concerned about the topic Flatulence\nLIST OF FIELDS: ['factors that make the {chief complaint} better or worse', 'other symptoms']\nCONVERSATION HISTORY:ai: Please describe your concerns regarding flatulence. What symptoms are you experiencing related to flatulence?\nhuman: Bloating\nai: When did you first start experiencing bloating?\nhuman: Today\nai: Have you been diagnosed by a health professional with any medical conditions that could be related to your bloating today?\nhuman: No\nai: Hmm.. I see. May I ask in what year you were born?\nhuman: 2001\nai: Thank you for sharing your year of birth. May I ask, what is your sex?\nhuman: Male\nai: Is your bloating getting worse, getting better, staying the same, or does it vary day to day since it started suddenly today?\nhuman: Well it's just the same\nai: On a scale of 1 to 10, with 1 being no problem and 10 being very severe, how would you rate the severity of your bloating that has been the same since today?\nhuman: 5\nai: Have you noticed anything that makes your bloating better or worse since it started today?\nhuman: No\n",
+    "-------",
+    "-------",
+    "Thought: The fields 'factors that make the {chief complaint} better or worse' and 'other symptoms' have been asked and answered. Both are marked as filled.",
+    "Fields answered: ['factors that make the {chief complaint} better or worse', 'other symptoms']",
+    "Next Field: other symptoms",
+    "Question: Do you have any other symptoms besides bloating, such as abdominal pain, excessive gas, or changes in bowel habits?"
+  ],
+  "deployed": "2024-03-10T07:57:34.444113",
+  "diagnosis_list": [
+    "IRRITABLE BOWEL SYNDROME (IBS)",
+    "GASTRITIS",
+    "GASTROENTERITIS"
+  ],
+  "dx_group_list": [
+    "Gastroenteritis",
+    "IBS",
+    "Gastritis"
+  ],
+  "dx_specialist_list": [
+    "gastroenterologist"
+  ],
+  "dxg_version": "unified",
+  "engagement_minutes": 4.6501839,
+  "error_types": [],
+  "errors": [],
+  "errors_care": [],
+  "feedback_rating": null,
+  "followup_summary": null,
+  "hist_for_que_gen": "",
+  "ip_address": "196.190.60.148",
+  "last_human_input": "Ok",
+  "last_updated": "2024-03-11T12:07:01.618778",
+  "max_token_count": 2639,
+  "mode": null,
+  "next_agent_name": null,
+  "patient_name": "Jamie",
+  "priority_field_relevance": {
+    "location of {chief complaint}": false
+  },
+  "priority_field_src": "specialist",
+  "priority_fields_asked": [
+    "details of {chief complaint}",
+    "when started {chief complaint}",
+    "previous medical diagnoses",
+    "year of birth",
+    "sex",
+    "started suddenly or gradually",
+    "getting worse, getting better,  staying the the same, or varies",
+    "severity on scale of 1 to 10 where 1 is not severe and 10 is very severe",
+    "factors that make the {chief complaint} better or worse",
+    "other symptoms"
+  ],
+  "prompt_tokens": 22746,
+  "question_agent_feedback": null,
+  "specialist": "gastroenterologist",
+  "subSpecialty": "general",
+  "successful_requests": 33,
+  "thought_process": "The fields 'factors that make the {chief complaint} better or worse' and 'other symptoms' have been asked and answered. Both are marked as filled.",
+  "timeouts": 0,
+  "total_cost": 0.039812999999999994,
+  "treatment_plans": {
+    "3": "<div class='tx-plan'><h1>Your Treatment Plan for Gastroenteritis</h1><!--Provide a concise summary of the condition provided-->\nGastroenteritis is an inflammation of the stomach and intestines, commonly caused by viral or bacterial infections. Symptoms include diarrhea, vomiting, abdominal cramps, and sometimes fever.\n\n<h2>Health Professional Referrals</h2>\n<ul>\n    <li><b>Primary Care</b>: Gastroenteritis is typically managed by primary care providers such as family physicians or internists. They can diagnose the condition, provide treatment, and monitor your recovery.</li>\n    <li><b>Specialists</b>: In most cases, specialist referral is not necessary for the treatment of gastroenteritis. However, if complications arise or if symptoms persist, a gastroenterologist may be consulted for further evaluation and management.</li>\n</ul>\n\n<h2>Tests to Confirm Diagnosis</h2>\n<ul>\n    <li><b>Laboratory Tests:</b>\n    <ul>\n      <li>Stool Culture: A stool sample may be collected and tested to identify the specific virus, bacteria, or parasite causing gastroenteritis.</li>\n      <li>Complete Blood Count (CBC): This test can help assess if there is an infection present by looking at the levels of different blood cells.</li>\n    </ul>    \n    </li>\n    <li><b>Imaging such as X-Ray, MRI, CT</b>: Imaging studies are not typically needed to diagnose gastroenteritis.</li>\n    <li><b>Other Tests</b>: In some cases, a test for electrolyte levels may be done to check for dehydration due to vomiting and diarrhea.</li>\n</ul>\n\n<h2>Treatments</h2>\n<ul>\n    <li><b>Prescription Medication Options</b>: Antibiotics are not usually prescribed for viral gastroenteritis. If a bacterial infection is the cause, antibiotics may be considered. Antiemetic medications can be prescribed to help control nausea and vomiting.</li>\n    <li><b>Over-the-Counter Medication Options</b>: Over-the-counter medications like loperamide (Imodium) can help reduce diarrhea. Electrolyte solutions can help prevent dehydration by replacing lost fluids and minerals.</li>\n    <li><b>Supplements, Natural Medicines, Alternative Therapies</b>: Probiotics may help restore the balance of gut bacteria and alleviate symptoms of gastroenteritis. Ginger tea or peppermint tea can help soothe the stomach.</li>\n</ul>\n\n<h2>Self Care</h2>\n<ul>\n    <li><b>Prevention</b>: Wash hands frequently, especially before eating and after using the bathroom, to prevent the spread of gastroenteritis.</li>\n    <li><b>Diet and Hydration</b>: Stick to bland, easily digestible foods like rice, bananas, toast, and applesauce (BRAT diet). Drink plenty of fluids to stay hydrated, including water, clear broths, and oral rehydration solutions.</li>\n    <li><b>Exercise</b>: Rest is important during the acute phase of gastroenteritis. Avoid strenuous exercise until symptoms improve.</li>\n    <li><b>Sleep</b>: Get adequate rest to help your body recover from the infection.</li>\n    <li><b>Stress</b>: Manage stress levels as stress can impact the immune system. Practice relaxation techniques like deep breathing or meditation.</li>\n    <li><b>Lifestyle</b>: Avoid alcohol and caffeine, as they can irritate the stomach. Use a heating pad on your abdomen for comfort if you have cramps.</li>\n</ul>\n\n<h2>Expected Recovery Time: 1-2 Weeks</h2>\n<ul>\n    <li><b>Duration</b>: Most cases of gastroenteritis resolve within a week or two with proper treatment and self-care measures.</li>\n    <li><b>Recovery Experience</b>: It is common to feel fatigued and weak during recovery. Monitor for signs of dehydration such as dark urine, dry mouth, or dizziness. If symptoms worsen or persist, seek medical attention promptly.</li>\n</ul></li></ul><h2>Best gastroenteritis treatment references for you:</h2></li></ul><h2>Best gastroenteritis treatment references for you:</h2><ul><li><a class=\"text-blue underline\" href=\"https://www.mayoclinic.org/diseases-conditions/viral-gastroenteritis/diagnosis-treatment/drc-20378852\" target=\"_blank\">Viral gastroenteritis (stomach flu) - Diagnosis & treatment - Mayo Clinic</a>\n<p>\nwww.mayoclinic.org\n<br>\nTry anti-diarrhea medications. Some adults may find it helpful to take loperamide (Imodium A-D) or bismuth subsalicylate (Pepto-Bismol, others) to manage their ...\n</p>\n</li>\n<li><a class=\"text-blue underline\" href=\"https://www.betterhealth.vic.gov.au/health/conditionsandtreatments/gastroenteritis\" target=\"_blank\">Gastroenteritis - Better Health Channel</a>\n<p>\nwww.betterhealth.vic.gov.au\n<br>\nTreatment for gastroenteritis · Plenty of fluids. · Oral rehydration drinks, available from your pharmacist. · Admission to hospital and intravenous fluid ...\n</p>\n</li>\n<li><a class=\"text-blue underline\" href=\"https://my.clevelandclinic.org/health/diseases/gastroenteritis\" target=\"_blank\">Gastroenteritis: What It Is, Symptoms, Medication & Treatment</a>\n<p>\nSep 25, 2023\n<br>\nmy.clevelandclinic.org\n<br>\nBut some causes of acute gastroenteritis may need medication to go away. For example, you may need a specific antibiotic or antiparasitic ...\n</p>\n</li>\n</ul></div>"
+  },
+  "treatment_plans_seen": [
+    3
+  ],
+  "version": "0.14.0-alpha",
+  "location": {
+    "type": "Point",
+    "coordinates": [
+      77.09980453029009,
+      28.421657406917817
+    ]
+  }
+}
