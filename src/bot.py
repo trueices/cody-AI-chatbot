@@ -22,6 +22,7 @@ class Bot:
                  username: str,
                  profile: dict = None,
                  ip_address: str = None):
+        
         # Initializing the bot state.
         self.state = BotState(username=username)
 
