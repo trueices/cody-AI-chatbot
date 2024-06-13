@@ -16,6 +16,7 @@ from src.sub_specialist import SubSpecialtyDxGroup
 from src.utils import map_url_name, demo_mode
 from src.agents.cody_care_agent import FORCE_LOGIN_MSG
 
+# real-time custom chatbot using thread
 class Bot:
     def __init__(self,
                  username: str,
